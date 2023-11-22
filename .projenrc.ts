@@ -1,4 +1,4 @@
-import { CdklabsConstructLibrary } from 'cdklabs-projen-project-types';
+import { CdklabsConstructLibrary, JsiiLanguage } from 'cdklabs-projen-project-types';
 import { JsonPatch } from 'projen';
 import { UpdateSnapshot } from 'projen/lib/javascript';
 
@@ -12,7 +12,7 @@ const project = new CdklabsConstructLibrary({
   cdkVersion: '2.9.0',
   constructsVersion: '10.0.46',
   defaultReleaseBranch: 'main',
-  repositoryUrl: 'https://github.com/cdklabs/cdk-pipelines-github.git',
+  repositoryUrl: 'https://github.com/hojulian/cdk-pipelines-github.git',
   bundledDeps: ['decamelize', 'yaml', 'fast-json-patch'],
   devDeps: [
     'cdklabs-projen-project-types',
@@ -24,22 +24,11 @@ const project = new CdklabsConstructLibrary({
   jestOptions: {
     updateSnapshot: UpdateSnapshot.NEVER,
   },
+  jsiiTargetLanguages: [JsiiLanguage.PYTHON],
 
   publishToPypi: {
     distName: 'cdk-pipelines-github',
-    module: 'cdk_pipelines_github',
-  },
-
-  publishToMaven: {
-    javaPackage: 'io.github.cdklabs.cdkpipelines.github',
-    mavenGroupId: 'io.github.cdklabs',
-    mavenArtifactId: 'cdk-pipelines-github',
-    mavenEndpoint: 'https://s01.oss.sonatype.org',
-  },
-
-  publishToNuget: {
-    dotNetNamespace: 'Cdklabs.CdkPipelinesGitHub',
-    packageId: 'Cdklabs.CdkPipelinesGitHub',
+    module: 'hojulian.cdk_pipelines_github',
   },
 });
 
