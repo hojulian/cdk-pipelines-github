@@ -15,7 +15,7 @@ import {
   JsonPatch,
   Runner,
   DockerCredential,
-} from 'cdk-pipelines-github';
+} from '@hojulian/cdk-pipelines-github';
 
 const BETA_ENV = {
   account: '000000000000',
