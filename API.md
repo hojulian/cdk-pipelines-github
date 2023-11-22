@@ -680,7 +680,7 @@ This project is licensed under the Apache-2.0 License.
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### GitHubActionRole <a name="GitHubActionRole" id="cdk-pipelines-github.GitHubActionRole"></a>
+### GitHubActionRole <a name="GitHubActionRole" id="@hojulian/cdk-pipelines-github.GitHubActionRole"></a>
 
 Creates or references a GitHub OIDC provider and accompanying role that trusts the provider.
 
@@ -695,37 +695,37 @@ the `gitHubActionRoleArn` property. The role arn will be `arn:aws:iam::<accountI
 
 > [https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.GitHubActionRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer"></a>
 
 ```typescript
-import { GitHubActionRole } from 'cdk-pipelines-github'
+import { GitHubActionRole } from '@hojulian/cdk-pipelines-github'
 
 new GitHubActionRole(scope: Construct, id: string, props: GitHubActionRoleProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-pipelines-github.GitHubActionRoleProps">GitHubActionRoleProps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps">GitHubActionRoleProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="cdk-pipelines-github.GitHubActionRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubActionRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="cdk-pipelines-github.GitHubActionRole.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubActionRole.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubActionRoleProps">GitHubActionRoleProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps">GitHubActionRoleProps</a>
 
 ---
 
@@ -733,11 +733,11 @@ new GitHubActionRole(scope: Construct, id: string, props: GitHubActionRoleProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-pipelines-github.GitHubActionRole.toString"></a>
+##### `toString` <a name="toString" id="@hojulian/cdk-pipelines-github.GitHubActionRole.toString"></a>
 
 ```typescript
 public toString(): string
@@ -749,22 +749,22 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider">existingGitHubActionsProvider</a></code> | Reference an existing GitHub Actions provider. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider">existingGitHubActionsProvider</a></code> | Reference an existing GitHub Actions provider. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-pipelines-github.GitHubActionRole.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@hojulian/cdk-pipelines-github.GitHubActionRole.isConstruct"></a>
 
 ```typescript
-import { GitHubActionRole } from 'cdk-pipelines-github'
+import { GitHubActionRole } from '@hojulian/cdk-pipelines-github'
 
 GitHubActionRole.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-pipelines-github.GitHubActionRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@hojulian/cdk-pipelines-github.GitHubActionRole.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -772,10 +772,10 @@ Any object.
 
 ---
 
-##### `existingGitHubActionsProvider` <a name="existingGitHubActionsProvider" id="cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider"></a>
+##### `existingGitHubActionsProvider` <a name="existingGitHubActionsProvider" id="@hojulian/cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider"></a>
 
 ```typescript
-import { GitHubActionRole } from 'cdk-pipelines-github'
+import { GitHubActionRole } from '@hojulian/cdk-pipelines-github'
 
 GitHubActionRole.existingGitHubActionsProvider(scope: Construct)
 ```
@@ -785,7 +785,7 @@ Reference an existing GitHub Actions provider.
 You do not need to pass in an arn because the arn for such
 a provider is always the same.
 
-###### `scope`<sup>Required</sup> <a name="scope" id="cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@hojulian/cdk-pipelines-github.GitHubActionRole.existingGitHubActionsProvider.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -795,12 +795,12 @@ a provider is always the same.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRole.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | The role that gets created. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRole.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | The role that gets created. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-pipelines-github.GitHubActionRole.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@hojulian/cdk-pipelines-github.GitHubActionRole.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -812,7 +812,7 @@ The tree node.
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="cdk-pipelines-github.GitHubActionRole.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@hojulian/cdk-pipelines-github.GitHubActionRole.property.role"></a>
 
 ```typescript
 public readonly role: IRole;
@@ -828,39 +828,39 @@ property in your GitHub Workflow app.
 ---
 
 
-### GitHubStage <a name="GitHubStage" id="cdk-pipelines-github.GitHubStage"></a>
+### GitHubStage <a name="GitHubStage" id="@hojulian/cdk-pipelines-github.GitHubStage"></a>
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.GitHubStage.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GitHubStage.Initializer"></a>
 
 ```typescript
-import { GitHubStage } from 'cdk-pipelines-github'
+import { GitHubStage } from '@hojulian/cdk-pipelines-github'
 
 new GitHubStage(scope: Construct, id: string, props?: GitHubStageProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubStage.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubStage.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubStage.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="cdk-pipelines-github.GitHubStage.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubStage.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="cdk-pipelines-github.GitHubStage.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubStage.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a>
 
 ---
 
@@ -868,12 +868,12 @@ new GitHubStage(scope: Construct, id: string, props?: GitHubStageProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubStage.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.synth">synth</a></code> | Synthesize this stage into a cloud assembly. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.synth">synth</a></code> | Synthesize this stage into a cloud assembly. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-pipelines-github.GitHubStage.toString"></a>
+##### `toString` <a name="toString" id="@hojulian/cdk-pipelines-github.GitHubStage.toString"></a>
 
 ```typescript
 public toString(): string
@@ -881,7 +881,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `synth` <a name="synth" id="cdk-pipelines-github.GitHubStage.synth"></a>
+##### `synth` <a name="synth" id="@hojulian/cdk-pipelines-github.GitHubStage.synth"></a>
 
 ```typescript
 public synth(options?: StageSynthesisOptions): CloudAssembly
@@ -892,7 +892,7 @@ Synthesize this stage into a cloud assembly.
 Once an assembly has been synthesized, it cannot be modified. Subsequent
 calls will return the same assembly.
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubStage.synth.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubStage.synth.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.StageSynthesisOptions
 
@@ -902,23 +902,23 @@ calls will return the same assembly.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubStage.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.isStage">isStage</a></code> | Test whether the given construct is a stage. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.of">of</a></code> | Return the stage this construct is contained with, if available. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.isStage">isStage</a></code> | Test whether the given construct is a stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.of">of</a></code> | Return the stage this construct is contained with, if available. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-pipelines-github.GitHubStage.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@hojulian/cdk-pipelines-github.GitHubStage.isConstruct"></a>
 
 ```typescript
-import { GitHubStage } from 'cdk-pipelines-github'
+import { GitHubStage } from '@hojulian/cdk-pipelines-github'
 
 GitHubStage.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-pipelines-github.GitHubStage.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@hojulian/cdk-pipelines-github.GitHubStage.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -926,26 +926,26 @@ Any object.
 
 ---
 
-##### `isStage` <a name="isStage" id="cdk-pipelines-github.GitHubStage.isStage"></a>
+##### `isStage` <a name="isStage" id="@hojulian/cdk-pipelines-github.GitHubStage.isStage"></a>
 
 ```typescript
-import { GitHubStage } from 'cdk-pipelines-github'
+import { GitHubStage } from '@hojulian/cdk-pipelines-github'
 
 GitHubStage.isStage(x: any)
 ```
 
 Test whether the given construct is a stage.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-pipelines-github.GitHubStage.isStage.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@hojulian/cdk-pipelines-github.GitHubStage.isStage.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `of` <a name="of" id="cdk-pipelines-github.GitHubStage.of"></a>
+##### `of` <a name="of" id="@hojulian/cdk-pipelines-github.GitHubStage.of"></a>
 
 ```typescript
-import { GitHubStage } from 'cdk-pipelines-github'
+import { GitHubStage } from '@hojulian/cdk-pipelines-github'
 
 GitHubStage.of(construct: IConstruct)
 ```
@@ -955,7 +955,7 @@ Return the stage this construct is contained with, if available.
 If called
 on a nested stage, returns its parent.
 
-###### `construct`<sup>Required</sup> <a name="construct" id="cdk-pipelines-github.GitHubStage.of.parameter.construct"></a>
+###### `construct`<sup>Required</sup> <a name="construct" id="@hojulian/cdk-pipelines-github.GitHubStage.of.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
 
@@ -965,19 +965,19 @@ on a nested stage, returns its parent.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.artifactId">artifactId</a></code> | <code>string</code> | Artifact ID of the assembly if it is a nested stage. The root stage (app) will return an empty string. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.assetOutdir">assetOutdir</a></code> | <code>string</code> | The cloud assembly asset output directory. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.outdir">outdir</a></code> | <code>string</code> | The cloud assembly output directory. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.stageName">stageName</a></code> | <code>string</code> | The name of the stage. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.account">account</a></code> | <code>string</code> | The default account for all resources defined within this stage. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.parentStage">parentStage</a></code> | <code>aws-cdk-lib.Stage</code> | The parent stage or `undefined` if this is the app. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.region">region</a></code> | <code>string</code> | The default region for all resources defined within this stage. |
-| <code><a href="#cdk-pipelines-github.GitHubStage.property.props">props</a></code> | <code><a href="#cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.artifactId">artifactId</a></code> | <code>string</code> | Artifact ID of the assembly if it is a nested stage. The root stage (app) will return an empty string. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.assetOutdir">assetOutdir</a></code> | <code>string</code> | The cloud assembly asset output directory. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.outdir">outdir</a></code> | <code>string</code> | The cloud assembly output directory. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.stageName">stageName</a></code> | <code>string</code> | The name of the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.account">account</a></code> | <code>string</code> | The default account for all resources defined within this stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.parentStage">parentStage</a></code> | <code>aws-cdk-lib.Stage</code> | The parent stage or `undefined` if this is the app. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.region">region</a></code> | <code>string</code> | The default region for all resources defined within this stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStage.property.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-pipelines-github.GitHubStage.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@hojulian/cdk-pipelines-github.GitHubStage.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -989,7 +989,7 @@ The tree node.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="cdk-pipelines-github.GitHubStage.property.artifactId"></a>
+##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@hojulian/cdk-pipelines-github.GitHubStage.property.artifactId"></a>
 
 ```typescript
 public readonly artifactId: string;
@@ -1003,7 +1003,7 @@ Derived from the construct path.
 
 ---
 
-##### `assetOutdir`<sup>Required</sup> <a name="assetOutdir" id="cdk-pipelines-github.GitHubStage.property.assetOutdir"></a>
+##### `assetOutdir`<sup>Required</sup> <a name="assetOutdir" id="@hojulian/cdk-pipelines-github.GitHubStage.property.assetOutdir"></a>
 
 ```typescript
 public readonly assetOutdir: string;
@@ -1015,7 +1015,7 @@ The cloud assembly asset output directory.
 
 ---
 
-##### `outdir`<sup>Required</sup> <a name="outdir" id="cdk-pipelines-github.GitHubStage.property.outdir"></a>
+##### `outdir`<sup>Required</sup> <a name="outdir" id="@hojulian/cdk-pipelines-github.GitHubStage.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -1027,7 +1027,7 @@ The cloud assembly output directory.
 
 ---
 
-##### `stageName`<sup>Required</sup> <a name="stageName" id="cdk-pipelines-github.GitHubStage.property.stageName"></a>
+##### `stageName`<sup>Required</sup> <a name="stageName" id="@hojulian/cdk-pipelines-github.GitHubStage.property.stageName"></a>
 
 ```typescript
 public readonly stageName: string;
@@ -1042,7 +1042,7 @@ hypens.
 
 ---
 
-##### `account`<sup>Optional</sup> <a name="account" id="cdk-pipelines-github.GitHubStage.property.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@hojulian/cdk-pipelines-github.GitHubStage.property.account"></a>
 
 ```typescript
 public readonly account: string;
@@ -1054,7 +1054,7 @@ The default account for all resources defined within this stage.
 
 ---
 
-##### `parentStage`<sup>Optional</sup> <a name="parentStage" id="cdk-pipelines-github.GitHubStage.property.parentStage"></a>
+##### `parentStage`<sup>Optional</sup> <a name="parentStage" id="@hojulian/cdk-pipelines-github.GitHubStage.property.parentStage"></a>
 
 ```typescript
 public readonly parentStage: Stage;
@@ -1068,7 +1068,7 @@ The parent stage or `undefined` if this is the app.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="cdk-pipelines-github.GitHubStage.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@hojulian/cdk-pipelines-github.GitHubStage.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1080,52 +1080,52 @@ The default region for all resources defined within this stage.
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="cdk-pipelines-github.GitHubStage.property.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubStage.property.props"></a>
 
 ```typescript
 public readonly props: GitHubStageProps;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubStageProps">GitHubStageProps</a>
 
 ---
 
 
-### GitHubWorkflow <a name="GitHubWorkflow" id="cdk-pipelines-github.GitHubWorkflow"></a>
+### GitHubWorkflow <a name="GitHubWorkflow" id="@hojulian/cdk-pipelines-github.GitHubWorkflow"></a>
 
 CDK Pipelines for GitHub workflows.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.GitHubWorkflow.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer"></a>
 
 ```typescript
-import { GitHubWorkflow } from 'cdk-pipelines-github'
+import { GitHubWorkflow } from '@hojulian/cdk-pipelines-github'
 
 new GitHubWorkflow(scope: Construct, id: string, props: GitHubWorkflowProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-pipelines-github.GitHubWorkflowProps">GitHubWorkflowProps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps">GitHubWorkflowProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubWorkflowProps">GitHubWorkflowProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps">GitHubWorkflowProps</a>
 
 ---
 
@@ -1133,16 +1133,16 @@ new GitHubWorkflow(scope: Construct, id: string, props: GitHubWorkflowProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.addStage">addStage</a></code> | Deploy a single Stage by itself. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.addWave">addWave</a></code> | Add a Wave to the pipeline, for deploying multiple Stages in parallel. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.buildPipeline">buildPipeline</a></code> | Send the current pipeline definition to the engine, and construct the pipeline. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.addGitHubWave">addGitHubWave</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions">addStageWithGitHubOptions</a></code> | Deploy a single Stage by itself with options for further GitHub configuration. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.addStage">addStage</a></code> | Deploy a single Stage by itself. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.addWave">addWave</a></code> | Add a Wave to the pipeline, for deploying multiple Stages in parallel. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.buildPipeline">buildPipeline</a></code> | Send the current pipeline definition to the engine, and construct the pipeline. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.addGitHubWave">addGitHubWave</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions">addStageWithGitHubOptions</a></code> | Deploy a single Stage by itself with options for further GitHub configuration. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-pipelines-github.GitHubWorkflow.toString"></a>
+##### `toString` <a name="toString" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1150,7 +1150,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addStage` <a name="addStage" id="cdk-pipelines-github.GitHubWorkflow.addStage"></a>
+##### `addStage` <a name="addStage" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStage"></a>
 
 ```typescript
 public addStage(stage: Stage, options?: AddStageOpts): StageDeployment
@@ -1162,19 +1162,19 @@ Add a Stage to the pipeline, to be deployed in sequence with other
 Stages added to the pipeline. All Stacks in the stage will be deployed
 in an order automatically determined by their relative dependencies.
 
-###### `stage`<sup>Required</sup> <a name="stage" id="cdk-pipelines-github.GitHubWorkflow.addStage.parameter.stage"></a>
+###### `stage`<sup>Required</sup> <a name="stage" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStage.parameter.stage"></a>
 
 - *Type:* aws-cdk-lib.Stage
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWorkflow.addStage.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStage.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.pipelines.AddStageOpts
 
 ---
 
-##### `addWave` <a name="addWave" id="cdk-pipelines-github.GitHubWorkflow.addWave"></a>
+##### `addWave` <a name="addWave" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addWave"></a>
 
 ```typescript
 public addWave(id: string, options?: WaveOptions): Wave
@@ -1194,19 +1194,19 @@ wave.addStage(new MyStage(this, 'Stage1'));
 wave.addStage(new MyStage(this, 'Stage2'));
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubWorkflow.addWave.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addWave.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWorkflow.addWave.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addWave.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.pipelines.WaveOptions
 
 ---
 
-##### `buildPipeline` <a name="buildPipeline" id="cdk-pipelines-github.GitHubWorkflow.buildPipeline"></a>
+##### `buildPipeline` <a name="buildPipeline" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.buildPipeline"></a>
 
 ```typescript
 public buildPipeline(): void
@@ -1216,25 +1216,25 @@ Send the current pipeline definition to the engine, and construct the pipeline.
 
 It is not possible to modify the pipeline after calling this method.
 
-##### `addGitHubWave` <a name="addGitHubWave" id="cdk-pipelines-github.GitHubWorkflow.addGitHubWave"></a>
+##### `addGitHubWave` <a name="addGitHubWave" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addGitHubWave"></a>
 
 ```typescript
 public addGitHubWave(id: string, options?: WaveOptions): GitHubWave
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubWorkflow.addGitHubWave.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addGitHubWave.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWorkflow.addGitHubWave.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addGitHubWave.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.pipelines.WaveOptions
 
 ---
 
-##### `addStageWithGitHubOptions` <a name="addStageWithGitHubOptions" id="cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions"></a>
+##### `addStageWithGitHubOptions` <a name="addStageWithGitHubOptions" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions"></a>
 
 ```typescript
 public addStageWithGitHubOptions(stage: Stage, options?: AddGitHubStageOptions): StageDeployment
@@ -1245,15 +1245,15 @@ Deploy a single Stage by itself with options for further GitHub configuration.
 Add a Stage to the pipeline, to be deployed in sequence with other Stages added to the pipeline.
 All Stacks in the stage will be deployed in an order automatically determined by their relative dependencies.
 
-###### `stage`<sup>Required</sup> <a name="stage" id="cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions.parameter.stage"></a>
+###### `stage`<sup>Required</sup> <a name="stage" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions.parameter.stage"></a>
 
 - *Type:* aws-cdk-lib.Stage
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.addStageWithGitHubOptions.parameter.options"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.AddGitHubStageOptions">AddGitHubStageOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions">AddGitHubStageOptions</a>
 
 ---
 
@@ -1261,21 +1261,21 @@ All Stacks in the stage will be deployed in an order automatically determined by
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-pipelines-github.GitHubWorkflow.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.isConstruct"></a>
 
 ```typescript
-import { GitHubWorkflow } from 'cdk-pipelines-github'
+import { GitHubWorkflow } from '@hojulian/cdk-pipelines-github'
 
 GitHubWorkflow.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-pipelines-github.GitHubWorkflow.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1287,17 +1287,17 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.cloudAssemblyFileSet">cloudAssemblyFileSet</a></code> | <code>aws-cdk-lib.pipelines.FileSet</code> | The FileSet tha contains the cloud assembly. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.synth">synth</a></code> | <code>aws-cdk-lib.pipelines.IFileSetProducer</code> | The build step that produces the CDK Cloud Assembly. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.waves">waves</a></code> | <code>aws-cdk-lib.pipelines.Wave[]</code> | The waves in this pipeline. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.workflowFile">workflowFile</a></code> | <code><a href="#cdk-pipelines-github.YamlFile">YamlFile</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.workflowName">workflowName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflow.property.workflowPath">workflowPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.cloudAssemblyFileSet">cloudAssemblyFileSet</a></code> | <code>aws-cdk-lib.pipelines.FileSet</code> | The FileSet tha contains the cloud assembly. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.synth">synth</a></code> | <code>aws-cdk-lib.pipelines.IFileSetProducer</code> | The build step that produces the CDK Cloud Assembly. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.waves">waves</a></code> | <code>aws-cdk-lib.pipelines.Wave[]</code> | The waves in this pipeline. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowFile">workflowFile</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.YamlFile">YamlFile</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowName">workflowName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowPath">workflowPath</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-pipelines-github.GitHubWorkflow.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -1309,7 +1309,7 @@ The tree node.
 
 ---
 
-##### `cloudAssemblyFileSet`<sup>Required</sup> <a name="cloudAssemblyFileSet" id="cdk-pipelines-github.GitHubWorkflow.property.cloudAssemblyFileSet"></a>
+##### `cloudAssemblyFileSet`<sup>Required</sup> <a name="cloudAssemblyFileSet" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.cloudAssemblyFileSet"></a>
 
 ```typescript
 public readonly cloudAssemblyFileSet: FileSet;
@@ -1323,7 +1323,7 @@ This is the primary output of the synth step.
 
 ---
 
-##### `synth`<sup>Required</sup> <a name="synth" id="cdk-pipelines-github.GitHubWorkflow.property.synth"></a>
+##### `synth`<sup>Required</sup> <a name="synth" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.synth"></a>
 
 ```typescript
 public readonly synth: IFileSetProducer;
@@ -1335,7 +1335,7 @@ The build step that produces the CDK Cloud Assembly.
 
 ---
 
-##### `waves`<sup>Required</sup> <a name="waves" id="cdk-pipelines-github.GitHubWorkflow.property.waves"></a>
+##### `waves`<sup>Required</sup> <a name="waves" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.waves"></a>
 
 ```typescript
 public readonly waves: Wave[];
@@ -1347,17 +1347,17 @@ The waves in this pipeline.
 
 ---
 
-##### `workflowFile`<sup>Required</sup> <a name="workflowFile" id="cdk-pipelines-github.GitHubWorkflow.property.workflowFile"></a>
+##### `workflowFile`<sup>Required</sup> <a name="workflowFile" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowFile"></a>
 
 ```typescript
 public readonly workflowFile: YamlFile;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.YamlFile">YamlFile</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.YamlFile">YamlFile</a>
 
 ---
 
-##### `workflowName`<sup>Required</sup> <a name="workflowName" id="cdk-pipelines-github.GitHubWorkflow.property.workflowName"></a>
+##### `workflowName`<sup>Required</sup> <a name="workflowName" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowName"></a>
 
 ```typescript
 public readonly workflowName: string;
@@ -1367,7 +1367,7 @@ public readonly workflowName: string;
 
 ---
 
-##### `workflowPath`<sup>Required</sup> <a name="workflowPath" id="cdk-pipelines-github.GitHubWorkflow.property.workflowPath"></a>
+##### `workflowPath`<sup>Required</sup> <a name="workflowPath" id="@hojulian/cdk-pipelines-github.GitHubWorkflow.property.workflowPath"></a>
 
 ```typescript
 public readonly workflowPath: string;
@@ -1380,14 +1380,14 @@ public readonly workflowPath: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AddGitHubStageOptions <a name="AddGitHubStageOptions" id="cdk-pipelines-github.AddGitHubStageOptions"></a>
+### AddGitHubStageOptions <a name="AddGitHubStageOptions" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions"></a>
 
 Options to pass to `addStageWithGitHubOpts`.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.AddGitHubStageOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.Initializer"></a>
 
 ```typescript
-import { AddGitHubStageOptions } from 'cdk-pipelines-github'
+import { AddGitHubStageOptions } from '@hojulian/cdk-pipelines-github'
 
 const addGitHubStageOptions: AddGitHubStageOptions = { ... }
 ```
@@ -1396,16 +1396,16 @@ const addGitHubStageOptions: AddGitHubStageOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.post">post</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps to run after all of the stacks in the stage. |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.pre">pre</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps to run before any of the stacks in the stage. |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.stackSteps">stackSteps</a></code> | <code>aws-cdk-lib.pipelines.StackSteps[]</code> | Instructions for stack level steps. |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.jobSettings">jobSettings</a></code> | <code><a href="#cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
-| <code><a href="#cdk-pipelines-github.AddGitHubStageOptions.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.post">post</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps to run after all of the stacks in the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.pre">pre</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps to run before any of the stacks in the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.stackSteps">stackSteps</a></code> | <code>aws-cdk-lib.pipelines.StackSteps[]</code> | Instructions for stack level steps. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.jobSettings">jobSettings</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
 
 ---
 
-##### `post`<sup>Optional</sup> <a name="post" id="cdk-pipelines-github.AddGitHubStageOptions.property.post"></a>
+##### `post`<sup>Optional</sup> <a name="post" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.post"></a>
 
 ```typescript
 public readonly post: Step[];
@@ -1418,7 +1418,7 @@ Additional steps to run after all of the stacks in the stage.
 
 ---
 
-##### `pre`<sup>Optional</sup> <a name="pre" id="cdk-pipelines-github.AddGitHubStageOptions.property.pre"></a>
+##### `pre`<sup>Optional</sup> <a name="pre" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.pre"></a>
 
 ```typescript
 public readonly pre: Step[];
@@ -1431,7 +1431,7 @@ Additional steps to run before any of the stacks in the stage.
 
 ---
 
-##### `stackSteps`<sup>Optional</sup> <a name="stackSteps" id="cdk-pipelines-github.AddGitHubStageOptions.property.stackSteps"></a>
+##### `stackSteps`<sup>Optional</sup> <a name="stackSteps" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.stackSteps"></a>
 
 ```typescript
 public readonly stackSteps: StackSteps[];
@@ -1444,13 +1444,13 @@ Instructions for stack level steps.
 
 ---
 
-##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="cdk-pipelines-github.AddGitHubStageOptions.property.gitHubEnvironment"></a>
+##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.gitHubEnvironment"></a>
 
 ```typescript
 public readonly gitHubEnvironment: GitHubEnvironment;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
 - *Default:* no GitHub environment
 
 Run the stage in a specific GitHub Environment.
@@ -1468,13 +1468,13 @@ exist will create an environment with the referenced name.
 
 ---
 
-##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="cdk-pipelines-github.AddGitHubStageOptions.property.jobSettings"></a>
+##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.jobSettings"></a>
 
 ```typescript
 public readonly jobSettings: JobSettings;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobSettings">JobSettings</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a>
 
 Job level settings that will be applied to all jobs in the stage.
 
@@ -1482,13 +1482,13 @@ Currently the only valid setting is 'if'.
 
 ---
 
-##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="cdk-pipelines-github.AddGitHubStageOptions.property.stackCapabilities"></a>
+##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="@hojulian/cdk-pipelines-github.AddGitHubStageOptions.property.stackCapabilities"></a>
 
 ```typescript
 public readonly stackCapabilities: StackCapabilities[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
 - *Default:* ['CAPABILITY_IAM']
 
 In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack.
@@ -1498,14 +1498,14 @@ error.
 
 ---
 
-### AwsCredentialsSecrets <a name="AwsCredentialsSecrets" id="cdk-pipelines-github.AwsCredentialsSecrets"></a>
+### AwsCredentialsSecrets <a name="AwsCredentialsSecrets" id="@hojulian/cdk-pipelines-github.AwsCredentialsSecrets"></a>
 
 Names of secrets for AWS credentials.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.AwsCredentialsSecrets.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.Initializer"></a>
 
 ```typescript
-import { AwsCredentialsSecrets } from 'cdk-pipelines-github'
+import { AwsCredentialsSecrets } from '@hojulian/cdk-pipelines-github'
 
 const awsCredentialsSecrets: AwsCredentialsSecrets = { ... }
 ```
@@ -1514,13 +1514,13 @@ const awsCredentialsSecrets: AwsCredentialsSecrets = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.AwsCredentialsSecrets.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.AwsCredentialsSecrets.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.AwsCredentialsSecrets.property.sessionToken">sessionToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.sessionToken">sessionToken</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `accessKeyId`<sup>Optional</sup> <a name="accessKeyId" id="cdk-pipelines-github.AwsCredentialsSecrets.property.accessKeyId"></a>
+##### `accessKeyId`<sup>Optional</sup> <a name="accessKeyId" id="@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.accessKeyId"></a>
 
 ```typescript
 public readonly accessKeyId: string;
@@ -1531,7 +1531,7 @@ public readonly accessKeyId: string;
 
 ---
 
-##### `secretAccessKey`<sup>Optional</sup> <a name="secretAccessKey" id="cdk-pipelines-github.AwsCredentialsSecrets.property.secretAccessKey"></a>
+##### `secretAccessKey`<sup>Optional</sup> <a name="secretAccessKey" id="@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.secretAccessKey"></a>
 
 ```typescript
 public readonly secretAccessKey: string;
@@ -1542,7 +1542,7 @@ public readonly secretAccessKey: string;
 
 ---
 
-##### `sessionToken`<sup>Optional</sup> <a name="sessionToken" id="cdk-pipelines-github.AwsCredentialsSecrets.property.sessionToken"></a>
+##### `sessionToken`<sup>Optional</sup> <a name="sessionToken" id="@hojulian/cdk-pipelines-github.AwsCredentialsSecrets.property.sessionToken"></a>
 
 ```typescript
 public readonly sessionToken: string;
@@ -1553,14 +1553,14 @@ public readonly sessionToken: string;
 
 ---
 
-### CheckRunOptions <a name="CheckRunOptions" id="cdk-pipelines-github.CheckRunOptions"></a>
+### CheckRunOptions <a name="CheckRunOptions" id="@hojulian/cdk-pipelines-github.CheckRunOptions"></a>
 
 Check run options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.CheckRunOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.CheckRunOptions.Initializer"></a>
 
 ```typescript
-import { CheckRunOptions } from 'cdk-pipelines-github'
+import { CheckRunOptions } from '@hojulian/cdk-pipelines-github'
 
 const checkRunOptions: CheckRunOptions = { ... }
 ```
@@ -1569,11 +1569,11 @@ const checkRunOptions: CheckRunOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.CheckRunOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.CheckRunOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.CheckRunOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.CheckRunOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -1585,14 +1585,14 @@ Which activity types to trigger on.
 
 ---
 
-### CheckSuiteOptions <a name="CheckSuiteOptions" id="cdk-pipelines-github.CheckSuiteOptions"></a>
+### CheckSuiteOptions <a name="CheckSuiteOptions" id="@hojulian/cdk-pipelines-github.CheckSuiteOptions"></a>
 
 Check suite options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.CheckSuiteOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.CheckSuiteOptions.Initializer"></a>
 
 ```typescript
-import { CheckSuiteOptions } from 'cdk-pipelines-github'
+import { CheckSuiteOptions } from '@hojulian/cdk-pipelines-github'
 
 const checkSuiteOptions: CheckSuiteOptions = { ... }
 ```
@@ -1601,11 +1601,11 @@ const checkSuiteOptions: CheckSuiteOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.CheckSuiteOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.CheckSuiteOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.CheckSuiteOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.CheckSuiteOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -1617,14 +1617,14 @@ Which activity types to trigger on.
 
 ---
 
-### ContainerCredentials <a name="ContainerCredentials" id="cdk-pipelines-github.ContainerCredentials"></a>
+### ContainerCredentials <a name="ContainerCredentials" id="@hojulian/cdk-pipelines-github.ContainerCredentials"></a>
 
 Credentials to use to authenticate to Docker registries.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ContainerCredentials.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ContainerCredentials.Initializer"></a>
 
 ```typescript
-import { ContainerCredentials } from 'cdk-pipelines-github'
+import { ContainerCredentials } from '@hojulian/cdk-pipelines-github'
 
 const containerCredentials: ContainerCredentials = { ... }
 ```
@@ -1633,12 +1633,12 @@ const containerCredentials: ContainerCredentials = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ContainerCredentials.property.password">password</a></code> | <code>string</code> | The password. |
-| <code><a href="#cdk-pipelines-github.ContainerCredentials.property.username">username</a></code> | <code>string</code> | The username. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerCredentials.property.password">password</a></code> | <code>string</code> | The password. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerCredentials.property.username">username</a></code> | <code>string</code> | The username. |
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="cdk-pipelines-github.ContainerCredentials.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@hojulian/cdk-pipelines-github.ContainerCredentials.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -1650,7 +1650,7 @@ The password.
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="cdk-pipelines-github.ContainerCredentials.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@hojulian/cdk-pipelines-github.ContainerCredentials.property.username"></a>
 
 ```typescript
 public readonly username: string;
@@ -1662,14 +1662,14 @@ The username.
 
 ---
 
-### ContainerOptions <a name="ContainerOptions" id="cdk-pipelines-github.ContainerOptions"></a>
+### ContainerOptions <a name="ContainerOptions" id="@hojulian/cdk-pipelines-github.ContainerOptions"></a>
 
 Options petaining to container environments.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ContainerOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ContainerOptions.Initializer"></a>
 
 ```typescript
-import { ContainerOptions } from 'cdk-pipelines-github'
+import { ContainerOptions } from '@hojulian/cdk-pipelines-github'
 
 const containerOptions: ContainerOptions = { ... }
 ```
@@ -1678,16 +1678,16 @@ const containerOptions: ContainerOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.image">image</a></code> | <code>string</code> | The Docker image to use as the container to run the action. |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.credentials">credentials</a></code> | <code><a href="#cdk-pipelines-github.ContainerCredentials">ContainerCredentials</a></code> | f the image's container registry requires authentication to pull the image, you can use credentials to set a map of the username and password. |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Sets a map of environment variables in the container. |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.options">options</a></code> | <code>string[]</code> | Additional Docker container resource options. |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.ports">ports</a></code> | <code>number[]</code> | Sets an array of ports to expose on the container. |
-| <code><a href="#cdk-pipelines-github.ContainerOptions.property.volumes">volumes</a></code> | <code>string[]</code> | Sets an array of volumes for the container to use. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.image">image</a></code> | <code>string</code> | The Docker image to use as the container to run the action. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.credentials">credentials</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ContainerCredentials">ContainerCredentials</a></code> | f the image's container registry requires authentication to pull the image, you can use credentials to set a map of the username and password. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Sets a map of environment variables in the container. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.options">options</a></code> | <code>string[]</code> | Additional Docker container resource options. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.ports">ports</a></code> | <code>number[]</code> | Sets an array of ports to expose on the container. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions.property.volumes">volumes</a></code> | <code>string[]</code> | Sets an array of volumes for the container to use. |
 
 ---
 
-##### `image`<sup>Required</sup> <a name="image" id="cdk-pipelines-github.ContainerOptions.property.image"></a>
+##### `image`<sup>Required</sup> <a name="image" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.image"></a>
 
 ```typescript
 public readonly image: string;
@@ -1702,13 +1702,13 @@ be the Docker Hub image name or a registry name.
 
 ---
 
-##### `credentials`<sup>Optional</sup> <a name="credentials" id="cdk-pipelines-github.ContainerOptions.property.credentials"></a>
+##### `credentials`<sup>Optional</sup> <a name="credentials" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.credentials"></a>
 
 ```typescript
 public readonly credentials: ContainerCredentials;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ContainerCredentials">ContainerCredentials</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ContainerCredentials">ContainerCredentials</a>
 
 f the image's container registry requires authentication to pull the image, you can use credentials to set a map of the username and password.
 
@@ -1717,7 +1717,7 @@ login command.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="cdk-pipelines-github.ContainerOptions.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -1729,7 +1729,7 @@ Sets a map of environment variables in the container.
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.ContainerOptions.property.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.options"></a>
 
 ```typescript
 public readonly options: string[];
@@ -1743,7 +1743,7 @@ Additional Docker container resource options.
 
 ---
 
-##### `ports`<sup>Optional</sup> <a name="ports" id="cdk-pipelines-github.ContainerOptions.property.ports"></a>
+##### `ports`<sup>Optional</sup> <a name="ports" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.ports"></a>
 
 ```typescript
 public readonly ports: number[];
@@ -1755,7 +1755,7 @@ Sets an array of ports to expose on the container.
 
 ---
 
-##### `volumes`<sup>Optional</sup> <a name="volumes" id="cdk-pipelines-github.ContainerOptions.property.volumes"></a>
+##### `volumes`<sup>Optional</sup> <a name="volumes" id="@hojulian/cdk-pipelines-github.ContainerOptions.property.volumes"></a>
 
 ```typescript
 public readonly volumes: string[];
@@ -1775,27 +1775,27 @@ To specify a volume, you specify the source and destination path:
 
 ---
 
-### CreateOptions <a name="CreateOptions" id="cdk-pipelines-github.CreateOptions"></a>
+### CreateOptions <a name="CreateOptions" id="@hojulian/cdk-pipelines-github.CreateOptions"></a>
 
 The Create event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.CreateOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.CreateOptions.Initializer"></a>
 
 ```typescript
-import { CreateOptions } from 'cdk-pipelines-github'
+import { CreateOptions } from '@hojulian/cdk-pipelines-github'
 
 const createOptions: CreateOptions = { ... }
 ```
 
 
-### CronScheduleOptions <a name="CronScheduleOptions" id="cdk-pipelines-github.CronScheduleOptions"></a>
+### CronScheduleOptions <a name="CronScheduleOptions" id="@hojulian/cdk-pipelines-github.CronScheduleOptions"></a>
 
 CRON schedule options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.CronScheduleOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.CronScheduleOptions.Initializer"></a>
 
 ```typescript
-import { CronScheduleOptions } from 'cdk-pipelines-github'
+import { CronScheduleOptions } from '@hojulian/cdk-pipelines-github'
 
 const cronScheduleOptions: CronScheduleOptions = { ... }
 ```
@@ -1804,11 +1804,11 @@ const cronScheduleOptions: CronScheduleOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.CronScheduleOptions.property.cron">cron</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.CronScheduleOptions.property.cron">cron</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `cron`<sup>Required</sup> <a name="cron" id="cdk-pipelines-github.CronScheduleOptions.property.cron"></a>
+##### `cron`<sup>Required</sup> <a name="cron" id="@hojulian/cdk-pipelines-github.CronScheduleOptions.property.cron"></a>
 
 ```typescript
 public readonly cron: string;
@@ -1820,53 +1820,53 @@ public readonly cron: string;
 
 ---
 
-### DeleteOptions <a name="DeleteOptions" id="cdk-pipelines-github.DeleteOptions"></a>
+### DeleteOptions <a name="DeleteOptions" id="@hojulian/cdk-pipelines-github.DeleteOptions"></a>
 
 The Delete event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.DeleteOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.DeleteOptions.Initializer"></a>
 
 ```typescript
-import { DeleteOptions } from 'cdk-pipelines-github'
+import { DeleteOptions } from '@hojulian/cdk-pipelines-github'
 
 const deleteOptions: DeleteOptions = { ... }
 ```
 
 
-### DeploymentOptions <a name="DeploymentOptions" id="cdk-pipelines-github.DeploymentOptions"></a>
+### DeploymentOptions <a name="DeploymentOptions" id="@hojulian/cdk-pipelines-github.DeploymentOptions"></a>
 
 The Deployment event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.DeploymentOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.DeploymentOptions.Initializer"></a>
 
 ```typescript
-import { DeploymentOptions } from 'cdk-pipelines-github'
+import { DeploymentOptions } from '@hojulian/cdk-pipelines-github'
 
 const deploymentOptions: DeploymentOptions = { ... }
 ```
 
 
-### DeploymentStatusOptions <a name="DeploymentStatusOptions" id="cdk-pipelines-github.DeploymentStatusOptions"></a>
+### DeploymentStatusOptions <a name="DeploymentStatusOptions" id="@hojulian/cdk-pipelines-github.DeploymentStatusOptions"></a>
 
 The Deployment status event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.DeploymentStatusOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.DeploymentStatusOptions.Initializer"></a>
 
 ```typescript
-import { DeploymentStatusOptions } from 'cdk-pipelines-github'
+import { DeploymentStatusOptions } from '@hojulian/cdk-pipelines-github'
 
 const deploymentStatusOptions: DeploymentStatusOptions = { ... }
 ```
 
 
-### DockerHubCredentialSecrets <a name="DockerHubCredentialSecrets" id="cdk-pipelines-github.DockerHubCredentialSecrets"></a>
+### DockerHubCredentialSecrets <a name="DockerHubCredentialSecrets" id="@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets"></a>
 
 Locations of GitHub Secrets used to authenticate to DockerHub.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.DockerHubCredentialSecrets.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets.Initializer"></a>
 
 ```typescript
-import { DockerHubCredentialSecrets } from 'cdk-pipelines-github'
+import { DockerHubCredentialSecrets } from '@hojulian/cdk-pipelines-github'
 
 const dockerHubCredentialSecrets: DockerHubCredentialSecrets = { ... }
 ```
@@ -1875,12 +1875,12 @@ const dockerHubCredentialSecrets: DockerHubCredentialSecrets = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.DockerHubCredentialSecrets.property.personalAccessTokenKey">personalAccessTokenKey</a></code> | <code>string</code> | The key of the GitHub Secret containing the DockerHub personal access token. |
-| <code><a href="#cdk-pipelines-github.DockerHubCredentialSecrets.property.usernameKey">usernameKey</a></code> | <code>string</code> | The key of the GitHub Secret containing the DockerHub username. |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets.property.personalAccessTokenKey">personalAccessTokenKey</a></code> | <code>string</code> | The key of the GitHub Secret containing the DockerHub personal access token. |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets.property.usernameKey">usernameKey</a></code> | <code>string</code> | The key of the GitHub Secret containing the DockerHub username. |
 
 ---
 
-##### `personalAccessTokenKey`<sup>Optional</sup> <a name="personalAccessTokenKey" id="cdk-pipelines-github.DockerHubCredentialSecrets.property.personalAccessTokenKey"></a>
+##### `personalAccessTokenKey`<sup>Optional</sup> <a name="personalAccessTokenKey" id="@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets.property.personalAccessTokenKey"></a>
 
 ```typescript
 public readonly personalAccessTokenKey: string;
@@ -1893,7 +1893,7 @@ The key of the GitHub Secret containing the DockerHub personal access token.
 
 ---
 
-##### `usernameKey`<sup>Optional</sup> <a name="usernameKey" id="cdk-pipelines-github.DockerHubCredentialSecrets.property.usernameKey"></a>
+##### `usernameKey`<sup>Optional</sup> <a name="usernameKey" id="@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets.property.usernameKey"></a>
 
 ```typescript
 public readonly usernameKey: string;
@@ -1906,14 +1906,14 @@ The key of the GitHub Secret containing the DockerHub username.
 
 ---
 
-### ExternalDockerCredentialSecrets <a name="ExternalDockerCredentialSecrets" id="cdk-pipelines-github.ExternalDockerCredentialSecrets"></a>
+### ExternalDockerCredentialSecrets <a name="ExternalDockerCredentialSecrets" id="@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets"></a>
 
 Generic structure to supply the locations of GitHub Secrets used to authenticate to a docker registry.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ExternalDockerCredentialSecrets.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets.Initializer"></a>
 
 ```typescript
-import { ExternalDockerCredentialSecrets } from 'cdk-pipelines-github'
+import { ExternalDockerCredentialSecrets } from '@hojulian/cdk-pipelines-github'
 
 const externalDockerCredentialSecrets: ExternalDockerCredentialSecrets = { ... }
 ```
@@ -1922,12 +1922,12 @@ const externalDockerCredentialSecrets: ExternalDockerCredentialSecrets = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ExternalDockerCredentialSecrets.property.passwordKey">passwordKey</a></code> | <code>string</code> | The key of the GitHub Secret containing your registry password. |
-| <code><a href="#cdk-pipelines-github.ExternalDockerCredentialSecrets.property.usernameKey">usernameKey</a></code> | <code>string</code> | The key of the GitHub Secret containing your registry username. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets.property.passwordKey">passwordKey</a></code> | <code>string</code> | The key of the GitHub Secret containing your registry password. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets.property.usernameKey">usernameKey</a></code> | <code>string</code> | The key of the GitHub Secret containing your registry username. |
 
 ---
 
-##### `passwordKey`<sup>Required</sup> <a name="passwordKey" id="cdk-pipelines-github.ExternalDockerCredentialSecrets.property.passwordKey"></a>
+##### `passwordKey`<sup>Required</sup> <a name="passwordKey" id="@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets.property.passwordKey"></a>
 
 ```typescript
 public readonly passwordKey: string;
@@ -1939,7 +1939,7 @@ The key of the GitHub Secret containing your registry password.
 
 ---
 
-##### `usernameKey`<sup>Required</sup> <a name="usernameKey" id="cdk-pipelines-github.ExternalDockerCredentialSecrets.property.usernameKey"></a>
+##### `usernameKey`<sup>Required</sup> <a name="usernameKey" id="@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets.property.usernameKey"></a>
 
 ```typescript
 public readonly usernameKey: string;
@@ -1951,27 +1951,27 @@ The key of the GitHub Secret containing your registry username.
 
 ---
 
-### ForkOptions <a name="ForkOptions" id="cdk-pipelines-github.ForkOptions"></a>
+### ForkOptions <a name="ForkOptions" id="@hojulian/cdk-pipelines-github.ForkOptions"></a>
 
 The Fork event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ForkOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ForkOptions.Initializer"></a>
 
 ```typescript
-import { ForkOptions } from 'cdk-pipelines-github'
+import { ForkOptions } from '@hojulian/cdk-pipelines-github'
 
 const forkOptions: ForkOptions = { ... }
 ```
 
 
-### GitHubActionRoleProps <a name="GitHubActionRoleProps" id="cdk-pipelines-github.GitHubActionRoleProps"></a>
+### GitHubActionRoleProps <a name="GitHubActionRoleProps" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps"></a>
 
 Properties for the GitHubActionRole construct.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubActionRoleProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.Initializer"></a>
 
 ```typescript
-import { GitHubActionRoleProps } from 'cdk-pipelines-github'
+import { GitHubActionRoleProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubActionRoleProps: GitHubActionRoleProps = { ... }
 ```
@@ -1980,15 +1980,15 @@ const gitHubActionRoleProps: GitHubActionRoleProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionRoleProps.property.provider">provider</a></code> | <code>aws-cdk-lib.aws_iam.IOpenIdConnectProvider</code> | The GitHub OpenId Connect Provider. Must have provider url `https://token.actions.githubusercontent.com`. The audience must be `sts:amazonaws.com`. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRoleProps.property.repos">repos</a></code> | <code>string[]</code> | A list of GitHub repositories you want to be able to access the IAM role. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRoleProps.property.roleName">roleName</a></code> | <code>string</code> | The name of the Oidc role. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRoleProps.property.subjectClaims">subjectClaims</a></code> | <code>string[]</code> | A list of subject claims allowed to access the IAM role. |
-| <code><a href="#cdk-pipelines-github.GitHubActionRoleProps.property.thumbprints">thumbprints</a></code> | <code>string[]</code> | Thumbprints of GitHub's certificates. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.provider">provider</a></code> | <code>aws-cdk-lib.aws_iam.IOpenIdConnectProvider</code> | The GitHub OpenId Connect Provider. Must have provider url `https://token.actions.githubusercontent.com`. The audience must be `sts:amazonaws.com`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.repos">repos</a></code> | <code>string[]</code> | A list of GitHub repositories you want to be able to access the IAM role. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.roleName">roleName</a></code> | <code>string</code> | The name of the Oidc role. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.subjectClaims">subjectClaims</a></code> | <code>string[]</code> | A list of subject claims allowed to access the IAM role. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.thumbprints">thumbprints</a></code> | <code>string[]</code> | Thumbprints of GitHub's certificates. |
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="cdk-pipelines-github.GitHubActionRoleProps.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.provider"></a>
 
 ```typescript
 public readonly provider: IOpenIdConnectProvider;
@@ -2004,7 +2004,7 @@ have a provider with the same url, a new provider cannot be created for you.
 
 ---
 
-##### `repos`<sup>Optional</sup> <a name="repos" id="cdk-pipelines-github.GitHubActionRoleProps.property.repos"></a>
+##### `repos`<sup>Optional</sup> <a name="repos" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.repos"></a>
 
 ```typescript
 public readonly repos: string[];
@@ -2022,7 +2022,7 @@ For example, `['owner/repo1', 'owner/repo2'].
 
 ---
 
-##### `roleName`<sup>Optional</sup> <a name="roleName" id="cdk-pipelines-github.GitHubActionRoleProps.property.roleName"></a>
+##### `roleName`<sup>Optional</sup> <a name="roleName" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.roleName"></a>
 
 ```typescript
 public readonly roleName: string;
@@ -2035,7 +2035,7 @@ The name of the Oidc role.
 
 ---
 
-##### `subjectClaims`<sup>Optional</sup> <a name="subjectClaims" id="cdk-pipelines-github.GitHubActionRoleProps.property.subjectClaims"></a>
+##### `subjectClaims`<sup>Optional</sup> <a name="subjectClaims" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.subjectClaims"></a>
 
 ```typescript
 public readonly subjectClaims: string[];
@@ -2053,7 +2053,7 @@ For example, `['repo:owner/repo1:ref:refs/heads/branch1', 'repo:owner/repo1:envi
 
 ---
 
-##### `thumbprints`<sup>Optional</sup> <a name="thumbprints" id="cdk-pipelines-github.GitHubActionRoleProps.property.thumbprints"></a>
+##### `thumbprints`<sup>Optional</sup> <a name="thumbprints" id="@hojulian/cdk-pipelines-github.GitHubActionRoleProps.property.thumbprints"></a>
 
 ```typescript
 public readonly thumbprints: string[];
@@ -2071,12 +2071,12 @@ https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integrati
 
 ---
 
-### GitHubActionStepProps <a name="GitHubActionStepProps" id="cdk-pipelines-github.GitHubActionStepProps"></a>
+### GitHubActionStepProps <a name="GitHubActionStepProps" id="@hojulian/cdk-pipelines-github.GitHubActionStepProps"></a>
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubActionStepProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubActionStepProps.Initializer"></a>
 
 ```typescript
-import { GitHubActionStepProps } from 'cdk-pipelines-github'
+import { GitHubActionStepProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubActionStepProps: GitHubActionStepProps = { ... }
 ```
@@ -2085,24 +2085,24 @@ const gitHubActionStepProps: GitHubActionStepProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionStepProps.property.jobSteps">jobSteps</a></code> | <code><a href="#cdk-pipelines-github.JobStep">JobStep</a>[]</code> | The Job steps. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStepProps.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Environment variables to set. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStepProps.property.jobSteps">jobSteps</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]</code> | The Job steps. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStepProps.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Environment variables to set. |
 
 ---
 
-##### `jobSteps`<sup>Required</sup> <a name="jobSteps" id="cdk-pipelines-github.GitHubActionStepProps.property.jobSteps"></a>
+##### `jobSteps`<sup>Required</sup> <a name="jobSteps" id="@hojulian/cdk-pipelines-github.GitHubActionStepProps.property.jobSteps"></a>
 
 ```typescript
 public readonly jobSteps: JobStep[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStep">JobStep</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]
 
 The Job steps.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="cdk-pipelines-github.GitHubActionStepProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@hojulian/cdk-pipelines-github.GitHubActionStepProps.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -2114,14 +2114,14 @@ Environment variables to set.
 
 ---
 
-### GitHubCommonProps <a name="GitHubCommonProps" id="cdk-pipelines-github.GitHubCommonProps"></a>
+### GitHubCommonProps <a name="GitHubCommonProps" id="@hojulian/cdk-pipelines-github.GitHubCommonProps"></a>
 
 Common properties to extend both StageProps and AddStageOpts.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubCommonProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubCommonProps.Initializer"></a>
 
 ```typescript
-import { GitHubCommonProps } from 'cdk-pipelines-github'
+import { GitHubCommonProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubCommonProps: GitHubCommonProps = { ... }
 ```
@@ -2130,19 +2130,19 @@ const gitHubCommonProps: GitHubCommonProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubCommonProps.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
-| <code><a href="#cdk-pipelines-github.GitHubCommonProps.property.jobSettings">jobSettings</a></code> | <code><a href="#cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
-| <code><a href="#cdk-pipelines-github.GitHubCommonProps.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubCommonProps.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubCommonProps.property.jobSettings">jobSettings</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubCommonProps.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
 
 ---
 
-##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="cdk-pipelines-github.GitHubCommonProps.property.gitHubEnvironment"></a>
+##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="@hojulian/cdk-pipelines-github.GitHubCommonProps.property.gitHubEnvironment"></a>
 
 ```typescript
 public readonly gitHubEnvironment: GitHubEnvironment;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
 - *Default:* no GitHub environment
 
 Run the stage in a specific GitHub Environment.
@@ -2160,13 +2160,13 @@ exist will create an environment with the referenced name.
 
 ---
 
-##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="cdk-pipelines-github.GitHubCommonProps.property.jobSettings"></a>
+##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="@hojulian/cdk-pipelines-github.GitHubCommonProps.property.jobSettings"></a>
 
 ```typescript
 public readonly jobSettings: JobSettings;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobSettings">JobSettings</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a>
 
 Job level settings that will be applied to all jobs in the stage.
 
@@ -2174,13 +2174,13 @@ Currently the only valid setting is 'if'.
 
 ---
 
-##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="cdk-pipelines-github.GitHubCommonProps.property.stackCapabilities"></a>
+##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="@hojulian/cdk-pipelines-github.GitHubCommonProps.property.stackCapabilities"></a>
 
 ```typescript
 public readonly stackCapabilities: StackCapabilities[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
 - *Default:* ['CAPABILITY_IAM']
 
 In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack.
@@ -2190,16 +2190,16 @@ error.
 
 ---
 
-### GitHubEnvironment <a name="GitHubEnvironment" id="cdk-pipelines-github.GitHubEnvironment"></a>
+### GitHubEnvironment <a name="GitHubEnvironment" id="@hojulian/cdk-pipelines-github.GitHubEnvironment"></a>
 
 Github environment with name and url.
 
 > [https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenvironment](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenvironment)
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubEnvironment.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubEnvironment.Initializer"></a>
 
 ```typescript
-import { GitHubEnvironment } from 'cdk-pipelines-github'
+import { GitHubEnvironment } from '@hojulian/cdk-pipelines-github'
 
 const gitHubEnvironment: GitHubEnvironment = { ... }
 ```
@@ -2208,12 +2208,12 @@ const gitHubEnvironment: GitHubEnvironment = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubEnvironment.property.name">name</a></code> | <code>string</code> | Name of the environment. |
-| <code><a href="#cdk-pipelines-github.GitHubEnvironment.property.url">url</a></code> | <code>string</code> | The url for the environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment.property.name">name</a></code> | <code>string</code> | Name of the environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment.property.url">url</a></code> | <code>string</code> | The url for the environment. |
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="cdk-pipelines-github.GitHubEnvironment.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@hojulian/cdk-pipelines-github.GitHubEnvironment.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -2227,7 +2227,7 @@ Name of the environment.
 
 ---
 
-##### `url`<sup>Optional</sup> <a name="url" id="cdk-pipelines-github.GitHubEnvironment.property.url"></a>
+##### `url`<sup>Optional</sup> <a name="url" id="@hojulian/cdk-pipelines-github.GitHubEnvironment.property.url"></a>
 
 ```typescript
 public readonly url: string;
@@ -2241,14 +2241,14 @@ The url for the environment.
 
 ---
 
-### GitHubSecretsProviderProps <a name="GitHubSecretsProviderProps" id="cdk-pipelines-github.GitHubSecretsProviderProps"></a>
+### GitHubSecretsProviderProps <a name="GitHubSecretsProviderProps" id="@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps"></a>
 
 Locations of GitHub Secrets used to authenticate to AWS.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubSecretsProviderProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.Initializer"></a>
 
 ```typescript
-import { GitHubSecretsProviderProps } from 'cdk-pipelines-github'
+import { GitHubSecretsProviderProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubSecretsProviderProps: GitHubSecretsProviderProps = { ... }
 ```
@@ -2257,13 +2257,13 @@ const gitHubSecretsProviderProps: GitHubSecretsProviderProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubSecretsProviderProps.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubSecretsProviderProps.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubSecretsProviderProps.property.sessionToken">sessionToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.sessionToken">sessionToken</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `accessKeyId`<sup>Required</sup> <a name="accessKeyId" id="cdk-pipelines-github.GitHubSecretsProviderProps.property.accessKeyId"></a>
+##### `accessKeyId`<sup>Required</sup> <a name="accessKeyId" id="@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.accessKeyId"></a>
 
 ```typescript
 public readonly accessKeyId: string;
@@ -2274,7 +2274,7 @@ public readonly accessKeyId: string;
 
 ---
 
-##### `secretAccessKey`<sup>Required</sup> <a name="secretAccessKey" id="cdk-pipelines-github.GitHubSecretsProviderProps.property.secretAccessKey"></a>
+##### `secretAccessKey`<sup>Required</sup> <a name="secretAccessKey" id="@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.secretAccessKey"></a>
 
 ```typescript
 public readonly secretAccessKey: string;
@@ -2285,7 +2285,7 @@ public readonly secretAccessKey: string;
 
 ---
 
-##### `sessionToken`<sup>Optional</sup> <a name="sessionToken" id="cdk-pipelines-github.GitHubSecretsProviderProps.property.sessionToken"></a>
+##### `sessionToken`<sup>Optional</sup> <a name="sessionToken" id="@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps.property.sessionToken"></a>
 
 ```typescript
 public readonly sessionToken: string;
@@ -2296,12 +2296,12 @@ public readonly sessionToken: string;
 
 ---
 
-### GitHubStageProps <a name="GitHubStageProps" id="cdk-pipelines-github.GitHubStageProps"></a>
+### GitHubStageProps <a name="GitHubStageProps" id="@hojulian/cdk-pipelines-github.GitHubStageProps"></a>
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubStageProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubStageProps.Initializer"></a>
 
 ```typescript
-import { GitHubStageProps } from 'cdk-pipelines-github'
+import { GitHubStageProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubStageProps: GitHubStageProps = { ... }
 ```
@@ -2310,15 +2310,15 @@ const gitHubStageProps: GitHubStageProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubStageProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | Default AWS environment (account/region) for `Stack`s in this `Stage`. |
-| <code><a href="#cdk-pipelines-github.GitHubStageProps.property.outdir">outdir</a></code> | <code>string</code> | The output directory into which to emit synthesized artifacts. |
-| <code><a href="#cdk-pipelines-github.GitHubStageProps.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
-| <code><a href="#cdk-pipelines-github.GitHubStageProps.property.jobSettings">jobSettings</a></code> | <code><a href="#cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
-| <code><a href="#cdk-pipelines-github.GitHubStageProps.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | Default AWS environment (account/region) for `Stack`s in this `Stage`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps.property.outdir">outdir</a></code> | <code>string</code> | The output directory into which to emit synthesized artifacts. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps.property.gitHubEnvironment">gitHubEnvironment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a></code> | Run the stage in a specific GitHub Environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps.property.jobSettings">jobSettings</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the stage. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubStageProps.property.stackCapabilities">stackCapabilities</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]</code> | In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack. |
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="cdk-pipelines-github.GitHubStageProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@hojulian/cdk-pipelines-github.GitHubStageProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -2359,7 +2359,7 @@ new Stage(app, 'Stage2', {
 ```
 
 
-##### `outdir`<sup>Optional</sup> <a name="outdir" id="cdk-pipelines-github.GitHubStageProps.property.outdir"></a>
+##### `outdir`<sup>Optional</sup> <a name="outdir" id="@hojulian/cdk-pipelines-github.GitHubStageProps.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -2376,13 +2376,13 @@ thrown.
 
 ---
 
-##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="cdk-pipelines-github.GitHubStageProps.property.gitHubEnvironment"></a>
+##### `gitHubEnvironment`<sup>Optional</sup> <a name="gitHubEnvironment" id="@hojulian/cdk-pipelines-github.GitHubStageProps.property.gitHubEnvironment"></a>
 
 ```typescript
 public readonly gitHubEnvironment: GitHubEnvironment;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubEnvironment">GitHubEnvironment</a>
 - *Default:* no GitHub environment
 
 Run the stage in a specific GitHub Environment.
@@ -2400,13 +2400,13 @@ exist will create an environment with the referenced name.
 
 ---
 
-##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="cdk-pipelines-github.GitHubStageProps.property.jobSettings"></a>
+##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="@hojulian/cdk-pipelines-github.GitHubStageProps.property.jobSettings"></a>
 
 ```typescript
 public readonly jobSettings: JobSettings;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobSettings">JobSettings</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a>
 
 Job level settings that will be applied to all jobs in the stage.
 
@@ -2414,13 +2414,13 @@ Currently the only valid setting is 'if'.
 
 ---
 
-##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="cdk-pipelines-github.GitHubStageProps.property.stackCapabilities"></a>
+##### `stackCapabilities`<sup>Optional</sup> <a name="stackCapabilities" id="@hojulian/cdk-pipelines-github.GitHubStageProps.property.stackCapabilities"></a>
 
 ```typescript
 public readonly stackCapabilities: StackCapabilities[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.StackCapabilities">StackCapabilities</a>[]
 - *Default:* ['CAPABILITY_IAM']
 
 In some cases, you must explicitly acknowledge that your CloudFormation stack template contains certain capabilities in order for CloudFormation to create the stack.
@@ -2430,14 +2430,14 @@ error.
 
 ---
 
-### GitHubWorkflowProps <a name="GitHubWorkflowProps" id="cdk-pipelines-github.GitHubWorkflowProps"></a>
+### GitHubWorkflowProps <a name="GitHubWorkflowProps" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps"></a>
 
 Props for `GitHubWorkflow`.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GitHubWorkflowProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.Initializer"></a>
 
 ```typescript
-import { GitHubWorkflowProps } from 'cdk-pipelines-github'
+import { GitHubWorkflowProps } from '@hojulian/cdk-pipelines-github'
 
 const gitHubWorkflowProps: GitHubWorkflowProps = { ... }
 ```
@@ -2446,26 +2446,26 @@ const gitHubWorkflowProps: GitHubWorkflowProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.synth">synth</a></code> | <code>aws-cdk-lib.pipelines.IFileSetProducer</code> | The build step that produces the CDK Cloud Assembly. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.awsCredentials">awsCredentials</a></code> | <code><a href="#cdk-pipelines-github.AwsCredentialsSecrets">AwsCredentialsSecrets</a></code> | Names of GitHub repository secrets that include AWS credentials for deployment. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.awsCreds">awsCreds</a></code> | <code><a href="#cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a></code> | Configure provider for AWS credentials used for deployment. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.buildContainer">buildContainer</a></code> | <code><a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a></code> | Build container options. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version of the CDK CLI to use. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.dockerCredentials">dockerCredentials</a></code> | <code><a href="#cdk-pipelines-github.DockerCredential">DockerCredential</a>[]</code> | The Docker Credentials to use to login. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.gitHubActionRoleArn">gitHubActionRoleArn</a></code> | <code>string</code> | A role that utilizes the GitHub OIDC Identity Provider in your AWS account. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.jobSettings">jobSettings</a></code> | <code><a href="#cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the workflow, including synth and asset deploy jobs. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.postBuildSteps">postBuildSteps</a></code> | <code><a href="#cdk-pipelines-github.JobStep">JobStep</a>[]</code> | GitHub workflow steps to execute after build. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.preBuildSteps">preBuildSteps</a></code> | <code><a href="#cdk-pipelines-github.JobStep">JobStep</a>[]</code> | GitHub workflow steps to execute before build. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.preSynthed">preSynthed</a></code> | <code>boolean</code> | Indicates if the repository already contains a synthesized `cdk.out` directory, in which case we will simply checkout the repo in jobs that require `cdk.out`. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.publishAssetsAuthRegion">publishAssetsAuthRegion</a></code> | <code>string</code> | Will assume the GitHubActionRole in this region when publishing assets. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.runner">runner</a></code> | <code><a href="#cdk-pipelines-github.Runner">Runner</a></code> | The type of runner to run the job on. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.workflowName">workflowName</a></code> | <code>string</code> | Name of the workflow. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.workflowPath">workflowPath</a></code> | <code>string</code> | File path for the GitHub workflow. |
-| <code><a href="#cdk-pipelines-github.GitHubWorkflowProps.property.workflowTriggers">workflowTriggers</a></code> | <code><a href="#cdk-pipelines-github.WorkflowTriggers">WorkflowTriggers</a></code> | GitHub workflow triggers. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.synth">synth</a></code> | <code>aws-cdk-lib.pipelines.IFileSetProducer</code> | The build step that produces the CDK Cloud Assembly. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.awsCredentials">awsCredentials</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsSecrets">AwsCredentialsSecrets</a></code> | Names of GitHub repository secrets that include AWS credentials for deployment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.awsCreds">awsCreds</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a></code> | Configure provider for AWS credentials used for deployment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.buildContainer">buildContainer</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a></code> | Build container options. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version of the CDK CLI to use. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.dockerCredentials">dockerCredentials</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential">DockerCredential</a>[]</code> | The Docker Credentials to use to login. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.gitHubActionRoleArn">gitHubActionRoleArn</a></code> | <code>string</code> | A role that utilizes the GitHub OIDC Identity Provider in your AWS account. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.jobSettings">jobSettings</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a></code> | Job level settings that will be applied to all jobs in the workflow, including synth and asset deploy jobs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.postBuildSteps">postBuildSteps</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]</code> | GitHub workflow steps to execute after build. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.preBuildSteps">preBuildSteps</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]</code> | GitHub workflow steps to execute before build. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.preSynthed">preSynthed</a></code> | <code>boolean</code> | Indicates if the repository already contains a synthesized `cdk.out` directory, in which case we will simply checkout the repo in jobs that require `cdk.out`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.publishAssetsAuthRegion">publishAssetsAuthRegion</a></code> | <code>string</code> | Will assume the GitHubActionRole in this region when publishing assets. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.runner">runner</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a></code> | The type of runner to run the job on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowName">workflowName</a></code> | <code>string</code> | Name of the workflow. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowPath">workflowPath</a></code> | <code>string</code> | File path for the GitHub workflow. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowTriggers">workflowTriggers</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers">WorkflowTriggers</a></code> | GitHub workflow triggers. |
 
 ---
 
-##### `synth`<sup>Required</sup> <a name="synth" id="cdk-pipelines-github.GitHubWorkflowProps.property.synth"></a>
+##### `synth`<sup>Required</sup> <a name="synth" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.synth"></a>
 
 ```typescript
 public readonly synth: IFileSetProducer;
@@ -2483,7 +2483,7 @@ the output directory will automatically be assumed to be `cdk.out`.
 
 ---
 
-##### ~~`awsCredentials`~~<sup>Optional</sup> <a name="awsCredentials" id="cdk-pipelines-github.GitHubWorkflowProps.property.awsCredentials"></a>
+##### ~~`awsCredentials`~~<sup>Optional</sup> <a name="awsCredentials" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.awsCredentials"></a>
 
 - *Deprecated:* Use `awsCreds.fromGitHubSecrets()` instead.
 
@@ -2491,40 +2491,40 @@ the output directory will automatically be assumed to be `cdk.out`.
 public readonly awsCredentials: AwsCredentialsSecrets;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.AwsCredentialsSecrets">AwsCredentialsSecrets</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.AwsCredentialsSecrets">AwsCredentialsSecrets</a>
 - *Default:* `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 
 Names of GitHub repository secrets that include AWS credentials for deployment.
 
 ---
 
-##### `awsCreds`<sup>Optional</sup> <a name="awsCreds" id="cdk-pipelines-github.GitHubWorkflowProps.property.awsCreds"></a>
+##### `awsCreds`<sup>Optional</sup> <a name="awsCreds" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.awsCreds"></a>
 
 ```typescript
 public readonly awsCreds: AwsCredentialsProvider;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a>
 - *Default:* Get AWS credentials from GitHub secrets `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 
 Configure provider for AWS credentials used for deployment.
 
 ---
 
-##### `buildContainer`<sup>Optional</sup> <a name="buildContainer" id="cdk-pipelines-github.GitHubWorkflowProps.property.buildContainer"></a>
+##### `buildContainer`<sup>Optional</sup> <a name="buildContainer" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.buildContainer"></a>
 
 ```typescript
 public readonly buildContainer: ContainerOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a>
 - *Default:* GitHub defaults
 
 Build container options.
 
 ---
 
-##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="cdk-pipelines-github.GitHubWorkflowProps.property.cdkCliVersion"></a>
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.cdkCliVersion"></a>
 
 ```typescript
 public readonly cdkCliVersion: string;
@@ -2537,13 +2537,13 @@ Version of the CDK CLI to use.
 
 ---
 
-##### `dockerCredentials`<sup>Optional</sup> <a name="dockerCredentials" id="cdk-pipelines-github.GitHubWorkflowProps.property.dockerCredentials"></a>
+##### `dockerCredentials`<sup>Optional</sup> <a name="dockerCredentials" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.dockerCredentials"></a>
 
 ```typescript
 public readonly dockerCredentials: DockerCredential[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.DockerCredential">DockerCredential</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.DockerCredential">DockerCredential</a>[]
 
 The Docker Credentials to use to login.
 
@@ -2552,7 +2552,7 @@ you will be logged in to docker when you upload Docker Assets.
 
 ---
 
-##### ~~`gitHubActionRoleArn`~~<sup>Optional</sup> <a name="gitHubActionRoleArn" id="cdk-pipelines-github.GitHubWorkflowProps.property.gitHubActionRoleArn"></a>
+##### ~~`gitHubActionRoleArn`~~<sup>Optional</sup> <a name="gitHubActionRoleArn" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.gitHubActionRoleArn"></a>
 
 - *Deprecated:* Use `awsCreds.fromOpenIdConnect()` instead.
 
@@ -2573,13 +2573,13 @@ you can utilize the `GitHubActionRole` construct to create a role for you.
 
 ---
 
-##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="cdk-pipelines-github.GitHubWorkflowProps.property.jobSettings"></a>
+##### `jobSettings`<sup>Optional</sup> <a name="jobSettings" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.jobSettings"></a>
 
 ```typescript
 public readonly jobSettings: JobSettings;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobSettings">JobSettings</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobSettings">JobSettings</a>
 
 Job level settings that will be applied to all jobs in the workflow, including synth and asset deploy jobs.
 
@@ -2590,33 +2590,33 @@ is 'if'. You can use this to run jobs only in specific repositories.
 
 ---
 
-##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="cdk-pipelines-github.GitHubWorkflowProps.property.postBuildSteps"></a>
+##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.postBuildSteps"></a>
 
 ```typescript
 public readonly postBuildSteps: JobStep[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStep">JobStep</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]
 - *Default:* []
 
 GitHub workflow steps to execute after build.
 
 ---
 
-##### `preBuildSteps`<sup>Optional</sup> <a name="preBuildSteps" id="cdk-pipelines-github.GitHubWorkflowProps.property.preBuildSteps"></a>
+##### `preBuildSteps`<sup>Optional</sup> <a name="preBuildSteps" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.preBuildSteps"></a>
 
 ```typescript
 public readonly preBuildSteps: JobStep[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStep">JobStep</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]
 - *Default:* []
 
 GitHub workflow steps to execute before build.
 
 ---
 
-##### `preSynthed`<sup>Optional</sup> <a name="preSynthed" id="cdk-pipelines-github.GitHubWorkflowProps.property.preSynthed"></a>
+##### `preSynthed`<sup>Optional</sup> <a name="preSynthed" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.preSynthed"></a>
 
 ```typescript
 public readonly preSynthed: boolean;
@@ -2629,7 +2629,7 @@ Indicates if the repository already contains a synthesized `cdk.out` directory, 
 
 ---
 
-##### `publishAssetsAuthRegion`<sup>Optional</sup> <a name="publishAssetsAuthRegion" id="cdk-pipelines-github.GitHubWorkflowProps.property.publishAssetsAuthRegion"></a>
+##### `publishAssetsAuthRegion`<sup>Optional</sup> <a name="publishAssetsAuthRegion" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.publishAssetsAuthRegion"></a>
 
 ```typescript
 public readonly publishAssetsAuthRegion: string;
@@ -2647,13 +2647,13 @@ ignore it.
 
 ---
 
-##### `runner`<sup>Optional</sup> <a name="runner" id="cdk-pipelines-github.GitHubWorkflowProps.property.runner"></a>
+##### `runner`<sup>Optional</sup> <a name="runner" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.runner"></a>
 
 ```typescript
 public readonly runner: Runner;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.Runner">Runner</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a>
 - *Default:* Runner.UBUNTU_LATEST
 
 The type of runner to run the job on.
@@ -2663,7 +2663,7 @@ GitHub-hosted runner or a self-hosted runner.
 
 ---
 
-##### `workflowName`<sup>Optional</sup> <a name="workflowName" id="cdk-pipelines-github.GitHubWorkflowProps.property.workflowName"></a>
+##### `workflowName`<sup>Optional</sup> <a name="workflowName" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowName"></a>
 
 ```typescript
 public readonly workflowName: string;
@@ -2676,7 +2676,7 @@ Name of the workflow.
 
 ---
 
-##### `workflowPath`<sup>Optional</sup> <a name="workflowPath" id="cdk-pipelines-github.GitHubWorkflowProps.property.workflowPath"></a>
+##### `workflowPath`<sup>Optional</sup> <a name="workflowPath" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowPath"></a>
 
 ```typescript
 public readonly workflowPath: string;
@@ -2689,40 +2689,40 @@ File path for the GitHub workflow.
 
 ---
 
-##### `workflowTriggers`<sup>Optional</sup> <a name="workflowTriggers" id="cdk-pipelines-github.GitHubWorkflowProps.property.workflowTriggers"></a>
+##### `workflowTriggers`<sup>Optional</sup> <a name="workflowTriggers" id="@hojulian/cdk-pipelines-github.GitHubWorkflowProps.property.workflowTriggers"></a>
 
 ```typescript
 public readonly workflowTriggers: WorkflowTriggers;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.WorkflowTriggers">WorkflowTriggers</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers">WorkflowTriggers</a>
 - *Default:* By default, workflow is triggered on push to the `main` branch and can also be triggered manually (`workflow_dispatch`).
 
 GitHub workflow triggers.
 
 ---
 
-### GollumOptions <a name="GollumOptions" id="cdk-pipelines-github.GollumOptions"></a>
+### GollumOptions <a name="GollumOptions" id="@hojulian/cdk-pipelines-github.GollumOptions"></a>
 
 The Gollum event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.GollumOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.GollumOptions.Initializer"></a>
 
 ```typescript
-import { GollumOptions } from 'cdk-pipelines-github'
+import { GollumOptions } from '@hojulian/cdk-pipelines-github'
 
 const gollumOptions: GollumOptions = { ... }
 ```
 
 
-### IssueCommentOptions <a name="IssueCommentOptions" id="cdk-pipelines-github.IssueCommentOptions"></a>
+### IssueCommentOptions <a name="IssueCommentOptions" id="@hojulian/cdk-pipelines-github.IssueCommentOptions"></a>
 
 Issue comment options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.IssueCommentOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.IssueCommentOptions.Initializer"></a>
 
 ```typescript
-import { IssueCommentOptions } from 'cdk-pipelines-github'
+import { IssueCommentOptions } from '@hojulian/cdk-pipelines-github'
 
 const issueCommentOptions: IssueCommentOptions = { ... }
 ```
@@ -2731,11 +2731,11 @@ const issueCommentOptions: IssueCommentOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.IssueCommentOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.IssueCommentOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.IssueCommentOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.IssueCommentOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -2747,14 +2747,14 @@ Which activity types to trigger on.
 
 ---
 
-### IssuesOptions <a name="IssuesOptions" id="cdk-pipelines-github.IssuesOptions"></a>
+### IssuesOptions <a name="IssuesOptions" id="@hojulian/cdk-pipelines-github.IssuesOptions"></a>
 
 Issues options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.IssuesOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.IssuesOptions.Initializer"></a>
 
 ```typescript
-import { IssuesOptions } from 'cdk-pipelines-github'
+import { IssuesOptions } from '@hojulian/cdk-pipelines-github'
 
 const issuesOptions: IssuesOptions = { ... }
 ```
@@ -2763,11 +2763,11 @@ const issuesOptions: IssuesOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.IssuesOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.IssuesOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.IssuesOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.IssuesOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -2779,14 +2779,14 @@ Which activity types to trigger on.
 
 ---
 
-### Job <a name="Job" id="cdk-pipelines-github.Job"></a>
+### Job <a name="Job" id="@hojulian/cdk-pipelines-github.Job"></a>
 
 A GitHub Workflow job definition.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.Job.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.Job.Initializer"></a>
 
 ```typescript
-import { Job } from 'cdk-pipelines-github'
+import { Job } from '@hojulian/cdk-pipelines-github'
 
 const job: Job = { ... }
 ```
@@ -2795,32 +2795,32 @@ const job: Job = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.Job.property.permissions">permissions</a></code> | <code><a href="#cdk-pipelines-github.JobPermissions">JobPermissions</a></code> | You can modify the default permissions granted to the GITHUB_TOKEN, adding or removing access as required, so that you only allow the minimum required access. |
-| <code><a href="#cdk-pipelines-github.Job.property.runsOn">runsOn</a></code> | <code>string \| string[]</code> | The type of machine to run the job on. |
-| <code><a href="#cdk-pipelines-github.Job.property.steps">steps</a></code> | <code><a href="#cdk-pipelines-github.JobStep">JobStep</a>[]</code> | A job contains a sequence of tasks called steps. |
-| <code><a href="#cdk-pipelines-github.Job.property.concurrency">concurrency</a></code> | <code>any</code> | Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. |
-| <code><a href="#cdk-pipelines-github.Job.property.container">container</a></code> | <code><a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a></code> | A container to run any steps in a job that don't already specify a container. |
-| <code><a href="#cdk-pipelines-github.Job.property.continueOnError">continueOnError</a></code> | <code>boolean</code> | Prevents a workflow run from failing when a job fails. |
-| <code><a href="#cdk-pipelines-github.Job.property.defaults">defaults</a></code> | <code><a href="#cdk-pipelines-github.JobDefaults">JobDefaults</a></code> | A map of default settings that will apply to all steps in the job. |
-| <code><a href="#cdk-pipelines-github.Job.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | A map of environment variables that are available to all steps in the job. |
-| <code><a href="#cdk-pipelines-github.Job.property.environment">environment</a></code> | <code>any</code> | The environment that the job references. |
-| <code><a href="#cdk-pipelines-github.Job.property.if">if</a></code> | <code>string</code> | You can use the if conditional to prevent a job from running unless a condition is met. |
-| <code><a href="#cdk-pipelines-github.Job.property.name">name</a></code> | <code>string</code> | The name of the job displayed on GitHub. |
-| <code><a href="#cdk-pipelines-github.Job.property.needs">needs</a></code> | <code>string[]</code> | Identifies any jobs that must complete successfully before this job will run. |
-| <code><a href="#cdk-pipelines-github.Job.property.outputs">outputs</a></code> | <code>{[ key: string ]: string}</code> | A map of outputs for a job. |
-| <code><a href="#cdk-pipelines-github.Job.property.services">services</a></code> | <code>{[ key: string ]: <a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a>}</code> | Used to host service containers for a job in a workflow. |
-| <code><a href="#cdk-pipelines-github.Job.property.strategy">strategy</a></code> | <code><a href="#cdk-pipelines-github.JobStrategy">JobStrategy</a></code> | A strategy creates a build matrix for your jobs. |
-| <code><a href="#cdk-pipelines-github.Job.property.timeoutMinutes">timeoutMinutes</a></code> | <code>number</code> | The maximum number of minutes to let a job run before GitHub automatically cancels it. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.permissions">permissions</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions">JobPermissions</a></code> | You can modify the default permissions granted to the GITHUB_TOKEN, adding or removing access as required, so that you only allow the minimum required access. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.runsOn">runsOn</a></code> | <code>string \| string[]</code> | The type of machine to run the job on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.steps">steps</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]</code> | A job contains a sequence of tasks called steps. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.concurrency">concurrency</a></code> | <code>any</code> | Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.container">container</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a></code> | A container to run any steps in a job that don't already specify a container. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.continueOnError">continueOnError</a></code> | <code>boolean</code> | Prevents a workflow run from failing when a job fails. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.defaults">defaults</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobDefaults">JobDefaults</a></code> | A map of default settings that will apply to all steps in the job. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | A map of environment variables that are available to all steps in the job. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.environment">environment</a></code> | <code>any</code> | The environment that the job references. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.if">if</a></code> | <code>string</code> | You can use the if conditional to prevent a job from running unless a condition is met. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.name">name</a></code> | <code>string</code> | The name of the job displayed on GitHub. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.needs">needs</a></code> | <code>string[]</code> | Identifies any jobs that must complete successfully before this job will run. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.outputs">outputs</a></code> | <code>{[ key: string ]: string}</code> | A map of outputs for a job. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.services">services</a></code> | <code>{[ key: string ]: <a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a>}</code> | Used to host service containers for a job in a workflow. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.strategy">strategy</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStrategy">JobStrategy</a></code> | A strategy creates a build matrix for your jobs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Job.property.timeoutMinutes">timeoutMinutes</a></code> | <code>number</code> | The maximum number of minutes to let a job run before GitHub automatically cancels it. |
 
 ---
 
-##### `permissions`<sup>Required</sup> <a name="permissions" id="cdk-pipelines-github.Job.property.permissions"></a>
+##### `permissions`<sup>Required</sup> <a name="permissions" id="@hojulian/cdk-pipelines-github.Job.property.permissions"></a>
 
 ```typescript
 public readonly permissions: JobPermissions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermissions">JobPermissions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermissions">JobPermissions</a>
 
 You can modify the default permissions granted to the GITHUB_TOKEN, adding or removing access as required, so that you only allow the minimum required access.
 
@@ -2834,7 +2834,7 @@ access.
 
 ---
 
-##### `runsOn`<sup>Required</sup> <a name="runsOn" id="cdk-pipelines-github.Job.property.runsOn"></a>
+##### `runsOn`<sup>Required</sup> <a name="runsOn" id="@hojulian/cdk-pipelines-github.Job.property.runsOn"></a>
 
 ```typescript
 public readonly runsOn: string | string[];
@@ -2856,13 +2856,13 @@ GitHub-hosted runner or a self-hosted runner.
 ```
 
 
-##### `steps`<sup>Required</sup> <a name="steps" id="cdk-pipelines-github.Job.property.steps"></a>
+##### `steps`<sup>Required</sup> <a name="steps" id="@hojulian/cdk-pipelines-github.Job.property.steps"></a>
 
 ```typescript
 public readonly steps: JobStep[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStep">JobStep</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]
 
 A job contains a sequence of tasks called steps.
 
@@ -2877,7 +2877,7 @@ and complete a job.
 
 ---
 
-##### `concurrency`<sup>Optional</sup> <a name="concurrency" id="cdk-pipelines-github.Job.property.concurrency"></a>
+##### `concurrency`<sup>Optional</sup> <a name="concurrency" id="@hojulian/cdk-pipelines-github.Job.property.concurrency"></a>
 
 ```typescript
 public readonly concurrency: any;
@@ -2893,13 +2893,13 @@ secrets context.
 
 ---
 
-##### `container`<sup>Optional</sup> <a name="container" id="cdk-pipelines-github.Job.property.container"></a>
+##### `container`<sup>Optional</sup> <a name="container" id="@hojulian/cdk-pipelines-github.Job.property.container"></a>
 
 ```typescript
 public readonly container: ContainerOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a>
 
 A container to run any steps in a job that don't already specify a container.
 
@@ -2909,7 +2909,7 @@ with the same volume mounts.
 
 ---
 
-##### `continueOnError`<sup>Optional</sup> <a name="continueOnError" id="cdk-pipelines-github.Job.property.continueOnError"></a>
+##### `continueOnError`<sup>Optional</sup> <a name="continueOnError" id="@hojulian/cdk-pipelines-github.Job.property.continueOnError"></a>
 
 ```typescript
 public readonly continueOnError: boolean;
@@ -2924,13 +2924,13 @@ allow a workflow run to pass when this job fails.
 
 ---
 
-##### `defaults`<sup>Optional</sup> <a name="defaults" id="cdk-pipelines-github.Job.property.defaults"></a>
+##### `defaults`<sup>Optional</sup> <a name="defaults" id="@hojulian/cdk-pipelines-github.Job.property.defaults"></a>
 
 ```typescript
 public readonly defaults: JobDefaults;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobDefaults">JobDefaults</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobDefaults">JobDefaults</a>
 
 A map of default settings that will apply to all steps in the job.
 
@@ -2939,7 +2939,7 @@ can also set default settings for the entire workflow.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="cdk-pipelines-github.Job.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@hojulian/cdk-pipelines-github.Job.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -2954,7 +2954,7 @@ individual step.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-pipelines-github.Job.property.environment"></a>
+##### `environment`<sup>Optional</sup> <a name="environment" id="@hojulian/cdk-pipelines-github.Job.property.environment"></a>
 
 ```typescript
 public readonly environment: any;
@@ -2971,7 +2971,7 @@ must pass before a job referencing the environment is sent to a runner.
 
 ---
 
-##### `if`<sup>Optional</sup> <a name="if" id="cdk-pipelines-github.Job.property.if"></a>
+##### `if`<sup>Optional</sup> <a name="if" id="@hojulian/cdk-pipelines-github.Job.property.if"></a>
 
 ```typescript
 public readonly if: string;
@@ -2986,7 +2986,7 @@ create a conditional.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="cdk-pipelines-github.Job.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@hojulian/cdk-pipelines-github.Job.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -2998,7 +2998,7 @@ The name of the job displayed on GitHub.
 
 ---
 
-##### `needs`<sup>Optional</sup> <a name="needs" id="cdk-pipelines-github.Job.property.needs"></a>
+##### `needs`<sup>Optional</sup> <a name="needs" id="@hojulian/cdk-pipelines-github.Job.property.needs"></a>
 
 ```typescript
 public readonly needs: string[];
@@ -3014,7 +3014,7 @@ that causes the job to continue.
 
 ---
 
-##### `outputs`<sup>Optional</sup> <a name="outputs" id="cdk-pipelines-github.Job.property.outputs"></a>
+##### `outputs`<sup>Optional</sup> <a name="outputs" id="@hojulian/cdk-pipelines-github.Job.property.outputs"></a>
 
 ```typescript
 public readonly outputs: {[ key: string ]: string};
@@ -3029,13 +3029,13 @@ jobs that depend on this job.
 
 ---
 
-##### `services`<sup>Optional</sup> <a name="services" id="cdk-pipelines-github.Job.property.services"></a>
+##### `services`<sup>Optional</sup> <a name="services" id="@hojulian/cdk-pipelines-github.Job.property.services"></a>
 
 ```typescript
 public readonly services: {[ key: string ]: ContainerOptions};
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-pipelines-github.ContainerOptions">ContainerOptions</a>}
+- *Type:* {[ key: string ]: <a href="#@hojulian/cdk-pipelines-github.ContainerOptions">ContainerOptions</a>}
 
 Used to host service containers for a job in a workflow.
 
@@ -3046,13 +3046,13 @@ cycle of the service containers.
 
 ---
 
-##### `strategy`<sup>Optional</sup> <a name="strategy" id="cdk-pipelines-github.Job.property.strategy"></a>
+##### `strategy`<sup>Optional</sup> <a name="strategy" id="@hojulian/cdk-pipelines-github.Job.property.strategy"></a>
 
 ```typescript
 public readonly strategy: JobStrategy;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStrategy">JobStrategy</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStrategy">JobStrategy</a>
 
 A strategy creates a build matrix for your jobs.
 
@@ -3061,7 +3061,7 @@ variations to run each job in.
 
 ---
 
-##### `timeoutMinutes`<sup>Optional</sup> <a name="timeoutMinutes" id="cdk-pipelines-github.Job.property.timeoutMinutes"></a>
+##### `timeoutMinutes`<sup>Optional</sup> <a name="timeoutMinutes" id="@hojulian/cdk-pipelines-github.Job.property.timeoutMinutes"></a>
 
 ```typescript
 public readonly timeoutMinutes: number;
@@ -3074,14 +3074,14 @@ The maximum number of minutes to let a job run before GitHub automatically cance
 
 ---
 
-### JobDefaults <a name="JobDefaults" id="cdk-pipelines-github.JobDefaults"></a>
+### JobDefaults <a name="JobDefaults" id="@hojulian/cdk-pipelines-github.JobDefaults"></a>
 
 Default settings for all steps in the job.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobDefaults.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobDefaults.Initializer"></a>
 
 ```typescript
-import { JobDefaults } from 'cdk-pipelines-github'
+import { JobDefaults } from '@hojulian/cdk-pipelines-github'
 
 const jobDefaults: JobDefaults = { ... }
 ```
@@ -3090,30 +3090,30 @@ const jobDefaults: JobDefaults = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobDefaults.property.run">run</a></code> | <code><a href="#cdk-pipelines-github.RunSettings">RunSettings</a></code> | Default run settings. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobDefaults.property.run">run</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.RunSettings">RunSettings</a></code> | Default run settings. |
 
 ---
 
-##### `run`<sup>Optional</sup> <a name="run" id="cdk-pipelines-github.JobDefaults.property.run"></a>
+##### `run`<sup>Optional</sup> <a name="run" id="@hojulian/cdk-pipelines-github.JobDefaults.property.run"></a>
 
 ```typescript
 public readonly run: RunSettings;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.RunSettings">RunSettings</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.RunSettings">RunSettings</a>
 
 Default run settings.
 
 ---
 
-### JobMatrix <a name="JobMatrix" id="cdk-pipelines-github.JobMatrix"></a>
+### JobMatrix <a name="JobMatrix" id="@hojulian/cdk-pipelines-github.JobMatrix"></a>
 
 A job matrix.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobMatrix.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobMatrix.Initializer"></a>
 
 ```typescript
-import { JobMatrix } from 'cdk-pipelines-github'
+import { JobMatrix } from '@hojulian/cdk-pipelines-github'
 
 const jobMatrix: JobMatrix = { ... }
 ```
@@ -3122,13 +3122,13 @@ const jobMatrix: JobMatrix = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobMatrix.property.domain">domain</a></code> | <code>{[ key: string ]: string[]}</code> | Each option you define in the matrix has a key and value. |
-| <code><a href="#cdk-pipelines-github.JobMatrix.property.exclude">exclude</a></code> | <code>{[ key: string ]: string}[]</code> | You can remove a specific configurations defined in the build matrix using the exclude option. |
-| <code><a href="#cdk-pipelines-github.JobMatrix.property.include">include</a></code> | <code>{[ key: string ]: string}[]</code> | You can add additional configuration options to a build matrix job that already exists. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobMatrix.property.domain">domain</a></code> | <code>{[ key: string ]: string[]}</code> | Each option you define in the matrix has a key and value. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobMatrix.property.exclude">exclude</a></code> | <code>{[ key: string ]: string}[]</code> | You can remove a specific configurations defined in the build matrix using the exclude option. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobMatrix.property.include">include</a></code> | <code>{[ key: string ]: string}[]</code> | You can add additional configuration options to a build matrix job that already exists. |
 
 ---
 
-##### `domain`<sup>Optional</sup> <a name="domain" id="cdk-pipelines-github.JobMatrix.property.domain"></a>
+##### `domain`<sup>Optional</sup> <a name="domain" id="@hojulian/cdk-pipelines-github.JobMatrix.property.domain"></a>
 
 ```typescript
 public readonly domain: {[ key: string ]: string[]};
@@ -3147,7 +3147,7 @@ for each operating system.
 
 ---
 
-##### `exclude`<sup>Optional</sup> <a name="exclude" id="cdk-pipelines-github.JobMatrix.property.exclude"></a>
+##### `exclude`<sup>Optional</sup> <a name="exclude" id="@hojulian/cdk-pipelines-github.JobMatrix.property.exclude"></a>
 
 ```typescript
 public readonly exclude: {[ key: string ]: string}[];
@@ -3162,7 +3162,7 @@ build matrix.
 
 ---
 
-##### `include`<sup>Optional</sup> <a name="include" id="cdk-pipelines-github.JobMatrix.property.include"></a>
+##### `include`<sup>Optional</sup> <a name="include" id="@hojulian/cdk-pipelines-github.JobMatrix.property.include"></a>
 
 ```typescript
 public readonly include: {[ key: string ]: string}[];
@@ -3178,7 +3178,7 @@ use include to specify that additional option.
 
 ---
 
-### JobPermissions <a name="JobPermissions" id="cdk-pipelines-github.JobPermissions"></a>
+### JobPermissions <a name="JobPermissions" id="@hojulian/cdk-pipelines-github.JobPermissions"></a>
 
 The available scopes and access values for workflow permissions.
 
@@ -3187,10 +3187,10 @@ specify the access for any of these scopes, all those that are not
 specified are set to `JobPermission.NONE`, instead of the default behavior
 when none is specified.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobPermissions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobPermissions.Initializer"></a>
 
 ```typescript
-import { JobPermissions } from 'cdk-pipelines-github'
+import { JobPermissions } from '@hojulian/cdk-pipelines-github'
 
 const jobPermissions: JobPermissions = { ... }
 ```
@@ -3199,149 +3199,149 @@ const jobPermissions: JobPermissions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.actions">actions</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.checks">checks</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.contents">contents</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.deployments">deployments</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.discussions">discussions</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.idToken">idToken</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.issues">issues</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.packages">packages</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.pullRequests">pullRequests</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.repositoryProjects">repositoryProjects</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.securityEvents">securityEvents</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.JobPermissions.property.statuses">statuses</a></code> | <code><a href="#cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.actions">actions</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.checks">checks</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.contents">contents</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.deployments">deployments</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.discussions">discussions</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.idToken">idToken</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.issues">issues</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.packages">packages</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.pullRequests">pullRequests</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.repositoryProjects">repositoryProjects</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.securityEvents">securityEvents</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermissions.property.statuses">statuses</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a></code> | *No description.* |
 
 ---
 
-##### `actions`<sup>Optional</sup> <a name="actions" id="cdk-pipelines-github.JobPermissions.property.actions"></a>
+##### `actions`<sup>Optional</sup> <a name="actions" id="@hojulian/cdk-pipelines-github.JobPermissions.property.actions"></a>
 
 ```typescript
 public readonly actions: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `checks`<sup>Optional</sup> <a name="checks" id="cdk-pipelines-github.JobPermissions.property.checks"></a>
+##### `checks`<sup>Optional</sup> <a name="checks" id="@hojulian/cdk-pipelines-github.JobPermissions.property.checks"></a>
 
 ```typescript
 public readonly checks: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `contents`<sup>Optional</sup> <a name="contents" id="cdk-pipelines-github.JobPermissions.property.contents"></a>
+##### `contents`<sup>Optional</sup> <a name="contents" id="@hojulian/cdk-pipelines-github.JobPermissions.property.contents"></a>
 
 ```typescript
 public readonly contents: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `deployments`<sup>Optional</sup> <a name="deployments" id="cdk-pipelines-github.JobPermissions.property.deployments"></a>
+##### `deployments`<sup>Optional</sup> <a name="deployments" id="@hojulian/cdk-pipelines-github.JobPermissions.property.deployments"></a>
 
 ```typescript
 public readonly deployments: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `discussions`<sup>Optional</sup> <a name="discussions" id="cdk-pipelines-github.JobPermissions.property.discussions"></a>
+##### `discussions`<sup>Optional</sup> <a name="discussions" id="@hojulian/cdk-pipelines-github.JobPermissions.property.discussions"></a>
 
 ```typescript
 public readonly discussions: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `idToken`<sup>Optional</sup> <a name="idToken" id="cdk-pipelines-github.JobPermissions.property.idToken"></a>
+##### `idToken`<sup>Optional</sup> <a name="idToken" id="@hojulian/cdk-pipelines-github.JobPermissions.property.idToken"></a>
 
 ```typescript
 public readonly idToken: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `issues`<sup>Optional</sup> <a name="issues" id="cdk-pipelines-github.JobPermissions.property.issues"></a>
+##### `issues`<sup>Optional</sup> <a name="issues" id="@hojulian/cdk-pipelines-github.JobPermissions.property.issues"></a>
 
 ```typescript
 public readonly issues: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `packages`<sup>Optional</sup> <a name="packages" id="cdk-pipelines-github.JobPermissions.property.packages"></a>
+##### `packages`<sup>Optional</sup> <a name="packages" id="@hojulian/cdk-pipelines-github.JobPermissions.property.packages"></a>
 
 ```typescript
 public readonly packages: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `pullRequests`<sup>Optional</sup> <a name="pullRequests" id="cdk-pipelines-github.JobPermissions.property.pullRequests"></a>
+##### `pullRequests`<sup>Optional</sup> <a name="pullRequests" id="@hojulian/cdk-pipelines-github.JobPermissions.property.pullRequests"></a>
 
 ```typescript
 public readonly pullRequests: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `repositoryProjects`<sup>Optional</sup> <a name="repositoryProjects" id="cdk-pipelines-github.JobPermissions.property.repositoryProjects"></a>
+##### `repositoryProjects`<sup>Optional</sup> <a name="repositoryProjects" id="@hojulian/cdk-pipelines-github.JobPermissions.property.repositoryProjects"></a>
 
 ```typescript
 public readonly repositoryProjects: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `securityEvents`<sup>Optional</sup> <a name="securityEvents" id="cdk-pipelines-github.JobPermissions.property.securityEvents"></a>
+##### `securityEvents`<sup>Optional</sup> <a name="securityEvents" id="@hojulian/cdk-pipelines-github.JobPermissions.property.securityEvents"></a>
 
 ```typescript
 public readonly securityEvents: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-##### `statuses`<sup>Optional</sup> <a name="statuses" id="cdk-pipelines-github.JobPermissions.property.statuses"></a>
+##### `statuses`<sup>Optional</sup> <a name="statuses" id="@hojulian/cdk-pipelines-github.JobPermissions.property.statuses"></a>
 
 ```typescript
 public readonly statuses: JobPermission;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobPermission">JobPermission</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobPermission">JobPermission</a>
 
 ---
 
-### JobSettings <a name="JobSettings" id="cdk-pipelines-github.JobSettings"></a>
+### JobSettings <a name="JobSettings" id="@hojulian/cdk-pipelines-github.JobSettings"></a>
 
 Job level settings applied to all jobs in the workflow.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobSettings.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobSettings.Initializer"></a>
 
 ```typescript
-import { JobSettings } from 'cdk-pipelines-github'
+import { JobSettings } from '@hojulian/cdk-pipelines-github'
 
 const jobSettings: JobSettings = { ... }
 ```
@@ -3350,11 +3350,11 @@ const jobSettings: JobSettings = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobSettings.property.if">if</a></code> | <code>string</code> | jobs.<job_id>.if. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobSettings.property.if">if</a></code> | <code>string</code> | jobs.<job_id>.if. |
 
 ---
 
-##### `if`<sup>Optional</sup> <a name="if" id="cdk-pipelines-github.JobSettings.property.if"></a>
+##### `if`<sup>Optional</sup> <a name="if" id="@hojulian/cdk-pipelines-github.JobSettings.property.if"></a>
 
 ```typescript
 public readonly if: string;
@@ -3368,14 +3368,14 @@ jobs.<job_id>.if.
 
 ---
 
-### JobStep <a name="JobStep" id="cdk-pipelines-github.JobStep"></a>
+### JobStep <a name="JobStep" id="@hojulian/cdk-pipelines-github.JobStep"></a>
 
 A job step.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobStep.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobStep.Initializer"></a>
 
 ```typescript
-import { JobStep } from 'cdk-pipelines-github'
+import { JobStep } from '@hojulian/cdk-pipelines-github'
 
 const jobStep: JobStep = { ... }
 ```
@@ -3384,19 +3384,19 @@ const jobStep: JobStep = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobStep.property.continueOnError">continueOnError</a></code> | <code>boolean</code> | Prevents a job from failing when a step fails. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Sets environment variables for steps to use in the runner environment. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.id">id</a></code> | <code>string</code> | A unique identifier for the step. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.if">if</a></code> | <code>string</code> | You can use the if conditional to prevent a job from running unless a condition is met. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.name">name</a></code> | <code>string</code> | A name for your step to display on GitHub. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.run">run</a></code> | <code>string</code> | Runs command-line programs using the operating system's shell. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.timeoutMinutes">timeoutMinutes</a></code> | <code>number</code> | The maximum number of minutes to run the step before killing the process. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.uses">uses</a></code> | <code>string</code> | Selects an action to run as part of a step in your job. |
-| <code><a href="#cdk-pipelines-github.JobStep.property.with">with</a></code> | <code>{[ key: string ]: any}</code> | A map of the input parameters defined by the action. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.continueOnError">continueOnError</a></code> | <code>boolean</code> | Prevents a job from failing when a step fails. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | Sets environment variables for steps to use in the runner environment. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.id">id</a></code> | <code>string</code> | A unique identifier for the step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.if">if</a></code> | <code>string</code> | You can use the if conditional to prevent a job from running unless a condition is met. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.name">name</a></code> | <code>string</code> | A name for your step to display on GitHub. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.run">run</a></code> | <code>string</code> | Runs command-line programs using the operating system's shell. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.timeoutMinutes">timeoutMinutes</a></code> | <code>number</code> | The maximum number of minutes to run the step before killing the process. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.uses">uses</a></code> | <code>string</code> | Selects an action to run as part of a step in your job. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStep.property.with">with</a></code> | <code>{[ key: string ]: any}</code> | A map of the input parameters defined by the action. |
 
 ---
 
-##### `continueOnError`<sup>Optional</sup> <a name="continueOnError" id="cdk-pipelines-github.JobStep.property.continueOnError"></a>
+##### `continueOnError`<sup>Optional</sup> <a name="continueOnError" id="@hojulian/cdk-pipelines-github.JobStep.property.continueOnError"></a>
 
 ```typescript
 public readonly continueOnError: boolean;
@@ -3411,7 +3411,7 @@ to pass when this step fails.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="cdk-pipelines-github.JobStep.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@hojulian/cdk-pipelines-github.JobStep.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -3425,7 +3425,7 @@ You can also set environment variables for the entire workflow or a job.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="cdk-pipelines-github.JobStep.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@hojulian/cdk-pipelines-github.JobStep.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3440,7 +3440,7 @@ step in contexts.
 
 ---
 
-##### `if`<sup>Optional</sup> <a name="if" id="cdk-pipelines-github.JobStep.property.if"></a>
+##### `if`<sup>Optional</sup> <a name="if" id="@hojulian/cdk-pipelines-github.JobStep.property.if"></a>
 
 ```typescript
 public readonly if: string;
@@ -3455,7 +3455,7 @@ create a conditional.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="cdk-pipelines-github.JobStep.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@hojulian/cdk-pipelines-github.JobStep.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -3467,7 +3467,7 @@ A name for your step to display on GitHub.
 
 ---
 
-##### `run`<sup>Optional</sup> <a name="run" id="cdk-pipelines-github.JobStep.property.run"></a>
+##### `run`<sup>Optional</sup> <a name="run" id="@hojulian/cdk-pipelines-github.JobStep.property.run"></a>
 
 ```typescript
 public readonly run: string;
@@ -3483,7 +3483,7 @@ the run command.
 
 ---
 
-##### `timeoutMinutes`<sup>Optional</sup> <a name="timeoutMinutes" id="cdk-pipelines-github.JobStep.property.timeoutMinutes"></a>
+##### `timeoutMinutes`<sup>Optional</sup> <a name="timeoutMinutes" id="@hojulian/cdk-pipelines-github.JobStep.property.timeoutMinutes"></a>
 
 ```typescript
 public readonly timeoutMinutes: number;
@@ -3495,7 +3495,7 @@ The maximum number of minutes to run the step before killing the process.
 
 ---
 
-##### `uses`<sup>Optional</sup> <a name="uses" id="cdk-pipelines-github.JobStep.property.uses"></a>
+##### `uses`<sup>Optional</sup> <a name="uses" id="@hojulian/cdk-pipelines-github.JobStep.property.uses"></a>
 
 ```typescript
 public readonly uses: string;
@@ -3512,7 +3512,7 @@ container image.
 
 ---
 
-##### `with`<sup>Optional</sup> <a name="with" id="cdk-pipelines-github.JobStep.property.with"></a>
+##### `with`<sup>Optional</sup> <a name="with" id="@hojulian/cdk-pipelines-github.JobStep.property.with"></a>
 
 ```typescript
 public readonly with: {[ key: string ]: any};
@@ -3528,14 +3528,14 @@ The variable is prefixed with INPUT_ and converted to upper case.
 
 ---
 
-### JobStepOutput <a name="JobStepOutput" id="cdk-pipelines-github.JobStepOutput"></a>
+### JobStepOutput <a name="JobStepOutput" id="@hojulian/cdk-pipelines-github.JobStepOutput"></a>
 
 An output binding for a job.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobStepOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobStepOutput.Initializer"></a>
 
 ```typescript
-import { JobStepOutput } from 'cdk-pipelines-github'
+import { JobStepOutput } from '@hojulian/cdk-pipelines-github'
 
 const jobStepOutput: JobStepOutput = { ... }
 ```
@@ -3544,12 +3544,12 @@ const jobStepOutput: JobStepOutput = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobStepOutput.property.outputName">outputName</a></code> | <code>string</code> | The name of the job output that is being bound. |
-| <code><a href="#cdk-pipelines-github.JobStepOutput.property.stepId">stepId</a></code> | <code>string</code> | The ID of the step that exposes the output. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStepOutput.property.outputName">outputName</a></code> | <code>string</code> | The name of the job output that is being bound. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStepOutput.property.stepId">stepId</a></code> | <code>string</code> | The ID of the step that exposes the output. |
 
 ---
 
-##### `outputName`<sup>Required</sup> <a name="outputName" id="cdk-pipelines-github.JobStepOutput.property.outputName"></a>
+##### `outputName`<sup>Required</sup> <a name="outputName" id="@hojulian/cdk-pipelines-github.JobStepOutput.property.outputName"></a>
 
 ```typescript
 public readonly outputName: string;
@@ -3561,7 +3561,7 @@ The name of the job output that is being bound.
 
 ---
 
-##### `stepId`<sup>Required</sup> <a name="stepId" id="cdk-pipelines-github.JobStepOutput.property.stepId"></a>
+##### `stepId`<sup>Required</sup> <a name="stepId" id="@hojulian/cdk-pipelines-github.JobStepOutput.property.stepId"></a>
 
 ```typescript
 public readonly stepId: string;
@@ -3573,17 +3573,17 @@ The ID of the step that exposes the output.
 
 ---
 
-### JobStrategy <a name="JobStrategy" id="cdk-pipelines-github.JobStrategy"></a>
+### JobStrategy <a name="JobStrategy" id="@hojulian/cdk-pipelines-github.JobStrategy"></a>
 
 A strategy creates a build matrix for your jobs.
 
 You can define different
 variations to run each job in.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.JobStrategy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.JobStrategy.Initializer"></a>
 
 ```typescript
-import { JobStrategy } from 'cdk-pipelines-github'
+import { JobStrategy } from '@hojulian/cdk-pipelines-github'
 
 const jobStrategy: JobStrategy = { ... }
 ```
@@ -3592,13 +3592,13 @@ const jobStrategy: JobStrategy = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobStrategy.property.failFast">failFast</a></code> | <code>boolean</code> | When set to true, GitHub cancels all in-progress jobs if any matrix job fails. |
-| <code><a href="#cdk-pipelines-github.JobStrategy.property.matrix">matrix</a></code> | <code><a href="#cdk-pipelines-github.JobMatrix">JobMatrix</a></code> | You can define a matrix of different job configurations. |
-| <code><a href="#cdk-pipelines-github.JobStrategy.property.maxParallel">maxParallel</a></code> | <code>number</code> | The maximum number of jobs that can run simultaneously when using a matrix job strategy. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStrategy.property.failFast">failFast</a></code> | <code>boolean</code> | When set to true, GitHub cancels all in-progress jobs if any matrix job fails. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStrategy.property.matrix">matrix</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobMatrix">JobMatrix</a></code> | You can define a matrix of different job configurations. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobStrategy.property.maxParallel">maxParallel</a></code> | <code>number</code> | The maximum number of jobs that can run simultaneously when using a matrix job strategy. |
 
 ---
 
-##### `failFast`<sup>Optional</sup> <a name="failFast" id="cdk-pipelines-github.JobStrategy.property.failFast"></a>
+##### `failFast`<sup>Optional</sup> <a name="failFast" id="@hojulian/cdk-pipelines-github.JobStrategy.property.failFast"></a>
 
 ```typescript
 public readonly failFast: boolean;
@@ -3612,13 +3612,13 @@ Default: true
 
 ---
 
-##### `matrix`<sup>Optional</sup> <a name="matrix" id="cdk-pipelines-github.JobStrategy.property.matrix"></a>
+##### `matrix`<sup>Optional</sup> <a name="matrix" id="@hojulian/cdk-pipelines-github.JobStrategy.property.matrix"></a>
 
 ```typescript
 public readonly matrix: JobMatrix;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobMatrix">JobMatrix</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobMatrix">JobMatrix</a>
 
 You can define a matrix of different job configurations.
 
@@ -3634,7 +3634,7 @@ limit also applies to self-hosted runners.
 
 ---
 
-##### `maxParallel`<sup>Optional</sup> <a name="maxParallel" id="cdk-pipelines-github.JobStrategy.property.maxParallel"></a>
+##### `maxParallel`<sup>Optional</sup> <a name="maxParallel" id="@hojulian/cdk-pipelines-github.JobStrategy.property.maxParallel"></a>
 
 ```typescript
 public readonly maxParallel: number;
@@ -3650,14 +3650,14 @@ virtual machines.
 
 ---
 
-### LabelOptions <a name="LabelOptions" id="cdk-pipelines-github.LabelOptions"></a>
+### LabelOptions <a name="LabelOptions" id="@hojulian/cdk-pipelines-github.LabelOptions"></a>
 
 label options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.LabelOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.LabelOptions.Initializer"></a>
 
 ```typescript
-import { LabelOptions } from 'cdk-pipelines-github'
+import { LabelOptions } from '@hojulian/cdk-pipelines-github'
 
 const labelOptions: LabelOptions = { ... }
 ```
@@ -3666,11 +3666,11 @@ const labelOptions: LabelOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.LabelOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.LabelOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.LabelOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.LabelOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3682,14 +3682,14 @@ Which activity types to trigger on.
 
 ---
 
-### MilestoneOptions <a name="MilestoneOptions" id="cdk-pipelines-github.MilestoneOptions"></a>
+### MilestoneOptions <a name="MilestoneOptions" id="@hojulian/cdk-pipelines-github.MilestoneOptions"></a>
 
 Milestone options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.MilestoneOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.MilestoneOptions.Initializer"></a>
 
 ```typescript
-import { MilestoneOptions } from 'cdk-pipelines-github'
+import { MilestoneOptions } from '@hojulian/cdk-pipelines-github'
 
 const milestoneOptions: MilestoneOptions = { ... }
 ```
@@ -3698,11 +3698,11 @@ const milestoneOptions: MilestoneOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.MilestoneOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.MilestoneOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.MilestoneOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.MilestoneOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3714,14 +3714,14 @@ Which activity types to trigger on.
 
 ---
 
-### OpenIdConnectProviderProps <a name="OpenIdConnectProviderProps" id="cdk-pipelines-github.OpenIdConnectProviderProps"></a>
+### OpenIdConnectProviderProps <a name="OpenIdConnectProviderProps" id="@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps"></a>
 
 Role to assume using OpenId Connect.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.OpenIdConnectProviderProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps.Initializer"></a>
 
 ```typescript
-import { OpenIdConnectProviderProps } from 'cdk-pipelines-github'
+import { OpenIdConnectProviderProps } from '@hojulian/cdk-pipelines-github'
 
 const openIdConnectProviderProps: OpenIdConnectProviderProps = { ... }
 ```
@@ -3730,12 +3730,12 @@ const openIdConnectProviderProps: OpenIdConnectProviderProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.OpenIdConnectProviderProps.property.gitHubActionRoleArn">gitHubActionRoleArn</a></code> | <code>string</code> | A role that utilizes the GitHub OIDC Identity Provider in your AWS account. |
-| <code><a href="#cdk-pipelines-github.OpenIdConnectProviderProps.property.roleSessionName">roleSessionName</a></code> | <code>string</code> | The role session name to use when assuming the role. |
+| <code><a href="#@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps.property.gitHubActionRoleArn">gitHubActionRoleArn</a></code> | <code>string</code> | A role that utilizes the GitHub OIDC Identity Provider in your AWS account. |
+| <code><a href="#@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps.property.roleSessionName">roleSessionName</a></code> | <code>string</code> | The role session name to use when assuming the role. |
 
 ---
 
-##### `gitHubActionRoleArn`<sup>Required</sup> <a name="gitHubActionRoleArn" id="cdk-pipelines-github.OpenIdConnectProviderProps.property.gitHubActionRoleArn"></a>
+##### `gitHubActionRoleArn`<sup>Required</sup> <a name="gitHubActionRoleArn" id="@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps.property.gitHubActionRoleArn"></a>
 
 ```typescript
 public readonly gitHubActionRoleArn: string;
@@ -3751,7 +3751,7 @@ you can utilize the `GitHubActionRole` construct to create a role for you.
 
 ---
 
-##### `roleSessionName`<sup>Optional</sup> <a name="roleSessionName" id="cdk-pipelines-github.OpenIdConnectProviderProps.property.roleSessionName"></a>
+##### `roleSessionName`<sup>Optional</sup> <a name="roleSessionName" id="@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps.property.roleSessionName"></a>
 
 ```typescript
 public readonly roleSessionName: string;
@@ -3764,27 +3764,27 @@ The role session name to use when assuming the role.
 
 ---
 
-### PageBuildOptions <a name="PageBuildOptions" id="cdk-pipelines-github.PageBuildOptions"></a>
+### PageBuildOptions <a name="PageBuildOptions" id="@hojulian/cdk-pipelines-github.PageBuildOptions"></a>
 
 The Page build event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PageBuildOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PageBuildOptions.Initializer"></a>
 
 ```typescript
-import { PageBuildOptions } from 'cdk-pipelines-github'
+import { PageBuildOptions } from '@hojulian/cdk-pipelines-github'
 
 const pageBuildOptions: PageBuildOptions = { ... }
 ```
 
 
-### ProjectCardOptions <a name="ProjectCardOptions" id="cdk-pipelines-github.ProjectCardOptions"></a>
+### ProjectCardOptions <a name="ProjectCardOptions" id="@hojulian/cdk-pipelines-github.ProjectCardOptions"></a>
 
 Project card options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ProjectCardOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ProjectCardOptions.Initializer"></a>
 
 ```typescript
-import { ProjectCardOptions } from 'cdk-pipelines-github'
+import { ProjectCardOptions } from '@hojulian/cdk-pipelines-github'
 
 const projectCardOptions: ProjectCardOptions = { ... }
 ```
@@ -3793,11 +3793,11 @@ const projectCardOptions: ProjectCardOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ProjectCardOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ProjectCardOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.ProjectCardOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.ProjectCardOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3809,14 +3809,14 @@ Which activity types to trigger on.
 
 ---
 
-### ProjectColumnOptions <a name="ProjectColumnOptions" id="cdk-pipelines-github.ProjectColumnOptions"></a>
+### ProjectColumnOptions <a name="ProjectColumnOptions" id="@hojulian/cdk-pipelines-github.ProjectColumnOptions"></a>
 
 Probject column options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ProjectColumnOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ProjectColumnOptions.Initializer"></a>
 
 ```typescript
-import { ProjectColumnOptions } from 'cdk-pipelines-github'
+import { ProjectColumnOptions } from '@hojulian/cdk-pipelines-github'
 
 const projectColumnOptions: ProjectColumnOptions = { ... }
 ```
@@ -3825,11 +3825,11 @@ const projectColumnOptions: ProjectColumnOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ProjectColumnOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ProjectColumnOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.ProjectColumnOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.ProjectColumnOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3841,14 +3841,14 @@ Which activity types to trigger on.
 
 ---
 
-### ProjectOptions <a name="ProjectOptions" id="cdk-pipelines-github.ProjectOptions"></a>
+### ProjectOptions <a name="ProjectOptions" id="@hojulian/cdk-pipelines-github.ProjectOptions"></a>
 
 Project options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ProjectOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ProjectOptions.Initializer"></a>
 
 ```typescript
-import { ProjectOptions } from 'cdk-pipelines-github'
+import { ProjectOptions } from '@hojulian/cdk-pipelines-github'
 
 const projectOptions: ProjectOptions = { ... }
 ```
@@ -3857,11 +3857,11 @@ const projectOptions: ProjectOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ProjectOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ProjectOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.ProjectOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.ProjectOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3873,27 +3873,27 @@ Which activity types to trigger on.
 
 ---
 
-### PublicOptions <a name="PublicOptions" id="cdk-pipelines-github.PublicOptions"></a>
+### PublicOptions <a name="PublicOptions" id="@hojulian/cdk-pipelines-github.PublicOptions"></a>
 
 The Public event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PublicOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PublicOptions.Initializer"></a>
 
 ```typescript
-import { PublicOptions } from 'cdk-pipelines-github'
+import { PublicOptions } from '@hojulian/cdk-pipelines-github'
 
 const publicOptions: PublicOptions = { ... }
 ```
 
 
-### PullRequestOptions <a name="PullRequestOptions" id="cdk-pipelines-github.PullRequestOptions"></a>
+### PullRequestOptions <a name="PullRequestOptions" id="@hojulian/cdk-pipelines-github.PullRequestOptions"></a>
 
 Pull request options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PullRequestOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PullRequestOptions.Initializer"></a>
 
 ```typescript
-import { PullRequestOptions } from 'cdk-pipelines-github'
+import { PullRequestOptions } from '@hojulian/cdk-pipelines-github'
 
 const pullRequestOptions: PullRequestOptions = { ... }
 ```
@@ -3902,11 +3902,11 @@ const pullRequestOptions: PullRequestOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.PullRequestOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.PullRequestOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.PullRequestOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3918,14 +3918,14 @@ Which activity types to trigger on.
 
 ---
 
-### PullRequestReviewCommentOptions <a name="PullRequestReviewCommentOptions" id="cdk-pipelines-github.PullRequestReviewCommentOptions"></a>
+### PullRequestReviewCommentOptions <a name="PullRequestReviewCommentOptions" id="@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions"></a>
 
 Pull request review comment options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PullRequestReviewCommentOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions.Initializer"></a>
 
 ```typescript
-import { PullRequestReviewCommentOptions } from 'cdk-pipelines-github'
+import { PullRequestReviewCommentOptions } from '@hojulian/cdk-pipelines-github'
 
 const pullRequestReviewCommentOptions: PullRequestReviewCommentOptions = { ... }
 ```
@@ -3934,11 +3934,11 @@ const pullRequestReviewCommentOptions: PullRequestReviewCommentOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.PullRequestReviewCommentOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.PullRequestReviewCommentOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3950,14 +3950,14 @@ Which activity types to trigger on.
 
 ---
 
-### PullRequestReviewOptions <a name="PullRequestReviewOptions" id="cdk-pipelines-github.PullRequestReviewOptions"></a>
+### PullRequestReviewOptions <a name="PullRequestReviewOptions" id="@hojulian/cdk-pipelines-github.PullRequestReviewOptions"></a>
 
 Pull request review options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PullRequestReviewOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PullRequestReviewOptions.Initializer"></a>
 
 ```typescript
-import { PullRequestReviewOptions } from 'cdk-pipelines-github'
+import { PullRequestReviewOptions } from '@hojulian/cdk-pipelines-github'
 
 const pullRequestReviewOptions: PullRequestReviewOptions = { ... }
 ```
@@ -3966,11 +3966,11 @@ const pullRequestReviewOptions: PullRequestReviewOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.PullRequestReviewOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestReviewOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.PullRequestReviewOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.PullRequestReviewOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -3982,14 +3982,14 @@ Which activity types to trigger on.
 
 ---
 
-### PullRequestTargetOptions <a name="PullRequestTargetOptions" id="cdk-pipelines-github.PullRequestTargetOptions"></a>
+### PullRequestTargetOptions <a name="PullRequestTargetOptions" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions"></a>
 
 Pull request target options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PullRequestTargetOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions.Initializer"></a>
 
 ```typescript
-import { PullRequestTargetOptions } from 'cdk-pipelines-github'
+import { PullRequestTargetOptions } from '@hojulian/cdk-pipelines-github'
 
 const pullRequestTargetOptions: PullRequestTargetOptions = { ... }
 ```
@@ -3998,14 +3998,14 @@ const pullRequestTargetOptions: PullRequestTargetOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.PullRequestTargetOptions.property.branches">branches</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
-| <code><a href="#cdk-pipelines-github.PullRequestTargetOptions.property.paths">paths</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run when at least one file does not match paths-ignore or at least one modified file matches the configured paths. |
-| <code><a href="#cdk-pipelines-github.PullRequestTargetOptions.property.tags">tags</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
-| <code><a href="#cdk-pipelines-github.PullRequestTargetOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.branches">branches</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.paths">paths</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run when at least one file does not match paths-ignore or at least one modified file matches the configured paths. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.tags">tags</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `branches`<sup>Optional</sup> <a name="branches" id="cdk-pipelines-github.PullRequestTargetOptions.property.branches"></a>
+##### `branches`<sup>Optional</sup> <a name="branches" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.branches"></a>
 
 ```typescript
 public readonly branches: string[];
@@ -4024,7 +4024,7 @@ Git ref.
 
 ---
 
-##### `paths`<sup>Optional</sup> <a name="paths" id="cdk-pipelines-github.PullRequestTargetOptions.property.paths"></a>
+##### `paths`<sup>Optional</sup> <a name="paths" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.paths"></a>
 
 ```typescript
 public readonly paths: string[];
@@ -4041,7 +4041,7 @@ evaluated for pushes to tags.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="cdk-pipelines-github.PullRequestTargetOptions.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -4060,7 +4060,7 @@ Git ref.
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.PullRequestTargetOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.PullRequestTargetOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4072,14 +4072,14 @@ Which activity types to trigger on.
 
 ---
 
-### PushOptions <a name="PushOptions" id="cdk-pipelines-github.PushOptions"></a>
+### PushOptions <a name="PushOptions" id="@hojulian/cdk-pipelines-github.PushOptions"></a>
 
 Options for push-like events.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.PushOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.PushOptions.Initializer"></a>
 
 ```typescript
-import { PushOptions } from 'cdk-pipelines-github'
+import { PushOptions } from '@hojulian/cdk-pipelines-github'
 
 const pushOptions: PushOptions = { ... }
 ```
@@ -4088,13 +4088,13 @@ const pushOptions: PushOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.PushOptions.property.branches">branches</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
-| <code><a href="#cdk-pipelines-github.PushOptions.property.paths">paths</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run when at least one file does not match paths-ignore or at least one modified file matches the configured paths. |
-| <code><a href="#cdk-pipelines-github.PushOptions.property.tags">tags</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PushOptions.property.branches">branches</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PushOptions.property.paths">paths</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run when at least one file does not match paths-ignore or at least one modified file matches the configured paths. |
+| <code><a href="#@hojulian/cdk-pipelines-github.PushOptions.property.tags">tags</a></code> | <code>string[]</code> | When using the push and pull_request events, you can configure a workflow to run on specific branches or tags. |
 
 ---
 
-##### `branches`<sup>Optional</sup> <a name="branches" id="cdk-pipelines-github.PushOptions.property.branches"></a>
+##### `branches`<sup>Optional</sup> <a name="branches" id="@hojulian/cdk-pipelines-github.PushOptions.property.branches"></a>
 
 ```typescript
 public readonly branches: string[];
@@ -4113,7 +4113,7 @@ Git ref.
 
 ---
 
-##### `paths`<sup>Optional</sup> <a name="paths" id="cdk-pipelines-github.PushOptions.property.paths"></a>
+##### `paths`<sup>Optional</sup> <a name="paths" id="@hojulian/cdk-pipelines-github.PushOptions.property.paths"></a>
 
 ```typescript
 public readonly paths: string[];
@@ -4130,7 +4130,7 @@ evaluated for pushes to tags.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="cdk-pipelines-github.PushOptions.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@hojulian/cdk-pipelines-github.PushOptions.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -4149,14 +4149,14 @@ Git ref.
 
 ---
 
-### RegistryPackageOptions <a name="RegistryPackageOptions" id="cdk-pipelines-github.RegistryPackageOptions"></a>
+### RegistryPackageOptions <a name="RegistryPackageOptions" id="@hojulian/cdk-pipelines-github.RegistryPackageOptions"></a>
 
 Registry package options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.RegistryPackageOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.RegistryPackageOptions.Initializer"></a>
 
 ```typescript
-import { RegistryPackageOptions } from 'cdk-pipelines-github'
+import { RegistryPackageOptions } from '@hojulian/cdk-pipelines-github'
 
 const registryPackageOptions: RegistryPackageOptions = { ... }
 ```
@@ -4165,11 +4165,11 @@ const registryPackageOptions: RegistryPackageOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.RegistryPackageOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.RegistryPackageOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.RegistryPackageOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.RegistryPackageOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4181,14 +4181,14 @@ Which activity types to trigger on.
 
 ---
 
-### ReleaseOptions <a name="ReleaseOptions" id="cdk-pipelines-github.ReleaseOptions"></a>
+### ReleaseOptions <a name="ReleaseOptions" id="@hojulian/cdk-pipelines-github.ReleaseOptions"></a>
 
 Release options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.ReleaseOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.ReleaseOptions.Initializer"></a>
 
 ```typescript
-import { ReleaseOptions } from 'cdk-pipelines-github'
+import { ReleaseOptions } from '@hojulian/cdk-pipelines-github'
 
 const releaseOptions: ReleaseOptions = { ... }
 ```
@@ -4197,11 +4197,11 @@ const releaseOptions: ReleaseOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.ReleaseOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.ReleaseOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.ReleaseOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.ReleaseOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4213,14 +4213,14 @@ Which activity types to trigger on.
 
 ---
 
-### RepositoryDispatchOptions <a name="RepositoryDispatchOptions" id="cdk-pipelines-github.RepositoryDispatchOptions"></a>
+### RepositoryDispatchOptions <a name="RepositoryDispatchOptions" id="@hojulian/cdk-pipelines-github.RepositoryDispatchOptions"></a>
 
 Repository dispatch options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.RepositoryDispatchOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.RepositoryDispatchOptions.Initializer"></a>
 
 ```typescript
-import { RepositoryDispatchOptions } from 'cdk-pipelines-github'
+import { RepositoryDispatchOptions } from '@hojulian/cdk-pipelines-github'
 
 const repositoryDispatchOptions: RepositoryDispatchOptions = { ... }
 ```
@@ -4229,11 +4229,11 @@ const repositoryDispatchOptions: RepositoryDispatchOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.RepositoryDispatchOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.RepositoryDispatchOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.RepositoryDispatchOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.RepositoryDispatchOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4245,14 +4245,14 @@ Which activity types to trigger on.
 
 ---
 
-### RunSettings <a name="RunSettings" id="cdk-pipelines-github.RunSettings"></a>
+### RunSettings <a name="RunSettings" id="@hojulian/cdk-pipelines-github.RunSettings"></a>
 
 Run settings for a job.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.RunSettings.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.RunSettings.Initializer"></a>
 
 ```typescript
-import { RunSettings } from 'cdk-pipelines-github'
+import { RunSettings } from '@hojulian/cdk-pipelines-github'
 
 const runSettings: RunSettings = { ... }
 ```
@@ -4261,12 +4261,12 @@ const runSettings: RunSettings = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.RunSettings.property.shell">shell</a></code> | <code>string</code> | Which shell to use for running the step. |
-| <code><a href="#cdk-pipelines-github.RunSettings.property.workingDirectory">workingDirectory</a></code> | <code>string</code> | Working directory to use when running the step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.RunSettings.property.shell">shell</a></code> | <code>string</code> | Which shell to use for running the step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.RunSettings.property.workingDirectory">workingDirectory</a></code> | <code>string</code> | Working directory to use when running the step. |
 
 ---
 
-##### `shell`<sup>Optional</sup> <a name="shell" id="cdk-pipelines-github.RunSettings.property.shell"></a>
+##### `shell`<sup>Optional</sup> <a name="shell" id="@hojulian/cdk-pipelines-github.RunSettings.property.shell"></a>
 
 ```typescript
 public readonly shell: string;
@@ -4285,7 +4285,7 @@ Which shell to use for running the step.
 ```
 
 
-##### `workingDirectory`<sup>Optional</sup> <a name="workingDirectory" id="cdk-pipelines-github.RunSettings.property.workingDirectory"></a>
+##### `workingDirectory`<sup>Optional</sup> <a name="workingDirectory" id="@hojulian/cdk-pipelines-github.RunSettings.property.workingDirectory"></a>
 
 ```typescript
 public readonly workingDirectory: string;
@@ -4297,27 +4297,27 @@ Working directory to use when running the step.
 
 ---
 
-### StatusOptions <a name="StatusOptions" id="cdk-pipelines-github.StatusOptions"></a>
+### StatusOptions <a name="StatusOptions" id="@hojulian/cdk-pipelines-github.StatusOptions"></a>
 
 The Status event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.StatusOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.StatusOptions.Initializer"></a>
 
 ```typescript
-import { StatusOptions } from 'cdk-pipelines-github'
+import { StatusOptions } from '@hojulian/cdk-pipelines-github'
 
 const statusOptions: StatusOptions = { ... }
 ```
 
 
-### WatchOptions <a name="WatchOptions" id="cdk-pipelines-github.WatchOptions"></a>
+### WatchOptions <a name="WatchOptions" id="@hojulian/cdk-pipelines-github.WatchOptions"></a>
 
 Watch options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.WatchOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.WatchOptions.Initializer"></a>
 
 ```typescript
-import { WatchOptions } from 'cdk-pipelines-github'
+import { WatchOptions } from '@hojulian/cdk-pipelines-github'
 
 const watchOptions: WatchOptions = { ... }
 ```
@@ -4326,11 +4326,11 @@ const watchOptions: WatchOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.WatchOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WatchOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.WatchOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.WatchOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4342,27 +4342,27 @@ Which activity types to trigger on.
 
 ---
 
-### WorkflowDispatchOptions <a name="WorkflowDispatchOptions" id="cdk-pipelines-github.WorkflowDispatchOptions"></a>
+### WorkflowDispatchOptions <a name="WorkflowDispatchOptions" id="@hojulian/cdk-pipelines-github.WorkflowDispatchOptions"></a>
 
 The Workflow dispatch event accepts no options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.WorkflowDispatchOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.WorkflowDispatchOptions.Initializer"></a>
 
 ```typescript
-import { WorkflowDispatchOptions } from 'cdk-pipelines-github'
+import { WorkflowDispatchOptions } from '@hojulian/cdk-pipelines-github'
 
 const workflowDispatchOptions: WorkflowDispatchOptions = { ... }
 ```
 
 
-### WorkflowRunOptions <a name="WorkflowRunOptions" id="cdk-pipelines-github.WorkflowRunOptions"></a>
+### WorkflowRunOptions <a name="WorkflowRunOptions" id="@hojulian/cdk-pipelines-github.WorkflowRunOptions"></a>
 
 Workflow run options.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.WorkflowRunOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.WorkflowRunOptions.Initializer"></a>
 
 ```typescript
-import { WorkflowRunOptions } from 'cdk-pipelines-github'
+import { WorkflowRunOptions } from '@hojulian/cdk-pipelines-github'
 
 const workflowRunOptions: WorkflowRunOptions = { ... }
 ```
@@ -4371,11 +4371,11 @@ const workflowRunOptions: WorkflowRunOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.WorkflowRunOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowRunOptions.property.types">types</a></code> | <code>string[]</code> | Which activity types to trigger on. |
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="cdk-pipelines-github.WorkflowRunOptions.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@hojulian/cdk-pipelines-github.WorkflowRunOptions.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -4387,16 +4387,16 @@ Which activity types to trigger on.
 
 ---
 
-### WorkflowTriggers <a name="WorkflowTriggers" id="cdk-pipelines-github.WorkflowTriggers"></a>
+### WorkflowTriggers <a name="WorkflowTriggers" id="@hojulian/cdk-pipelines-github.WorkflowTriggers"></a>
 
 The set of available triggers for GitHub Workflows.
 
 > [https://docs.github.com/en/actions/reference/events-that-trigger-workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.WorkflowTriggers.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.Initializer"></a>
 
 ```typescript
-import { WorkflowTriggers } from 'cdk-pipelines-github'
+import { WorkflowTriggers } from '@hojulian/cdk-pipelines-github'
 
 const workflowTriggers: WorkflowTriggers = { ... }
 ```
@@ -4405,94 +4405,94 @@ const workflowTriggers: WorkflowTriggers = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.checkRun">checkRun</a></code> | <code><a href="#cdk-pipelines-github.CheckRunOptions">CheckRunOptions</a></code> | Runs your workflow anytime the check_run event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.checkSuite">checkSuite</a></code> | <code><a href="#cdk-pipelines-github.CheckSuiteOptions">CheckSuiteOptions</a></code> | Runs your workflow anytime the check_suite event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.create">create</a></code> | <code><a href="#cdk-pipelines-github.CreateOptions">CreateOptions</a></code> | Runs your workflow anytime someone creates a branch or tag, which triggers the create event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.delete">delete</a></code> | <code><a href="#cdk-pipelines-github.DeleteOptions">DeleteOptions</a></code> | Runs your workflow anytime someone deletes a branch or tag, which triggers the delete event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.deployment">deployment</a></code> | <code><a href="#cdk-pipelines-github.DeploymentOptions">DeploymentOptions</a></code> | Runs your workflow anytime someone creates a deployment, which triggers the deployment event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.deploymentStatus">deploymentStatus</a></code> | <code><a href="#cdk-pipelines-github.DeploymentStatusOptions">DeploymentStatusOptions</a></code> | Runs your workflow anytime a third party provides a deployment status, which triggers the deployment_status event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.fork">fork</a></code> | <code><a href="#cdk-pipelines-github.ForkOptions">ForkOptions</a></code> | Runs your workflow anytime when someone forks a repository, which triggers the fork event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.gollum">gollum</a></code> | <code><a href="#cdk-pipelines-github.GollumOptions">GollumOptions</a></code> | Runs your workflow when someone creates or updates a Wiki page, which triggers the gollum event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.issueComment">issueComment</a></code> | <code><a href="#cdk-pipelines-github.IssueCommentOptions">IssueCommentOptions</a></code> | Runs your workflow anytime the issue_comment event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.issues">issues</a></code> | <code><a href="#cdk-pipelines-github.IssuesOptions">IssuesOptions</a></code> | Runs your workflow anytime the issues event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.label">label</a></code> | <code><a href="#cdk-pipelines-github.LabelOptions">LabelOptions</a></code> | Runs your workflow anytime the label event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.milestone">milestone</a></code> | <code><a href="#cdk-pipelines-github.MilestoneOptions">MilestoneOptions</a></code> | Runs your workflow anytime the milestone event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.pageBuild">pageBuild</a></code> | <code><a href="#cdk-pipelines-github.PageBuildOptions">PageBuildOptions</a></code> | Runs your workflow anytime someone pushes to a GitHub Pages-enabled branch, which triggers the page_build event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.project">project</a></code> | <code><a href="#cdk-pipelines-github.ProjectOptions">ProjectOptions</a></code> | Runs your workflow anytime the project event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.projectCard">projectCard</a></code> | <code><a href="#cdk-pipelines-github.ProjectCardOptions">ProjectCardOptions</a></code> | Runs your workflow anytime the project_card event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.projectColumn">projectColumn</a></code> | <code><a href="#cdk-pipelines-github.ProjectColumnOptions">ProjectColumnOptions</a></code> | Runs your workflow anytime the project_column event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.public">public</a></code> | <code><a href="#cdk-pipelines-github.PublicOptions">PublicOptions</a></code> | Runs your workflow anytime someone makes a private repository public, which triggers the public event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.pullRequest">pullRequest</a></code> | <code><a href="#cdk-pipelines-github.PullRequestOptions">PullRequestOptions</a></code> | Runs your workflow anytime the pull_request event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.pullRequestReview">pullRequestReview</a></code> | <code><a href="#cdk-pipelines-github.PullRequestReviewOptions">PullRequestReviewOptions</a></code> | Runs your workflow anytime the pull_request_review event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.pullRequestReviewComment">pullRequestReviewComment</a></code> | <code><a href="#cdk-pipelines-github.PullRequestReviewCommentOptions">PullRequestReviewCommentOptions</a></code> | Runs your workflow anytime a comment on a pull request's unified diff is modified, which triggers the pull_request_review_comment event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.pullRequestTarget">pullRequestTarget</a></code> | <code><a href="#cdk-pipelines-github.PullRequestTargetOptions">PullRequestTargetOptions</a></code> | This event runs in the context of the base of the pull request, rather than in the merge commit as the pull_request event does. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.push">push</a></code> | <code><a href="#cdk-pipelines-github.PushOptions">PushOptions</a></code> | Runs your workflow when someone pushes to a repository branch, which triggers the push event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.registryPackage">registryPackage</a></code> | <code><a href="#cdk-pipelines-github.RegistryPackageOptions">RegistryPackageOptions</a></code> | Runs your workflow anytime a package is published or updated. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.release">release</a></code> | <code><a href="#cdk-pipelines-github.ReleaseOptions">ReleaseOptions</a></code> | Runs your workflow anytime the release event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.repositoryDispatch">repositoryDispatch</a></code> | <code><a href="#cdk-pipelines-github.RepositoryDispatchOptions">RepositoryDispatchOptions</a></code> | You can use the GitHub API to trigger a webhook event called repository_dispatch when you want to trigger a workflow for activity that happens outside of GitHub. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.schedule">schedule</a></code> | <code><a href="#cdk-pipelines-github.CronScheduleOptions">CronScheduleOptions</a>[]</code> | You can schedule a workflow to run at specific UTC times using POSIX cron syntax. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.status">status</a></code> | <code><a href="#cdk-pipelines-github.StatusOptions">StatusOptions</a></code> | Runs your workflow anytime the status of a Git commit changes, which triggers the status event. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.watch">watch</a></code> | <code><a href="#cdk-pipelines-github.WatchOptions">WatchOptions</a></code> | Runs your workflow anytime the watch event occurs. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.workflowDispatch">workflowDispatch</a></code> | <code><a href="#cdk-pipelines-github.WorkflowDispatchOptions">WorkflowDispatchOptions</a></code> | You can configure custom-defined input properties, default input values, and required inputs for the event directly in your workflow. |
-| <code><a href="#cdk-pipelines-github.WorkflowTriggers.property.workflowRun">workflowRun</a></code> | <code><a href="#cdk-pipelines-github.WorkflowRunOptions">WorkflowRunOptions</a></code> | This event occurs when a workflow run is requested or completed, and allows you to execute a workflow based on the finished result of another workflow. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.checkRun">checkRun</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.CheckRunOptions">CheckRunOptions</a></code> | Runs your workflow anytime the check_run event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.checkSuite">checkSuite</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.CheckSuiteOptions">CheckSuiteOptions</a></code> | Runs your workflow anytime the check_suite event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.create">create</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.CreateOptions">CreateOptions</a></code> | Runs your workflow anytime someone creates a branch or tag, which triggers the create event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.delete">delete</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.DeleteOptions">DeleteOptions</a></code> | Runs your workflow anytime someone deletes a branch or tag, which triggers the delete event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.deployment">deployment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.DeploymentOptions">DeploymentOptions</a></code> | Runs your workflow anytime someone creates a deployment, which triggers the deployment event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.deploymentStatus">deploymentStatus</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.DeploymentStatusOptions">DeploymentStatusOptions</a></code> | Runs your workflow anytime a third party provides a deployment status, which triggers the deployment_status event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.fork">fork</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ForkOptions">ForkOptions</a></code> | Runs your workflow anytime when someone forks a repository, which triggers the fork event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.gollum">gollum</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GollumOptions">GollumOptions</a></code> | Runs your workflow when someone creates or updates a Wiki page, which triggers the gollum event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.issueComment">issueComment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.IssueCommentOptions">IssueCommentOptions</a></code> | Runs your workflow anytime the issue_comment event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.issues">issues</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.IssuesOptions">IssuesOptions</a></code> | Runs your workflow anytime the issues event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.label">label</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.LabelOptions">LabelOptions</a></code> | Runs your workflow anytime the label event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.milestone">milestone</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.MilestoneOptions">MilestoneOptions</a></code> | Runs your workflow anytime the milestone event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pageBuild">pageBuild</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PageBuildOptions">PageBuildOptions</a></code> | Runs your workflow anytime someone pushes to a GitHub Pages-enabled branch, which triggers the page_build event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.project">project</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ProjectOptions">ProjectOptions</a></code> | Runs your workflow anytime the project event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.projectCard">projectCard</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ProjectCardOptions">ProjectCardOptions</a></code> | Runs your workflow anytime the project_card event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.projectColumn">projectColumn</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ProjectColumnOptions">ProjectColumnOptions</a></code> | Runs your workflow anytime the project_column event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.public">public</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PublicOptions">PublicOptions</a></code> | Runs your workflow anytime someone makes a private repository public, which triggers the public event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequest">pullRequest</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PullRequestOptions">PullRequestOptions</a></code> | Runs your workflow anytime the pull_request event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestReview">pullRequestReview</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PullRequestReviewOptions">PullRequestReviewOptions</a></code> | Runs your workflow anytime the pull_request_review event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestReviewComment">pullRequestReviewComment</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions">PullRequestReviewCommentOptions</a></code> | Runs your workflow anytime a comment on a pull request's unified diff is modified, which triggers the pull_request_review_comment event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestTarget">pullRequestTarget</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions">PullRequestTargetOptions</a></code> | This event runs in the context of the base of the pull request, rather than in the merge commit as the pull_request event does. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.push">push</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.PushOptions">PushOptions</a></code> | Runs your workflow when someone pushes to a repository branch, which triggers the push event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.registryPackage">registryPackage</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.RegistryPackageOptions">RegistryPackageOptions</a></code> | Runs your workflow anytime a package is published or updated. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.release">release</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.ReleaseOptions">ReleaseOptions</a></code> | Runs your workflow anytime the release event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.repositoryDispatch">repositoryDispatch</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.RepositoryDispatchOptions">RepositoryDispatchOptions</a></code> | You can use the GitHub API to trigger a webhook event called repository_dispatch when you want to trigger a workflow for activity that happens outside of GitHub. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.schedule">schedule</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.CronScheduleOptions">CronScheduleOptions</a>[]</code> | You can schedule a workflow to run at specific UTC times using POSIX cron syntax. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.status">status</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.StatusOptions">StatusOptions</a></code> | Runs your workflow anytime the status of a Git commit changes, which triggers the status event. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.watch">watch</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.WatchOptions">WatchOptions</a></code> | Runs your workflow anytime the watch event occurs. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.workflowDispatch">workflowDispatch</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.WorkflowDispatchOptions">WorkflowDispatchOptions</a></code> | You can configure custom-defined input properties, default input values, and required inputs for the event directly in your workflow. |
+| <code><a href="#@hojulian/cdk-pipelines-github.WorkflowTriggers.property.workflowRun">workflowRun</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.WorkflowRunOptions">WorkflowRunOptions</a></code> | This event occurs when a workflow run is requested or completed, and allows you to execute a workflow based on the finished result of another workflow. |
 
 ---
 
-##### `checkRun`<sup>Optional</sup> <a name="checkRun" id="cdk-pipelines-github.WorkflowTriggers.property.checkRun"></a>
+##### `checkRun`<sup>Optional</sup> <a name="checkRun" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.checkRun"></a>
 
 ```typescript
 public readonly checkRun: CheckRunOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.CheckRunOptions">CheckRunOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.CheckRunOptions">CheckRunOptions</a>
 
 Runs your workflow anytime the check_run event occurs.
 
 ---
 
-##### `checkSuite`<sup>Optional</sup> <a name="checkSuite" id="cdk-pipelines-github.WorkflowTriggers.property.checkSuite"></a>
+##### `checkSuite`<sup>Optional</sup> <a name="checkSuite" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.checkSuite"></a>
 
 ```typescript
 public readonly checkSuite: CheckSuiteOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.CheckSuiteOptions">CheckSuiteOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.CheckSuiteOptions">CheckSuiteOptions</a>
 
 Runs your workflow anytime the check_suite event occurs.
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="cdk-pipelines-github.WorkflowTriggers.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.create"></a>
 
 ```typescript
 public readonly create: CreateOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.CreateOptions">CreateOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.CreateOptions">CreateOptions</a>
 
 Runs your workflow anytime someone creates a branch or tag, which triggers the create event.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="cdk-pipelines-github.WorkflowTriggers.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.delete"></a>
 
 ```typescript
 public readonly delete: DeleteOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.DeleteOptions">DeleteOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.DeleteOptions">DeleteOptions</a>
 
 Runs your workflow anytime someone deletes a branch or tag, which triggers the delete event.
 
 ---
 
-##### `deployment`<sup>Optional</sup> <a name="deployment" id="cdk-pipelines-github.WorkflowTriggers.property.deployment"></a>
+##### `deployment`<sup>Optional</sup> <a name="deployment" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.deployment"></a>
 
 ```typescript
 public readonly deployment: DeploymentOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.DeploymentOptions">DeploymentOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.DeploymentOptions">DeploymentOptions</a>
 
 Runs your workflow anytime someone creates a deployment, which triggers the deployment event.
 
@@ -4501,13 +4501,13 @@ a Git ref.
 
 ---
 
-##### `deploymentStatus`<sup>Optional</sup> <a name="deploymentStatus" id="cdk-pipelines-github.WorkflowTriggers.property.deploymentStatus"></a>
+##### `deploymentStatus`<sup>Optional</sup> <a name="deploymentStatus" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.deploymentStatus"></a>
 
 ```typescript
 public readonly deploymentStatus: DeploymentStatusOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.DeploymentStatusOptions">DeploymentStatusOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.DeploymentStatusOptions">DeploymentStatusOptions</a>
 
 Runs your workflow anytime a third party provides a deployment status, which triggers the deployment_status event.
 
@@ -4516,181 +4516,181 @@ commit SHA may not have a Git ref.
 
 ---
 
-##### `fork`<sup>Optional</sup> <a name="fork" id="cdk-pipelines-github.WorkflowTriggers.property.fork"></a>
+##### `fork`<sup>Optional</sup> <a name="fork" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.fork"></a>
 
 ```typescript
 public readonly fork: ForkOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ForkOptions">ForkOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ForkOptions">ForkOptions</a>
 
 Runs your workflow anytime when someone forks a repository, which triggers the fork event.
 
 ---
 
-##### `gollum`<sup>Optional</sup> <a name="gollum" id="cdk-pipelines-github.WorkflowTriggers.property.gollum"></a>
+##### `gollum`<sup>Optional</sup> <a name="gollum" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.gollum"></a>
 
 ```typescript
 public readonly gollum: GollumOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.GollumOptions">GollumOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GollumOptions">GollumOptions</a>
 
 Runs your workflow when someone creates or updates a Wiki page, which triggers the gollum event.
 
 ---
 
-##### `issueComment`<sup>Optional</sup> <a name="issueComment" id="cdk-pipelines-github.WorkflowTriggers.property.issueComment"></a>
+##### `issueComment`<sup>Optional</sup> <a name="issueComment" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.issueComment"></a>
 
 ```typescript
 public readonly issueComment: IssueCommentOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.IssueCommentOptions">IssueCommentOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.IssueCommentOptions">IssueCommentOptions</a>
 
 Runs your workflow anytime the issue_comment event occurs.
 
 ---
 
-##### `issues`<sup>Optional</sup> <a name="issues" id="cdk-pipelines-github.WorkflowTriggers.property.issues"></a>
+##### `issues`<sup>Optional</sup> <a name="issues" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.issues"></a>
 
 ```typescript
 public readonly issues: IssuesOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.IssuesOptions">IssuesOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.IssuesOptions">IssuesOptions</a>
 
 Runs your workflow anytime the issues event occurs.
 
 ---
 
-##### `label`<sup>Optional</sup> <a name="label" id="cdk-pipelines-github.WorkflowTriggers.property.label"></a>
+##### `label`<sup>Optional</sup> <a name="label" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.label"></a>
 
 ```typescript
 public readonly label: LabelOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.LabelOptions">LabelOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.LabelOptions">LabelOptions</a>
 
 Runs your workflow anytime the label event occurs.
 
 ---
 
-##### `milestone`<sup>Optional</sup> <a name="milestone" id="cdk-pipelines-github.WorkflowTriggers.property.milestone"></a>
+##### `milestone`<sup>Optional</sup> <a name="milestone" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.milestone"></a>
 
 ```typescript
 public readonly milestone: MilestoneOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.MilestoneOptions">MilestoneOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.MilestoneOptions">MilestoneOptions</a>
 
 Runs your workflow anytime the milestone event occurs.
 
 ---
 
-##### `pageBuild`<sup>Optional</sup> <a name="pageBuild" id="cdk-pipelines-github.WorkflowTriggers.property.pageBuild"></a>
+##### `pageBuild`<sup>Optional</sup> <a name="pageBuild" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pageBuild"></a>
 
 ```typescript
 public readonly pageBuild: PageBuildOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PageBuildOptions">PageBuildOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PageBuildOptions">PageBuildOptions</a>
 
 Runs your workflow anytime someone pushes to a GitHub Pages-enabled branch, which triggers the page_build event.
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="cdk-pipelines-github.WorkflowTriggers.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.project"></a>
 
 ```typescript
 public readonly project: ProjectOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ProjectOptions">ProjectOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ProjectOptions">ProjectOptions</a>
 
 Runs your workflow anytime the project event occurs.
 
 ---
 
-##### `projectCard`<sup>Optional</sup> <a name="projectCard" id="cdk-pipelines-github.WorkflowTriggers.property.projectCard"></a>
+##### `projectCard`<sup>Optional</sup> <a name="projectCard" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.projectCard"></a>
 
 ```typescript
 public readonly projectCard: ProjectCardOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ProjectCardOptions">ProjectCardOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ProjectCardOptions">ProjectCardOptions</a>
 
 Runs your workflow anytime the project_card event occurs.
 
 ---
 
-##### `projectColumn`<sup>Optional</sup> <a name="projectColumn" id="cdk-pipelines-github.WorkflowTriggers.property.projectColumn"></a>
+##### `projectColumn`<sup>Optional</sup> <a name="projectColumn" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.projectColumn"></a>
 
 ```typescript
 public readonly projectColumn: ProjectColumnOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ProjectColumnOptions">ProjectColumnOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ProjectColumnOptions">ProjectColumnOptions</a>
 
 Runs your workflow anytime the project_column event occurs.
 
 ---
 
-##### `public`<sup>Optional</sup> <a name="public" id="cdk-pipelines-github.WorkflowTriggers.property.public"></a>
+##### `public`<sup>Optional</sup> <a name="public" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.public"></a>
 
 ```typescript
 public readonly public: PublicOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PublicOptions">PublicOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PublicOptions">PublicOptions</a>
 
 Runs your workflow anytime someone makes a private repository public, which triggers the public event.
 
 ---
 
-##### `pullRequest`<sup>Optional</sup> <a name="pullRequest" id="cdk-pipelines-github.WorkflowTriggers.property.pullRequest"></a>
+##### `pullRequest`<sup>Optional</sup> <a name="pullRequest" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequest"></a>
 
 ```typescript
 public readonly pullRequest: PullRequestOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PullRequestOptions">PullRequestOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PullRequestOptions">PullRequestOptions</a>
 
 Runs your workflow anytime the pull_request event occurs.
 
 ---
 
-##### `pullRequestReview`<sup>Optional</sup> <a name="pullRequestReview" id="cdk-pipelines-github.WorkflowTriggers.property.pullRequestReview"></a>
+##### `pullRequestReview`<sup>Optional</sup> <a name="pullRequestReview" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestReview"></a>
 
 ```typescript
 public readonly pullRequestReview: PullRequestReviewOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PullRequestReviewOptions">PullRequestReviewOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PullRequestReviewOptions">PullRequestReviewOptions</a>
 
 Runs your workflow anytime the pull_request_review event occurs.
 
 ---
 
-##### `pullRequestReviewComment`<sup>Optional</sup> <a name="pullRequestReviewComment" id="cdk-pipelines-github.WorkflowTriggers.property.pullRequestReviewComment"></a>
+##### `pullRequestReviewComment`<sup>Optional</sup> <a name="pullRequestReviewComment" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestReviewComment"></a>
 
 ```typescript
 public readonly pullRequestReviewComment: PullRequestReviewCommentOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PullRequestReviewCommentOptions">PullRequestReviewCommentOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PullRequestReviewCommentOptions">PullRequestReviewCommentOptions</a>
 
 Runs your workflow anytime a comment on a pull request's unified diff is modified, which triggers the pull_request_review_comment event.
 
 ---
 
-##### `pullRequestTarget`<sup>Optional</sup> <a name="pullRequestTarget" id="cdk-pipelines-github.WorkflowTriggers.property.pullRequestTarget"></a>
+##### `pullRequestTarget`<sup>Optional</sup> <a name="pullRequestTarget" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.pullRequestTarget"></a>
 
 ```typescript
 public readonly pullRequestTarget: PullRequestTargetOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PullRequestTargetOptions">PullRequestTargetOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PullRequestTargetOptions">PullRequestTargetOptions</a>
 
 This event runs in the context of the base of the pull request, rather than in the merge commit as the pull_request event does.
 
@@ -4713,61 +4713,61 @@ the cache contents were altered.
 
 ---
 
-##### `push`<sup>Optional</sup> <a name="push" id="cdk-pipelines-github.WorkflowTriggers.property.push"></a>
+##### `push`<sup>Optional</sup> <a name="push" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.push"></a>
 
 ```typescript
 public readonly push: PushOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.PushOptions">PushOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.PushOptions">PushOptions</a>
 
 Runs your workflow when someone pushes to a repository branch, which triggers the push event.
 
 ---
 
-##### `registryPackage`<sup>Optional</sup> <a name="registryPackage" id="cdk-pipelines-github.WorkflowTriggers.property.registryPackage"></a>
+##### `registryPackage`<sup>Optional</sup> <a name="registryPackage" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.registryPackage"></a>
 
 ```typescript
 public readonly registryPackage: RegistryPackageOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.RegistryPackageOptions">RegistryPackageOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.RegistryPackageOptions">RegistryPackageOptions</a>
 
 Runs your workflow anytime a package is published or updated.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="cdk-pipelines-github.WorkflowTriggers.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.release"></a>
 
 ```typescript
 public readonly release: ReleaseOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.ReleaseOptions">ReleaseOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ReleaseOptions">ReleaseOptions</a>
 
 Runs your workflow anytime the release event occurs.
 
 ---
 
-##### `repositoryDispatch`<sup>Optional</sup> <a name="repositoryDispatch" id="cdk-pipelines-github.WorkflowTriggers.property.repositoryDispatch"></a>
+##### `repositoryDispatch`<sup>Optional</sup> <a name="repositoryDispatch" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.repositoryDispatch"></a>
 
 ```typescript
 public readonly repositoryDispatch: RepositoryDispatchOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.RepositoryDispatchOptions">RepositoryDispatchOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.RepositoryDispatchOptions">RepositoryDispatchOptions</a>
 
 You can use the GitHub API to trigger a webhook event called repository_dispatch when you want to trigger a workflow for activity that happens outside of GitHub.
 
 ---
 
-##### `schedule`<sup>Optional</sup> <a name="schedule" id="cdk-pipelines-github.WorkflowTriggers.property.schedule"></a>
+##### `schedule`<sup>Optional</sup> <a name="schedule" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.schedule"></a>
 
 ```typescript
 public readonly schedule: CronScheduleOptions[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.CronScheduleOptions">CronScheduleOptions</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.CronScheduleOptions">CronScheduleOptions</a>[]
 
 You can schedule a workflow to run at specific UTC times using POSIX cron syntax.
 
@@ -4779,37 +4779,37 @@ once every 5 minutes.
 
 ---
 
-##### `status`<sup>Optional</sup> <a name="status" id="cdk-pipelines-github.WorkflowTriggers.property.status"></a>
+##### `status`<sup>Optional</sup> <a name="status" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.status"></a>
 
 ```typescript
 public readonly status: StatusOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.StatusOptions">StatusOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.StatusOptions">StatusOptions</a>
 
 Runs your workflow anytime the status of a Git commit changes, which triggers the status event.
 
 ---
 
-##### `watch`<sup>Optional</sup> <a name="watch" id="cdk-pipelines-github.WorkflowTriggers.property.watch"></a>
+##### `watch`<sup>Optional</sup> <a name="watch" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.watch"></a>
 
 ```typescript
 public readonly watch: WatchOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.WatchOptions">WatchOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.WatchOptions">WatchOptions</a>
 
 Runs your workflow anytime the watch event occurs.
 
 ---
 
-##### `workflowDispatch`<sup>Optional</sup> <a name="workflowDispatch" id="cdk-pipelines-github.WorkflowTriggers.property.workflowDispatch"></a>
+##### `workflowDispatch`<sup>Optional</sup> <a name="workflowDispatch" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.workflowDispatch"></a>
 
 ```typescript
 public readonly workflowDispatch: WorkflowDispatchOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.WorkflowDispatchOptions">WorkflowDispatchOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.WorkflowDispatchOptions">WorkflowDispatchOptions</a>
 
 You can configure custom-defined input properties, default input values, and required inputs for the event directly in your workflow.
 
@@ -4819,13 +4819,13 @@ context.
 
 ---
 
-##### `workflowRun`<sup>Optional</sup> <a name="workflowRun" id="cdk-pipelines-github.WorkflowTriggers.property.workflowRun"></a>
+##### `workflowRun`<sup>Optional</sup> <a name="workflowRun" id="@hojulian/cdk-pipelines-github.WorkflowTriggers.property.workflowRun"></a>
 
 ```typescript
 public readonly workflowRun: WorkflowRunOptions;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.WorkflowRunOptions">WorkflowRunOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.WorkflowRunOptions">WorkflowRunOptions</a>
 
 This event occurs when a workflow run is requested or completed, and allows you to execute a workflow based on the finished result of another workflow.
 
@@ -4834,14 +4834,14 @@ previous workflow.
 
 ---
 
-### YamlFileOptions <a name="YamlFileOptions" id="cdk-pipelines-github.YamlFileOptions"></a>
+### YamlFileOptions <a name="YamlFileOptions" id="@hojulian/cdk-pipelines-github.YamlFileOptions"></a>
 
 Options for `YamlFile`.
 
-#### Initializer <a name="Initializer" id="cdk-pipelines-github.YamlFileOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.YamlFileOptions.Initializer"></a>
 
 ```typescript
-import { YamlFileOptions } from 'cdk-pipelines-github'
+import { YamlFileOptions } from '@hojulian/cdk-pipelines-github'
 
 const yamlFileOptions: YamlFileOptions = { ... }
 ```
@@ -4850,11 +4850,11 @@ const yamlFileOptions: YamlFileOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.YamlFileOptions.property.obj">obj</a></code> | <code>any</code> | The object that will be serialized. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFileOptions.property.obj">obj</a></code> | <code>any</code> | The object that will be serialized. |
 
 ---
 
-##### `obj`<sup>Optional</sup> <a name="obj" id="cdk-pipelines-github.YamlFileOptions.property.obj"></a>
+##### `obj`<sup>Optional</sup> <a name="obj" id="@hojulian/cdk-pipelines-github.YamlFileOptions.property.obj"></a>
 
 ```typescript
 public readonly obj: any;
@@ -4872,14 +4872,14 @@ before synthesis.
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AwsCredentials <a name="AwsCredentials" id="cdk-pipelines-github.AwsCredentials"></a>
+### AwsCredentials <a name="AwsCredentials" id="@hojulian/cdk-pipelines-github.AwsCredentials"></a>
 
 Provides AWS credenitals to the pipeline jobs.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.AwsCredentials.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.AwsCredentials.Initializer"></a>
 
 ```typescript
-import { AwsCredentials } from 'cdk-pipelines-github'
+import { AwsCredentials } from '@hojulian/cdk-pipelines-github'
 
 new AwsCredentials()
 ```
@@ -4894,16 +4894,16 @@ new AwsCredentials()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.AwsCredentials.fromGitHubSecrets">fromGitHubSecrets</a></code> | Reference credential secrets to authenticate with AWS. |
-| <code><a href="#cdk-pipelines-github.AwsCredentials.fromOpenIdConnect">fromOpenIdConnect</a></code> | Provide AWS credentials using OpenID Connect. |
-| <code><a href="#cdk-pipelines-github.AwsCredentials.runnerHasPreconfiguredCreds">runnerHasPreconfiguredCreds</a></code> | Don't provide any AWS credentials, use this if runners have preconfigured credentials. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentials.fromGitHubSecrets">fromGitHubSecrets</a></code> | Reference credential secrets to authenticate with AWS. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentials.fromOpenIdConnect">fromOpenIdConnect</a></code> | Provide AWS credentials using OpenID Connect. |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentials.runnerHasPreconfiguredCreds">runnerHasPreconfiguredCreds</a></code> | Don't provide any AWS credentials, use this if runners have preconfigured credentials. |
 
 ---
 
-##### `fromGitHubSecrets` <a name="fromGitHubSecrets" id="cdk-pipelines-github.AwsCredentials.fromGitHubSecrets"></a>
+##### `fromGitHubSecrets` <a name="fromGitHubSecrets" id="@hojulian/cdk-pipelines-github.AwsCredentials.fromGitHubSecrets"></a>
 
 ```typescript
-import { AwsCredentials } from 'cdk-pipelines-github'
+import { AwsCredentials } from '@hojulian/cdk-pipelines-github'
 
 AwsCredentials.fromGitHubSecrets(props?: GitHubSecretsProviderProps)
 ```
@@ -4913,32 +4913,32 @@ Reference credential secrets to authenticate with AWS.
 This method assumes
 that your credentials will be stored as long-lived GitHub Secrets.
 
-###### `props`<sup>Optional</sup> <a name="props" id="cdk-pipelines-github.AwsCredentials.fromGitHubSecrets.parameter.props"></a>
+###### `props`<sup>Optional</sup> <a name="props" id="@hojulian/cdk-pipelines-github.AwsCredentials.fromGitHubSecrets.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubSecretsProviderProps">GitHubSecretsProviderProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubSecretsProviderProps">GitHubSecretsProviderProps</a>
 
 ---
 
-##### `fromOpenIdConnect` <a name="fromOpenIdConnect" id="cdk-pipelines-github.AwsCredentials.fromOpenIdConnect"></a>
+##### `fromOpenIdConnect` <a name="fromOpenIdConnect" id="@hojulian/cdk-pipelines-github.AwsCredentials.fromOpenIdConnect"></a>
 
 ```typescript
-import { AwsCredentials } from 'cdk-pipelines-github'
+import { AwsCredentials } from '@hojulian/cdk-pipelines-github'
 
 AwsCredentials.fromOpenIdConnect(props: OpenIdConnectProviderProps)
 ```
 
 Provide AWS credentials using OpenID Connect.
 
-###### `props`<sup>Required</sup> <a name="props" id="cdk-pipelines-github.AwsCredentials.fromOpenIdConnect.parameter.props"></a>
+###### `props`<sup>Required</sup> <a name="props" id="@hojulian/cdk-pipelines-github.AwsCredentials.fromOpenIdConnect.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.OpenIdConnectProviderProps">OpenIdConnectProviderProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.OpenIdConnectProviderProps">OpenIdConnectProviderProps</a>
 
 ---
 
-##### `runnerHasPreconfiguredCreds` <a name="runnerHasPreconfiguredCreds" id="cdk-pipelines-github.AwsCredentials.runnerHasPreconfiguredCreds"></a>
+##### `runnerHasPreconfiguredCreds` <a name="runnerHasPreconfiguredCreds" id="@hojulian/cdk-pipelines-github.AwsCredentials.runnerHasPreconfiguredCreds"></a>
 
 ```typescript
-import { AwsCredentials } from 'cdk-pipelines-github'
+import { AwsCredentials } from '@hojulian/cdk-pipelines-github'
 
 AwsCredentials.runnerHasPreconfiguredCreds()
 ```
@@ -4947,14 +4947,14 @@ Don't provide any AWS credentials, use this if runners have preconfigured creden
 
 
 
-### AwsCredentialsProvider <a name="AwsCredentialsProvider" id="cdk-pipelines-github.AwsCredentialsProvider"></a>
+### AwsCredentialsProvider <a name="AwsCredentialsProvider" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider"></a>
 
 AWS credential provider.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.AwsCredentialsProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider.Initializer"></a>
 
 ```typescript
-import { AwsCredentialsProvider } from 'cdk-pipelines-github'
+import { AwsCredentialsProvider } from '@hojulian/cdk-pipelines-github'
 
 new AwsCredentialsProvider()
 ```
@@ -4968,30 +4968,30 @@ new AwsCredentialsProvider()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.AwsCredentialsProvider.credentialSteps">credentialSteps</a></code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.AwsCredentialsProvider.jobPermission">jobPermission</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider.credentialSteps">credentialSteps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider.jobPermission">jobPermission</a></code> | *No description.* |
 
 ---
 
-##### `credentialSteps` <a name="credentialSteps" id="cdk-pipelines-github.AwsCredentialsProvider.credentialSteps"></a>
+##### `credentialSteps` <a name="credentialSteps" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider.credentialSteps"></a>
 
 ```typescript
 public credentialSteps(region: string, assumeRoleArn?: string): JobStep[]
 ```
 
-###### `region`<sup>Required</sup> <a name="region" id="cdk-pipelines-github.AwsCredentialsProvider.credentialSteps.parameter.region"></a>
+###### `region`<sup>Required</sup> <a name="region" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider.credentialSteps.parameter.region"></a>
 
 - *Type:* string
 
 ---
 
-###### `assumeRoleArn`<sup>Optional</sup> <a name="assumeRoleArn" id="cdk-pipelines-github.AwsCredentialsProvider.credentialSteps.parameter.assumeRoleArn"></a>
+###### `assumeRoleArn`<sup>Optional</sup> <a name="assumeRoleArn" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider.credentialSteps.parameter.assumeRoleArn"></a>
 
 - *Type:* string
 
 ---
 
-##### `jobPermission` <a name="jobPermission" id="cdk-pipelines-github.AwsCredentialsProvider.jobPermission"></a>
+##### `jobPermission` <a name="jobPermission" id="@hojulian/cdk-pipelines-github.AwsCredentialsProvider.jobPermission"></a>
 
 ```typescript
 public jobPermission(): JobPermission
@@ -5000,7 +5000,7 @@ public jobPermission(): JobPermission
 
 
 
-### DockerCredential <a name="DockerCredential" id="cdk-pipelines-github.DockerCredential"></a>
+### DockerCredential <a name="DockerCredential" id="@hojulian/cdk-pipelines-github.DockerCredential"></a>
 
 Represents a credential used to authenticate to a docker registry.
 
@@ -5013,16 +5013,16 @@ Uses the official Docker Login GitHub Action to authenticate.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.DockerCredential.customRegistry">customRegistry</a></code> | Create a credential for a custom registry. |
-| <code><a href="#cdk-pipelines-github.DockerCredential.dockerHub">dockerHub</a></code> | Reference credential secrets to authenticate to DockerHub. |
-| <code><a href="#cdk-pipelines-github.DockerCredential.ecr">ecr</a></code> | Create a credential for ECR. |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.customRegistry">customRegistry</a></code> | Create a credential for a custom registry. |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.dockerHub">dockerHub</a></code> | Reference credential secrets to authenticate to DockerHub. |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.ecr">ecr</a></code> | Create a credential for ECR. |
 
 ---
 
-##### `customRegistry` <a name="customRegistry" id="cdk-pipelines-github.DockerCredential.customRegistry"></a>
+##### `customRegistry` <a name="customRegistry" id="@hojulian/cdk-pipelines-github.DockerCredential.customRegistry"></a>
 
 ```typescript
-import { DockerCredential } from 'cdk-pipelines-github'
+import { DockerCredential } from '@hojulian/cdk-pipelines-github'
 
 DockerCredential.customRegistry(registry: string, creds: ExternalDockerCredentialSecrets)
 ```
@@ -5035,22 +5035,22 @@ registry you provide.
 
 > [https://github.com/marketplace/actions/docker-login](https://github.com/marketplace/actions/docker-login)
 
-###### `registry`<sup>Required</sup> <a name="registry" id="cdk-pipelines-github.DockerCredential.customRegistry.parameter.registry"></a>
+###### `registry`<sup>Required</sup> <a name="registry" id="@hojulian/cdk-pipelines-github.DockerCredential.customRegistry.parameter.registry"></a>
 
 - *Type:* string
 
 ---
 
-###### `creds`<sup>Required</sup> <a name="creds" id="cdk-pipelines-github.DockerCredential.customRegistry.parameter.creds"></a>
+###### `creds`<sup>Required</sup> <a name="creds" id="@hojulian/cdk-pipelines-github.DockerCredential.customRegistry.parameter.creds"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.ExternalDockerCredentialSecrets">ExternalDockerCredentialSecrets</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.ExternalDockerCredentialSecrets">ExternalDockerCredentialSecrets</a>
 
 ---
 
-##### `dockerHub` <a name="dockerHub" id="cdk-pipelines-github.DockerCredential.dockerHub"></a>
+##### `dockerHub` <a name="dockerHub" id="@hojulian/cdk-pipelines-github.DockerCredential.dockerHub"></a>
 
 ```typescript
-import { DockerCredential } from 'cdk-pipelines-github'
+import { DockerCredential } from '@hojulian/cdk-pipelines-github'
 
 DockerCredential.dockerHub(creds?: DockerHubCredentialSecrets)
 ```
@@ -5065,16 +5065,16 @@ The default for usernameKey is `DOCKERHUB_USERNAME`. The default for personalAcc
 is `DOCKERHUB_TOKEN`. If you do not set these values, your credentials should be
 found in your GitHub Secrets under these default keys.
 
-###### `creds`<sup>Optional</sup> <a name="creds" id="cdk-pipelines-github.DockerCredential.dockerHub.parameter.creds"></a>
+###### `creds`<sup>Optional</sup> <a name="creds" id="@hojulian/cdk-pipelines-github.DockerCredential.dockerHub.parameter.creds"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.DockerHubCredentialSecrets">DockerHubCredentialSecrets</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.DockerHubCredentialSecrets">DockerHubCredentialSecrets</a>
 
 ---
 
-##### `ecr` <a name="ecr" id="cdk-pipelines-github.DockerCredential.ecr"></a>
+##### `ecr` <a name="ecr" id="@hojulian/cdk-pipelines-github.DockerCredential.ecr"></a>
 
 ```typescript
-import { DockerCredential } from 'cdk-pipelines-github'
+import { DockerCredential } from '@hojulian/cdk-pipelines-github'
 
 DockerCredential.ecr(registry: string)
 ```
@@ -5091,7 +5091,7 @@ set of credentials (and DockerCredential). Attempting to associate one set of cr
 with one ECR repo and another with another ECR repo in the same account and region will
 result in failures when using these credentials in the pipeline.
 
-###### `registry`<sup>Required</sup> <a name="registry" id="cdk-pipelines-github.DockerCredential.ecr.parameter.registry"></a>
+###### `registry`<sup>Required</sup> <a name="registry" id="@hojulian/cdk-pipelines-github.DockerCredential.ecr.parameter.registry"></a>
 
 - *Type:* string
 
@@ -5101,14 +5101,14 @@ result in failures when using these credentials in the pipeline.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.DockerCredential.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.DockerCredential.property.passwordKey">passwordKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.DockerCredential.property.registry">registry</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.DockerCredential.property.usernameKey">usernameKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.property.passwordKey">passwordKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.property.registry">registry</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.DockerCredential.property.usernameKey">usernameKey</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="cdk-pipelines-github.DockerCredential.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@hojulian/cdk-pipelines-github.DockerCredential.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -5118,7 +5118,7 @@ public readonly name: string;
 
 ---
 
-##### `passwordKey`<sup>Optional</sup> <a name="passwordKey" id="cdk-pipelines-github.DockerCredential.property.passwordKey"></a>
+##### `passwordKey`<sup>Optional</sup> <a name="passwordKey" id="@hojulian/cdk-pipelines-github.DockerCredential.property.passwordKey"></a>
 
 ```typescript
 public readonly passwordKey: string;
@@ -5128,7 +5128,7 @@ public readonly passwordKey: string;
 
 ---
 
-##### `registry`<sup>Optional</sup> <a name="registry" id="cdk-pipelines-github.DockerCredential.property.registry"></a>
+##### `registry`<sup>Optional</sup> <a name="registry" id="@hojulian/cdk-pipelines-github.DockerCredential.property.registry"></a>
 
 ```typescript
 public readonly registry: string;
@@ -5138,7 +5138,7 @@ public readonly registry: string;
 
 ---
 
-##### `usernameKey`<sup>Optional</sup> <a name="usernameKey" id="cdk-pipelines-github.DockerCredential.property.usernameKey"></a>
+##### `usernameKey`<sup>Optional</sup> <a name="usernameKey" id="@hojulian/cdk-pipelines-github.DockerCredential.property.usernameKey"></a>
 
 ```typescript
 public readonly usernameKey: string;
@@ -5149,34 +5149,34 @@ public readonly usernameKey: string;
 ---
 
 
-### GitHubActionStep <a name="GitHubActionStep" id="cdk-pipelines-github.GitHubActionStep"></a>
+### GitHubActionStep <a name="GitHubActionStep" id="@hojulian/cdk-pipelines-github.GitHubActionStep"></a>
 
 Specifies a GitHub Action as a step in the pipeline.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.GitHubActionStep.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GitHubActionStep.Initializer"></a>
 
 ```typescript
-import { GitHubActionStep } from 'cdk-pipelines-github'
+import { GitHubActionStep } from '@hojulian/cdk-pipelines-github'
 
 new GitHubActionStep(id: string, props: GitHubActionStepProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-pipelines-github.GitHubActionStepProps">GitHubActionStepProps</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.Initializer.parameter.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStepProps">GitHubActionStepProps</a></code> | *No description.* |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubActionStep.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubActionStep.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="cdk-pipelines-github.GitHubActionStep.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubActionStep.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubActionStepProps">GitHubActionStepProps</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubActionStepProps">GitHubActionStepProps</a>
 
 ---
 
@@ -5184,12 +5184,12 @@ new GitHubActionStep(id: string, props: GitHubActionStepProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.addStepDependency">addStepDependency</a></code> | Add a dependency on another step. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.toString">toString</a></code> | Return a string representation of this Step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.addStepDependency">addStepDependency</a></code> | Add a dependency on another step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.toString">toString</a></code> | Return a string representation of this Step. |
 
 ---
 
-##### `addStepDependency` <a name="addStepDependency" id="cdk-pipelines-github.GitHubActionStep.addStepDependency"></a>
+##### `addStepDependency` <a name="addStepDependency" id="@hojulian/cdk-pipelines-github.GitHubActionStep.addStepDependency"></a>
 
 ```typescript
 public addStepDependency(step: Step): void
@@ -5197,13 +5197,13 @@ public addStepDependency(step: Step): void
 
 Add a dependency on another step.
 
-###### `step`<sup>Required</sup> <a name="step" id="cdk-pipelines-github.GitHubActionStep.addStepDependency.parameter.step"></a>
+###### `step`<sup>Required</sup> <a name="step" id="@hojulian/cdk-pipelines-github.GitHubActionStep.addStepDependency.parameter.step"></a>
 
 - *Type:* aws-cdk-lib.pipelines.Step
 
 ---
 
-##### `toString` <a name="toString" id="cdk-pipelines-github.GitHubActionStep.toString"></a>
+##### `toString` <a name="toString" id="@hojulian/cdk-pipelines-github.GitHubActionStep.toString"></a>
 
 ```typescript
 public toString(): string
@@ -5215,21 +5215,21 @@ Return a string representation of this Step.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.sequence">sequence</a></code> | Define a sequence of steps to be executed in order. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.sequence">sequence</a></code> | Define a sequence of steps to be executed in order. |
 
 ---
 
-##### `sequence` <a name="sequence" id="cdk-pipelines-github.GitHubActionStep.sequence"></a>
+##### `sequence` <a name="sequence" id="@hojulian/cdk-pipelines-github.GitHubActionStep.sequence"></a>
 
 ```typescript
-import { GitHubActionStep } from 'cdk-pipelines-github'
+import { GitHubActionStep } from '@hojulian/cdk-pipelines-github'
 
 GitHubActionStep.sequence(steps: Step[])
 ```
 
 Define a sequence of steps to be executed in order.
 
-###### `steps`<sup>Required</sup> <a name="steps" id="cdk-pipelines-github.GitHubActionStep.sequence.parameter.steps"></a>
+###### `steps`<sup>Required</sup> <a name="steps" id="@hojulian/cdk-pipelines-github.GitHubActionStep.sequence.parameter.steps"></a>
 
 - *Type:* aws-cdk-lib.pipelines.Step[]
 
@@ -5239,17 +5239,17 @@ Define a sequence of steps to be executed in order.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Return the steps this step depends on, based on the FileSets it requires. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.dependencyFileSets">dependencyFileSets</a></code> | <code>aws-cdk-lib.pipelines.FileSet[]</code> | The list of FileSets consumed by this Step. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.id">id</a></code> | <code>string</code> | Identifier for this step. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.isSource">isSource</a></code> | <code>boolean</code> | Whether or not this is a Source step. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.primaryOutput">primaryOutput</a></code> | <code>aws-cdk-lib.pipelines.FileSet</code> | The primary FileSet produced by this Step. |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.GitHubActionStep.property.jobSteps">jobSteps</a></code> | <code><a href="#cdk-pipelines-github.JobStep">JobStep</a>[]</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Return the steps this step depends on, based on the FileSets it requires. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.dependencyFileSets">dependencyFileSets</a></code> | <code>aws-cdk-lib.pipelines.FileSet[]</code> | The list of FileSets consumed by this Step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.id">id</a></code> | <code>string</code> | Identifier for this step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.isSource">isSource</a></code> | <code>boolean</code> | Whether or not this is a Source step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.primaryOutput">primaryOutput</a></code> | <code>aws-cdk-lib.pipelines.FileSet</code> | The primary FileSet produced by this Step. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.env">env</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubActionStep.property.jobSteps">jobSteps</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]</code> | *No description.* |
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="cdk-pipelines-github.GitHubActionStep.property.dependencies"></a>
+##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.dependencies"></a>
 
 ```typescript
 public readonly dependencies: Step[];
@@ -5261,7 +5261,7 @@ Return the steps this step depends on, based on the FileSets it requires.
 
 ---
 
-##### `dependencyFileSets`<sup>Required</sup> <a name="dependencyFileSets" id="cdk-pipelines-github.GitHubActionStep.property.dependencyFileSets"></a>
+##### `dependencyFileSets`<sup>Required</sup> <a name="dependencyFileSets" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.dependencyFileSets"></a>
 
 ```typescript
 public readonly dependencyFileSets: FileSet[];
@@ -5273,7 +5273,7 @@ The list of FileSets consumed by this Step.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubActionStep.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -5285,7 +5285,7 @@ Identifier for this step.
 
 ---
 
-##### `isSource`<sup>Required</sup> <a name="isSource" id="cdk-pipelines-github.GitHubActionStep.property.isSource"></a>
+##### `isSource`<sup>Required</sup> <a name="isSource" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.isSource"></a>
 
 ```typescript
 public readonly isSource: boolean;
@@ -5299,7 +5299,7 @@ What it means to be a Source step depends on the engine.
 
 ---
 
-##### `primaryOutput`<sup>Optional</sup> <a name="primaryOutput" id="cdk-pipelines-github.GitHubActionStep.property.primaryOutput"></a>
+##### `primaryOutput`<sup>Optional</sup> <a name="primaryOutput" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.primaryOutput"></a>
 
 ```typescript
 public readonly primaryOutput: FileSet;
@@ -5314,7 +5314,7 @@ you can substitute the `Step` object for the `FileSet` object.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-pipelines-github.GitHubActionStep.property.env"></a>
+##### `env`<sup>Required</sup> <a name="env" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.env"></a>
 
 ```typescript
 public readonly env: {[ key: string ]: string};
@@ -5324,18 +5324,18 @@ public readonly env: {[ key: string ]: string};
 
 ---
 
-##### `jobSteps`<sup>Required</sup> <a name="jobSteps" id="cdk-pipelines-github.GitHubActionStep.property.jobSteps"></a>
+##### `jobSteps`<sup>Required</sup> <a name="jobSteps" id="@hojulian/cdk-pipelines-github.GitHubActionStep.property.jobSteps"></a>
 
 ```typescript
 public readonly jobSteps: JobStep[];
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.JobStep">JobStep</a>[]
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JobStep">JobStep</a>[]
 
 ---
 
 
-### GitHubWave <a name="GitHubWave" id="cdk-pipelines-github.GitHubWave"></a>
+### GitHubWave <a name="GitHubWave" id="@hojulian/cdk-pipelines-github.GitHubWave"></a>
 
 Multiple stages that are deployed in parallel.
 
@@ -5344,23 +5344,23 @@ A `Wave`, but with addition GitHub options
 Create with `GitHubWorkflow.addWave()` or `GitHubWorkflow.addGitHubWave()`.
 You should not have to instantiate a GitHubWave yourself.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.GitHubWave.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GitHubWave.Initializer"></a>
 
 ```typescript
-import { GitHubWave } from 'cdk-pipelines-github'
+import { GitHubWave } from '@hojulian/cdk-pipelines-github'
 
 new GitHubWave(id: string, pipeline: GitHubWorkflow, props?: WaveProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWave.Initializer.parameter.id">id</a></code> | <code>string</code> | Identifier for this Wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.Initializer.parameter.pipeline">pipeline</a></code> | <code><a href="#cdk-pipelines-github.GitHubWorkflow">GitHubWorkflow</a></code> | GitHubWorkflow that this wave is part of. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.pipelines.WaveProps</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.id">id</a></code> | <code>string</code> | Identifier for this Wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.pipeline">pipeline</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow">GitHubWorkflow</a></code> | GitHubWorkflow that this wave is part of. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.pipelines.WaveProps</code> | *No description.* |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubWave.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -5368,15 +5368,15 @@ Identifier for this Wave.
 
 ---
 
-##### `pipeline`<sup>Required</sup> <a name="pipeline" id="cdk-pipelines-github.GitHubWave.Initializer.parameter.pipeline"></a>
+##### `pipeline`<sup>Required</sup> <a name="pipeline" id="@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.pipeline"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.GitHubWorkflow">GitHubWorkflow</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.GitHubWorkflow">GitHubWorkflow</a>
 
 GitHubWorkflow that this wave is part of.
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="cdk-pipelines-github.GitHubWave.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@hojulian/cdk-pipelines-github.GitHubWave.Initializer.parameter.props"></a>
 
 - *Type:* aws-cdk-lib.pipelines.WaveProps
 
@@ -5386,14 +5386,14 @@ GitHubWorkflow that this wave is part of.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWave.addPost">addPost</a></code> | Add an additional step to run after all of the stages in this wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.addPre">addPre</a></code> | Add an additional step to run before any of the stages in this wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.addStage">addStage</a></code> | Add a Stage to this wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions">addStageWithGitHubOptions</a></code> | Add a Stage to this wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.addPost">addPost</a></code> | Add an additional step to run after all of the stages in this wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.addPre">addPre</a></code> | Add an additional step to run before any of the stages in this wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.addStage">addStage</a></code> | Add a Stage to this wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions">addStageWithGitHubOptions</a></code> | Add a Stage to this wave. |
 
 ---
 
-##### `addPost` <a name="addPost" id="cdk-pipelines-github.GitHubWave.addPost"></a>
+##### `addPost` <a name="addPost" id="@hojulian/cdk-pipelines-github.GitHubWave.addPost"></a>
 
 ```typescript
 public addPost(steps: Step): void
@@ -5401,13 +5401,13 @@ public addPost(steps: Step): void
 
 Add an additional step to run after all of the stages in this wave.
 
-###### `steps`<sup>Required</sup> <a name="steps" id="cdk-pipelines-github.GitHubWave.addPost.parameter.steps"></a>
+###### `steps`<sup>Required</sup> <a name="steps" id="@hojulian/cdk-pipelines-github.GitHubWave.addPost.parameter.steps"></a>
 
 - *Type:* aws-cdk-lib.pipelines.Step
 
 ---
 
-##### `addPre` <a name="addPre" id="cdk-pipelines-github.GitHubWave.addPre"></a>
+##### `addPre` <a name="addPre" id="@hojulian/cdk-pipelines-github.GitHubWave.addPre"></a>
 
 ```typescript
 public addPre(steps: Step): void
@@ -5415,13 +5415,13 @@ public addPre(steps: Step): void
 
 Add an additional step to run before any of the stages in this wave.
 
-###### `steps`<sup>Required</sup> <a name="steps" id="cdk-pipelines-github.GitHubWave.addPre.parameter.steps"></a>
+###### `steps`<sup>Required</sup> <a name="steps" id="@hojulian/cdk-pipelines-github.GitHubWave.addPre.parameter.steps"></a>
 
 - *Type:* aws-cdk-lib.pipelines.Step
 
 ---
 
-##### `addStage` <a name="addStage" id="cdk-pipelines-github.GitHubWave.addStage"></a>
+##### `addStage` <a name="addStage" id="@hojulian/cdk-pipelines-github.GitHubWave.addStage"></a>
 
 ```typescript
 public addStage(stage: Stage, options?: AddStageOpts): StageDeployment
@@ -5432,19 +5432,19 @@ Add a Stage to this wave.
 It will be deployed in parallel with all other stages in this
 wave.
 
-###### `stage`<sup>Required</sup> <a name="stage" id="cdk-pipelines-github.GitHubWave.addStage.parameter.stage"></a>
+###### `stage`<sup>Required</sup> <a name="stage" id="@hojulian/cdk-pipelines-github.GitHubWave.addStage.parameter.stage"></a>
 
 - *Type:* aws-cdk-lib.Stage
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWave.addStage.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWave.addStage.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.pipelines.AddStageOpts
 
 ---
 
-##### `addStageWithGitHubOptions` <a name="addStageWithGitHubOptions" id="cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions"></a>
+##### `addStageWithGitHubOptions` <a name="addStageWithGitHubOptions" id="@hojulian/cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions"></a>
 
 ```typescript
 public addStageWithGitHubOptions(stage: Stage, options?: AddGitHubStageOptions): StageDeployment
@@ -5455,15 +5455,15 @@ Add a Stage to this wave.
 It will be deployed in parallel with all other stages in this
 wave.
 
-###### `stage`<sup>Required</sup> <a name="stage" id="cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions.parameter.stage"></a>
+###### `stage`<sup>Required</sup> <a name="stage" id="@hojulian/cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions.parameter.stage"></a>
 
 - *Type:* aws-cdk-lib.Stage
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.GitHubWave.addStageWithGitHubOptions.parameter.options"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.AddGitHubStageOptions">AddGitHubStageOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.AddGitHubStageOptions">AddGitHubStageOptions</a>
 
 ---
 
@@ -5472,14 +5472,14 @@ wave.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.GitHubWave.property.id">id</a></code> | <code>string</code> | Identifier for this Wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.property.post">post</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps that are run after all of the stages in the wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.property.pre">pre</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps that are run before any of the stages in the wave. |
-| <code><a href="#cdk-pipelines-github.GitHubWave.property.stages">stages</a></code> | <code>aws-cdk-lib.pipelines.StageDeployment[]</code> | The stages that are deployed in this wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.property.id">id</a></code> | <code>string</code> | Identifier for this Wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.property.post">post</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps that are run after all of the stages in the wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.property.pre">pre</a></code> | <code>aws-cdk-lib.pipelines.Step[]</code> | Additional steps that are run before any of the stages in the wave. |
+| <code><a href="#@hojulian/cdk-pipelines-github.GitHubWave.property.stages">stages</a></code> | <code>aws-cdk-lib.pipelines.StageDeployment[]</code> | The stages that are deployed in this wave. |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-pipelines-github.GitHubWave.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@hojulian/cdk-pipelines-github.GitHubWave.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -5491,7 +5491,7 @@ Identifier for this Wave.
 
 ---
 
-##### `post`<sup>Required</sup> <a name="post" id="cdk-pipelines-github.GitHubWave.property.post"></a>
+##### `post`<sup>Required</sup> <a name="post" id="@hojulian/cdk-pipelines-github.GitHubWave.property.post"></a>
 
 ```typescript
 public readonly post: Step[];
@@ -5503,7 +5503,7 @@ Additional steps that are run after all of the stages in the wave.
 
 ---
 
-##### `pre`<sup>Required</sup> <a name="pre" id="cdk-pipelines-github.GitHubWave.property.pre"></a>
+##### `pre`<sup>Required</sup> <a name="pre" id="@hojulian/cdk-pipelines-github.GitHubWave.property.pre"></a>
 
 ```typescript
 public readonly pre: Step[];
@@ -5515,7 +5515,7 @@ Additional steps that are run before any of the stages in the wave.
 
 ---
 
-##### `stages`<sup>Required</sup> <a name="stages" id="cdk-pipelines-github.GitHubWave.property.stages"></a>
+##### `stages`<sup>Required</sup> <a name="stages" id="@hojulian/cdk-pipelines-github.GitHubWave.property.stages"></a>
 
 ```typescript
 public readonly stages: StageDeployment[];
@@ -5528,7 +5528,7 @@ The stages that are deployed in this wave.
 ---
 
 
-### JsonPatch <a name="JsonPatch" id="cdk-pipelines-github.JsonPatch"></a>
+### JsonPatch <a name="JsonPatch" id="@hojulian/cdk-pipelines-github.JsonPatch"></a>
 
 Utility for applying RFC-6902 JSON-Patch to a document.
 
@@ -5549,20 +5549,20 @@ const output = JsonPatch.apply(input,
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.JsonPatch.add">add</a></code> | Adds a value to an object or inserts it into an array. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.apply">apply</a></code> | Applies a set of JSON-Patch (RFC-6902) operations to `document` and returns the result. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.copy">copy</a></code> | Copies a value from one location to another within the JSON document. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.move">move</a></code> | Moves a value from one location to the other. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.remove">remove</a></code> | Removes a value from an object or array. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.replace">replace</a></code> | Replaces a value. |
-| <code><a href="#cdk-pipelines-github.JsonPatch.test">test</a></code> | Tests that the specified value is set in the document. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.add">add</a></code> | Adds a value to an object or inserts it into an array. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.apply">apply</a></code> | Applies a set of JSON-Patch (RFC-6902) operations to `document` and returns the result. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.copy">copy</a></code> | Copies a value from one location to another within the JSON document. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.move">move</a></code> | Moves a value from one location to the other. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.remove">remove</a></code> | Removes a value from an object or array. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.replace">replace</a></code> | Replaces a value. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JsonPatch.test">test</a></code> | Tests that the specified value is set in the document. |
 
 ---
 
-##### `add` <a name="add" id="cdk-pipelines-github.JsonPatch.add"></a>
+##### `add` <a name="add" id="@hojulian/cdk-pipelines-github.JsonPatch.add"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.add(path: string, value: any)
 ```
@@ -5580,29 +5580,29 @@ JsonPatch.add('/biscuits/1', { "name": "Ginger Nut" })
 ```
 
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.add.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.add.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="cdk-pipelines-github.JsonPatch.add.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@hojulian/cdk-pipelines-github.JsonPatch.add.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `apply` <a name="apply" id="cdk-pipelines-github.JsonPatch.apply"></a>
+##### `apply` <a name="apply" id="@hojulian/cdk-pipelines-github.JsonPatch.apply"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.apply(document: any, ops: JsonPatch)
 ```
 
 Applies a set of JSON-Patch (RFC-6902) operations to `document` and returns the result.
 
-###### `document`<sup>Required</sup> <a name="document" id="cdk-pipelines-github.JsonPatch.apply.parameter.document"></a>
+###### `document`<sup>Required</sup> <a name="document" id="@hojulian/cdk-pipelines-github.JsonPatch.apply.parameter.document"></a>
 
 - *Type:* any
 
@@ -5610,18 +5610,18 @@ The document to patch.
 
 ---
 
-###### `ops`<sup>Required</sup> <a name="ops" id="cdk-pipelines-github.JsonPatch.apply.parameter.ops"></a>
+###### `ops`<sup>Required</sup> <a name="ops" id="@hojulian/cdk-pipelines-github.JsonPatch.apply.parameter.ops"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.JsonPatch">JsonPatch</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JsonPatch">JsonPatch</a>
 
 The operations to apply.
 
 ---
 
-##### `copy` <a name="copy" id="cdk-pipelines-github.JsonPatch.copy"></a>
+##### `copy` <a name="copy" id="@hojulian/cdk-pipelines-github.JsonPatch.copy"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.copy(from: string, path: string)
 ```
@@ -5638,22 +5638,22 @@ JsonPatch.copy('/biscuits/0', '/best_biscuit')
 ```
 
 
-###### `from`<sup>Required</sup> <a name="from" id="cdk-pipelines-github.JsonPatch.copy.parameter.from"></a>
+###### `from`<sup>Required</sup> <a name="from" id="@hojulian/cdk-pipelines-github.JsonPatch.copy.parameter.from"></a>
 
 - *Type:* string
 
 ---
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.copy.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.copy.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-##### `move` <a name="move" id="cdk-pipelines-github.JsonPatch.move"></a>
+##### `move` <a name="move" id="@hojulian/cdk-pipelines-github.JsonPatch.move"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.move(from: string, path: string)
 ```
@@ -5669,22 +5669,22 @@ JsonPatch.move('/biscuits', '/cookies')
 ```
 
 
-###### `from`<sup>Required</sup> <a name="from" id="cdk-pipelines-github.JsonPatch.move.parameter.from"></a>
+###### `from`<sup>Required</sup> <a name="from" id="@hojulian/cdk-pipelines-github.JsonPatch.move.parameter.from"></a>
 
 - *Type:* string
 
 ---
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.move.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.move.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-##### `remove` <a name="remove" id="cdk-pipelines-github.JsonPatch.remove"></a>
+##### `remove` <a name="remove" id="@hojulian/cdk-pipelines-github.JsonPatch.remove"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.remove(path: string)
 ```
@@ -5698,16 +5698,16 @@ JsonPatch.remove('/biscuits/0')
 ```
 
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.remove.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.remove.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-##### `replace` <a name="replace" id="cdk-pipelines-github.JsonPatch.replace"></a>
+##### `replace` <a name="replace" id="@hojulian/cdk-pipelines-github.JsonPatch.replace"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.replace(path: string, value: any)
 ```
@@ -5723,22 +5723,22 @@ JsonPatch.replace('/biscuits/0/name', 'Chocolate Digestive')
 ```
 
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.replace.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.replace.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="cdk-pipelines-github.JsonPatch.replace.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@hojulian/cdk-pipelines-github.JsonPatch.replace.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `test` <a name="test" id="cdk-pipelines-github.JsonPatch.test"></a>
+##### `test` <a name="test" id="@hojulian/cdk-pipelines-github.JsonPatch.test"></a>
 
 ```typescript
-import { JsonPatch } from 'cdk-pipelines-github'
+import { JsonPatch } from '@hojulian/cdk-pipelines-github'
 
 JsonPatch.test(path: string, value: any)
 ```
@@ -5755,13 +5755,13 @@ JsonPatch.test('/best_biscuit/name', 'Choco Leibniz')
 ```
 
 
-###### `path`<sup>Required</sup> <a name="path" id="cdk-pipelines-github.JsonPatch.test.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@hojulian/cdk-pipelines-github.JsonPatch.test.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="cdk-pipelines-github.JsonPatch.test.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@hojulian/cdk-pipelines-github.JsonPatch.test.parameter.value"></a>
 
 - *Type:* any
 
@@ -5769,7 +5769,7 @@ JsonPatch.test('/best_biscuit/name', 'Choco Leibniz')
 
 
 
-### Runner <a name="Runner" id="cdk-pipelines-github.Runner"></a>
+### Runner <a name="Runner" id="@hojulian/cdk-pipelines-github.Runner"></a>
 
 The type of runner to run the job on.
 
@@ -5781,14 +5781,14 @@ In case of self-hosted, a list of labels can be supplied.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.Runner.selfHosted">selfHosted</a></code> | Creates a runner instance that sets runsOn to `self-hosted`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Runner.selfHosted">selfHosted</a></code> | Creates a runner instance that sets runsOn to `self-hosted`. |
 
 ---
 
-##### `selfHosted` <a name="selfHosted" id="cdk-pipelines-github.Runner.selfHosted"></a>
+##### `selfHosted` <a name="selfHosted" id="@hojulian/cdk-pipelines-github.Runner.selfHosted"></a>
 
 ```typescript
-import { Runner } from 'cdk-pipelines-github'
+import { Runner } from '@hojulian/cdk-pipelines-github'
 
 Runner.selfHosted(labels: string[])
 ```
@@ -5797,7 +5797,7 @@ Creates a runner instance that sets runsOn to `self-hosted`.
 
 Additional labels can be supplied. There is no need to supply `self-hosted` as a label explicitly.
 
-###### `labels`<sup>Required</sup> <a name="labels" id="cdk-pipelines-github.Runner.selfHosted.parameter.labels"></a>
+###### `labels`<sup>Required</sup> <a name="labels" id="@hojulian/cdk-pipelines-github.Runner.selfHosted.parameter.labels"></a>
 
 - *Type:* string[]
 
@@ -5807,11 +5807,11 @@ Additional labels can be supplied. There is no need to supply `self-hosted` as a
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.Runner.property.runsOn">runsOn</a></code> | <code>string \| string[]</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.Runner.property.runsOn">runsOn</a></code> | <code>string \| string[]</code> | *No description.* |
 
 ---
 
-##### `runsOn`<sup>Required</sup> <a name="runsOn" id="cdk-pipelines-github.Runner.property.runsOn"></a>
+##### `runsOn`<sup>Required</sup> <a name="runsOn" id="@hojulian/cdk-pipelines-github.Runner.property.runsOn"></a>
 
 ```typescript
 public readonly runsOn: string | string[];
@@ -5825,76 +5825,76 @@ public readonly runsOn: string | string[];
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.Runner.property.MACOS_LATEST">MACOS_LATEST</a></code> | <code><a href="#cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `macos-latest`. |
-| <code><a href="#cdk-pipelines-github.Runner.property.UBUNTU_LATEST">UBUNTU_LATEST</a></code> | <code><a href="#cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `ubuntu-latest`. |
-| <code><a href="#cdk-pipelines-github.Runner.property.WINDOWS_LATEST">WINDOWS_LATEST</a></code> | <code><a href="#cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `windows-latest`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Runner.property.MACOS_LATEST">MACOS_LATEST</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `macos-latest`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Runner.property.UBUNTU_LATEST">UBUNTU_LATEST</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `ubuntu-latest`. |
+| <code><a href="#@hojulian/cdk-pipelines-github.Runner.property.WINDOWS_LATEST">WINDOWS_LATEST</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a></code> | Runner instance that sets runsOn to `windows-latest`. |
 
 ---
 
-##### `MACOS_LATEST`<sup>Required</sup> <a name="MACOS_LATEST" id="cdk-pipelines-github.Runner.property.MACOS_LATEST"></a>
+##### `MACOS_LATEST`<sup>Required</sup> <a name="MACOS_LATEST" id="@hojulian/cdk-pipelines-github.Runner.property.MACOS_LATEST"></a>
 
 ```typescript
 public readonly MACOS_LATEST: Runner;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.Runner">Runner</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a>
 
 Runner instance that sets runsOn to `macos-latest`.
 
 ---
 
-##### `UBUNTU_LATEST`<sup>Required</sup> <a name="UBUNTU_LATEST" id="cdk-pipelines-github.Runner.property.UBUNTU_LATEST"></a>
+##### `UBUNTU_LATEST`<sup>Required</sup> <a name="UBUNTU_LATEST" id="@hojulian/cdk-pipelines-github.Runner.property.UBUNTU_LATEST"></a>
 
 ```typescript
 public readonly UBUNTU_LATEST: Runner;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.Runner">Runner</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a>
 
 Runner instance that sets runsOn to `ubuntu-latest`.
 
 ---
 
-##### `WINDOWS_LATEST`<sup>Required</sup> <a name="WINDOWS_LATEST" id="cdk-pipelines-github.Runner.property.WINDOWS_LATEST"></a>
+##### `WINDOWS_LATEST`<sup>Required</sup> <a name="WINDOWS_LATEST" id="@hojulian/cdk-pipelines-github.Runner.property.WINDOWS_LATEST"></a>
 
 ```typescript
 public readonly WINDOWS_LATEST: Runner;
 ```
 
-- *Type:* <a href="#cdk-pipelines-github.Runner">Runner</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.Runner">Runner</a>
 
 Runner instance that sets runsOn to `windows-latest`.
 
 ---
 
-### YamlFile <a name="YamlFile" id="cdk-pipelines-github.YamlFile"></a>
+### YamlFile <a name="YamlFile" id="@hojulian/cdk-pipelines-github.YamlFile"></a>
 
 Represents a Yaml File.
 
-#### Initializers <a name="Initializers" id="cdk-pipelines-github.YamlFile.Initializer"></a>
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.YamlFile.Initializer"></a>
 
 ```typescript
-import { YamlFile } from 'cdk-pipelines-github'
+import { YamlFile } from '@hojulian/cdk-pipelines-github'
 
 new YamlFile(filePath: string, options?: YamlFileOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.YamlFile.Initializer.parameter.filePath">filePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-pipelines-github.YamlFile.Initializer.parameter.options">options</a></code> | <code><a href="#cdk-pipelines-github.YamlFileOptions">YamlFileOptions</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.Initializer.parameter.filePath">filePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.Initializer.parameter.options">options</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.YamlFileOptions">YamlFileOptions</a></code> | *No description.* |
 
 ---
 
-##### `filePath`<sup>Required</sup> <a name="filePath" id="cdk-pipelines-github.YamlFile.Initializer.parameter.filePath"></a>
+##### `filePath`<sup>Required</sup> <a name="filePath" id="@hojulian/cdk-pipelines-github.YamlFile.Initializer.parameter.filePath"></a>
 
 - *Type:* string
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="cdk-pipelines-github.YamlFile.Initializer.parameter.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@hojulian/cdk-pipelines-github.YamlFile.Initializer.parameter.options"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.YamlFileOptions">YamlFileOptions</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.YamlFileOptions">YamlFileOptions</a>
 
 ---
 
@@ -5902,14 +5902,14 @@ new YamlFile(filePath: string, options?: YamlFileOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.YamlFile.patch">patch</a></code> | Applies an RFC 6902 JSON-patch to the synthesized object file. See https://datatracker.ietf.org/doc/html/rfc6902 for more information. |
-| <code><a href="#cdk-pipelines-github.YamlFile.toYaml">toYaml</a></code> | Returns the patched yaml file. |
-| <code><a href="#cdk-pipelines-github.YamlFile.update">update</a></code> | Update the output object. |
-| <code><a href="#cdk-pipelines-github.YamlFile.writeFile">writeFile</a></code> | Write the patched yaml file to the specified location. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.patch">patch</a></code> | Applies an RFC 6902 JSON-patch to the synthesized object file. See https://datatracker.ietf.org/doc/html/rfc6902 for more information. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.toYaml">toYaml</a></code> | Returns the patched yaml file. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.update">update</a></code> | Update the output object. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.writeFile">writeFile</a></code> | Write the patched yaml file to the specified location. |
 
 ---
 
-##### `patch` <a name="patch" id="cdk-pipelines-github.YamlFile.patch"></a>
+##### `patch` <a name="patch" id="@hojulian/cdk-pipelines-github.YamlFile.patch"></a>
 
 ```typescript
 public patch(patches: JsonPatch): void
@@ -5948,15 +5948,15 @@ on:
 ...
 ```
 
-###### `patches`<sup>Required</sup> <a name="patches" id="cdk-pipelines-github.YamlFile.patch.parameter.patches"></a>
+###### `patches`<sup>Required</sup> <a name="patches" id="@hojulian/cdk-pipelines-github.YamlFile.patch.parameter.patches"></a>
 
-- *Type:* <a href="#cdk-pipelines-github.JsonPatch">JsonPatch</a>
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.JsonPatch">JsonPatch</a>
 
 The patch operations to apply.
 
 ---
 
-##### `toYaml` <a name="toYaml" id="cdk-pipelines-github.YamlFile.toYaml"></a>
+##### `toYaml` <a name="toYaml" id="@hojulian/cdk-pipelines-github.YamlFile.toYaml"></a>
 
 ```typescript
 public toYaml(): string
@@ -5964,7 +5964,7 @@ public toYaml(): string
 
 Returns the patched yaml file.
 
-##### `update` <a name="update" id="cdk-pipelines-github.YamlFile.update"></a>
+##### `update` <a name="update" id="@hojulian/cdk-pipelines-github.YamlFile.update"></a>
 
 ```typescript
 public update(obj: any): void
@@ -5972,13 +5972,13 @@ public update(obj: any): void
 
 Update the output object.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="cdk-pipelines-github.YamlFile.update.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@hojulian/cdk-pipelines-github.YamlFile.update.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-##### `writeFile` <a name="writeFile" id="cdk-pipelines-github.YamlFile.writeFile"></a>
+##### `writeFile` <a name="writeFile" id="@hojulian/cdk-pipelines-github.YamlFile.writeFile"></a>
 
 ```typescript
 public writeFile(): void
@@ -5991,11 +5991,11 @@ Write the patched yaml file to the specified location.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-pipelines-github.YamlFile.property.commentAtTop">commentAtTop</a></code> | <code>string</code> | A comment to be added to the top of the YAML file. |
+| <code><a href="#@hojulian/cdk-pipelines-github.YamlFile.property.commentAtTop">commentAtTop</a></code> | <code>string</code> | A comment to be added to the top of the YAML file. |
 
 ---
 
-##### `commentAtTop`<sup>Optional</sup> <a name="commentAtTop" id="cdk-pipelines-github.YamlFile.property.commentAtTop"></a>
+##### `commentAtTop`<sup>Optional</sup> <a name="commentAtTop" id="@hojulian/cdk-pipelines-github.YamlFile.property.commentAtTop"></a>
 
 ```typescript
 public readonly commentAtTop: string;
@@ -6031,7 +6031,7 @@ name: deploy
 
 ## Enums <a name="Enums" id="Enums"></a>
 
-### JobPermission <a name="JobPermission" id="cdk-pipelines-github.JobPermission"></a>
+### JobPermission <a name="JobPermission" id="@hojulian/cdk-pipelines-github.JobPermission"></a>
 
 Access level for workflow permission scopes.
 
@@ -6039,34 +6039,34 @@ Access level for workflow permission scopes.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.JobPermission.READ">READ</a></code> | Read-only access. |
-| <code><a href="#cdk-pipelines-github.JobPermission.WRITE">WRITE</a></code> | Read-write access. |
-| <code><a href="#cdk-pipelines-github.JobPermission.NONE">NONE</a></code> | No access at all. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermission.READ">READ</a></code> | Read-only access. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermission.WRITE">WRITE</a></code> | Read-write access. |
+| <code><a href="#@hojulian/cdk-pipelines-github.JobPermission.NONE">NONE</a></code> | No access at all. |
 
 ---
 
-##### `READ` <a name="READ" id="cdk-pipelines-github.JobPermission.READ"></a>
+##### `READ` <a name="READ" id="@hojulian/cdk-pipelines-github.JobPermission.READ"></a>
 
 Read-only access.
 
 ---
 
 
-##### `WRITE` <a name="WRITE" id="cdk-pipelines-github.JobPermission.WRITE"></a>
+##### `WRITE` <a name="WRITE" id="@hojulian/cdk-pipelines-github.JobPermission.WRITE"></a>
 
 Read-write access.
 
 ---
 
 
-##### `NONE` <a name="NONE" id="cdk-pipelines-github.JobPermission.NONE"></a>
+##### `NONE` <a name="NONE" id="@hojulian/cdk-pipelines-github.JobPermission.NONE"></a>
 
 No access at all.
 
 ---
 
 
-### StackCapabilities <a name="StackCapabilities" id="cdk-pipelines-github.StackCapabilities"></a>
+### StackCapabilities <a name="StackCapabilities" id="@hojulian/cdk-pipelines-github.StackCapabilities"></a>
 
 Acknowledge IAM resources in AWS CloudFormation templates.
 
@@ -6076,27 +6076,27 @@ Acknowledge IAM resources in AWS CloudFormation templates.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-pipelines-github.StackCapabilities.IAM">IAM</a></code> | Acknowledge your stack includes IAM resources. |
-| <code><a href="#cdk-pipelines-github.StackCapabilities.NAMED_IAM">NAMED_IAM</a></code> | Acknowledge your stack includes custom names for IAM resources. |
-| <code><a href="#cdk-pipelines-github.StackCapabilities.AUTO_EXPAND">AUTO_EXPAND</a></code> | Acknowledge your stack contains one or more macros. |
+| <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities.IAM">IAM</a></code> | Acknowledge your stack includes IAM resources. |
+| <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities.NAMED_IAM">NAMED_IAM</a></code> | Acknowledge your stack includes custom names for IAM resources. |
+| <code><a href="#@hojulian/cdk-pipelines-github.StackCapabilities.AUTO_EXPAND">AUTO_EXPAND</a></code> | Acknowledge your stack contains one or more macros. |
 
 ---
 
-##### `IAM` <a name="IAM" id="cdk-pipelines-github.StackCapabilities.IAM"></a>
+##### `IAM` <a name="IAM" id="@hojulian/cdk-pipelines-github.StackCapabilities.IAM"></a>
 
 Acknowledge your stack includes IAM resources.
 
 ---
 
 
-##### `NAMED_IAM` <a name="NAMED_IAM" id="cdk-pipelines-github.StackCapabilities.NAMED_IAM"></a>
+##### `NAMED_IAM` <a name="NAMED_IAM" id="@hojulian/cdk-pipelines-github.StackCapabilities.NAMED_IAM"></a>
 
 Acknowledge your stack includes custom names for IAM resources.
 
 ---
 
 
-##### `AUTO_EXPAND` <a name="AUTO_EXPAND" id="cdk-pipelines-github.StackCapabilities.AUTO_EXPAND"></a>
+##### `AUTO_EXPAND` <a name="AUTO_EXPAND" id="@hojulian/cdk-pipelines-github.StackCapabilities.AUTO_EXPAND"></a>
 
 Acknowledge your stack contains one or more macros.
 
