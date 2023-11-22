@@ -27,7 +27,7 @@ const project = new CdklabsConstructLibrary({
   jsiiTargetLanguages: [JsiiLanguage.PYTHON],
 
   publishToPypi: {
-    distName: 'cdk-pipelines-github',
+    distName: 'hojulian.cdk-pipelines-github',
     module: 'hojulian.cdk_pipelines_github',
   },
 });

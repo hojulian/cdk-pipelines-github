@@ -140,7 +140,7 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "cdk-pipelines-github",
+        "distName": "hojulian.cdk-pipelines-github",
         "module": "hojulian.cdk_pipelines_github"
       }
     },
