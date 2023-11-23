@@ -6028,16 +6028,23 @@ S3 assembly artifact options uses a given S3 bucket for artifacts handling.
 ```typescript
 import { S3AssemblyArtifactOptions } from '@hojulian/cdk-pipelines-github'
 
-new S3AssemblyArtifactOptions(bucket: string)
+new S3AssemblyArtifactOptions(bucket: string, seed?: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.seed">seed</a></code> | <code>string</code> | *No description.* |
 
 ---
 
 ##### `bucket`<sup>Required</sup> <a name="bucket" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket"></a>
+
+- *Type:* string
+
+---
+
+##### `seed`<sup>Optional</sup> <a name="seed" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.seed"></a>
 
 - *Type:* string
 
