@@ -13,12 +13,13 @@ const project = new CdklabsConstructLibrary({
   constructsVersion: '10.0.46',
   defaultReleaseBranch: 'main',
   repositoryUrl: 'https://github.com/hojulian/cdk-pipelines-github.git',
-  bundledDeps: ['decamelize', 'yaml', 'fast-json-patch'],
+  bundledDeps: ['decamelize', 'yaml', 'fast-json-patch', 'uuid'],
   devDeps: [
     'cdklabs-projen-project-types',
     'aws-cdk-lib',
     '@aws-cdk/integ-runner@^2.60.0',
     '@aws-cdk/integ-tests-alpha',
+    '@types/uuid',
   ],
   peerDeps: ['aws-cdk-lib'],
   jestOptions: {

@@ -5420,6 +5420,8 @@ public readonly jobSteps: JobStep[];
 
 ### GithubAssemblyArtifactOptions <a name="GithubAssemblyArtifactOptions" id="@hojulian/cdk-pipelines-github.GithubAssemblyArtifactOptions"></a>
 
+Github assembly artifact options uses built-in `upload-artifact/download-artifact` for artifacts handling.
+
 #### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.GithubAssemblyArtifactOptions.Initializer"></a>
 
 ```typescript
@@ -6016,6 +6018,82 @@ public readonly WINDOWS_LATEST: Runner;
 Runner instance that sets runsOn to `windows-latest`.
 
 ---
+
+### S3AssemblyArtifactOptions <a name="S3AssemblyArtifactOptions" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions"></a>
+
+S3 assembly artifact options uses a given S3 bucket for artifacts handling.
+
+#### Initializers <a name="Initializers" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer"></a>
+
+```typescript
+import { S3AssemblyArtifactOptions } from '@hojulian/cdk-pipelines-github'
+
+new S3AssemblyArtifactOptions(bucket: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket"></a>
+
+- *Type:* string
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.downloadAssemblySteps">downloadAssemblySteps</a></code> | Configure download assembly steps. |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.uploadAssemblySteps">uploadAssemblySteps</a></code> | Configure upload assembly steps. |
+
+---
+
+##### `downloadAssemblySteps` <a name="downloadAssemblySteps" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.downloadAssemblySteps"></a>
+
+```typescript
+public downloadAssemblySteps(targetName: string, targetDir: string): JobStep[]
+```
+
+Configure download assembly steps.
+
+###### `targetName`<sup>Required</sup> <a name="targetName" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.downloadAssemblySteps.parameter.targetName"></a>
+
+- *Type:* string
+
+---
+
+###### `targetDir`<sup>Required</sup> <a name="targetDir" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.downloadAssemblySteps.parameter.targetDir"></a>
+
+- *Type:* string
+
+---
+
+##### `uploadAssemblySteps` <a name="uploadAssemblySteps" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.uploadAssemblySteps"></a>
+
+```typescript
+public uploadAssemblySteps(sourceName: string, sourceDir: string): JobStep[]
+```
+
+Configure upload assembly steps.
+
+###### `sourceName`<sup>Required</sup> <a name="sourceName" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.uploadAssemblySteps.parameter.sourceName"></a>
+
+- *Type:* string
+
+---
+
+###### `sourceDir`<sup>Required</sup> <a name="sourceDir" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.uploadAssemblySteps.parameter.sourceDir"></a>
+
+- *Type:* string
+
+---
+
+
+
 
 ### YamlFile <a name="YamlFile" id="@hojulian/cdk-pipelines-github.YamlFile"></a>
 
