@@ -4311,6 +4311,80 @@ Working directory to use when running the step.
 
 ---
 
+### S3AssemblyArtifactOptionsProps <a name="S3AssemblyArtifactOptionsProps" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps"></a>
+
+Props for `S3AssemblyArtifactOptions`.
+
+#### Initializer <a name="Initializer" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.Initializer"></a>
+
+```typescript
+import { S3AssemblyArtifactOptionsProps } from '@hojulian/cdk-pipelines-github'
+
+const s3AssemblyArtifactOptionsProps: S3AssemblyArtifactOptionsProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.assumeRoleArn">assumeRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.awsCreds">awsCreds</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a></code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.seed">seed</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.bucket"></a>
+
+```typescript
+public readonly bucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `assumeRoleArn`<sup>Optional</sup> <a name="assumeRoleArn" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.assumeRoleArn"></a>
+
+```typescript
+public readonly assumeRoleArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsCreds`<sup>Optional</sup> <a name="awsCreds" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.awsCreds"></a>
+
+```typescript
+public readonly awsCreds: AwsCredentialsProvider;
+```
+
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.AwsCredentialsProvider">AwsCredentialsProvider</a>
+
+---
+
+##### `seed`<sup>Optional</sup> <a name="seed" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps.property.seed"></a>
+
+```typescript
+public readonly seed: string;
+```
+
+- *Type:* string
+
+---
+
 ### StatusOptions <a name="StatusOptions" id="@hojulian/cdk-pipelines-github.StatusOptions"></a>
 
 The Status event accepts no options.
@@ -6028,25 +6102,18 @@ S3 assembly artifact options uses a given S3 bucket for artifacts handling.
 ```typescript
 import { S3AssemblyArtifactOptions } from '@hojulian/cdk-pipelines-github'
 
-new S3AssemblyArtifactOptions(bucket: string, seed?: string)
+new S3AssemblyArtifactOptions(props: S3AssemblyArtifactOptionsProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket">bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.seed">seed</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.props">props</a></code> | <code><a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps">S3AssemblyArtifactOptionsProps</a></code> | *No description.* |
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.bucket"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.props"></a>
 
-- *Type:* string
-
----
-
-##### `seed`<sup>Optional</sup> <a name="seed" id="@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptions.Initializer.parameter.seed"></a>
-
-- *Type:* string
+- *Type:* <a href="#@hojulian/cdk-pipelines-github.S3AssemblyArtifactOptionsProps">S3AssemblyArtifactOptionsProps</a>
 
 ---
 

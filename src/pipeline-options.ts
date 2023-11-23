@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { AwsCredentials, AwsCredentialsProvider } from './aws-credentials';
 import * as github from './workflows-model';
 
 /**
@@ -54,31 +55,57 @@ export class GithubAssemblyArtifactOptions extends AssemblyArtifactOptions {
 }
 
 /**
+ * Props for `S3AssemblyArtifactOptions`.
+ */
+export interface S3AssemblyArtifactOptionsProps {
+  readonly bucket: string;
+
+  readonly region: string;
+
+  readonly seed?: string;
+
+  readonly awsCreds?: AwsCredentialsProvider;
+
+  readonly assumeRoleArn?: string;
+}
+
+/**
  * S3 assembly artifact options uses a given S3 bucket for artifacts handling.
  */
 export class S3AssemblyArtifactOptions extends AssemblyArtifactOptions {
+
+  private readonly awsCredsStep: github.JobStep[];
 
   private readonly bucket: string;
 
   private readonly seed: string;
 
-  constructor(bucket: string, seed?: string) {
+  constructor(props: S3AssemblyArtifactOptionsProps) {
     super();
-    this.bucket = bucket;
-    this.seed = seed ?? uuidv4();
+    this.bucket = props.bucket;
+    this.seed = props.seed ?? uuidv4();
+
+    const provider = props.awsCreds ?? AwsCredentials.fromGitHubSecrets();
+    this.awsCredsStep = provider.credentialSteps(props.region, props.assumeRoleArn);
   }
 
   downloadAssemblySteps(targetName: string, targetDir: string): github.JobStep[] {
-    return [{
-      name: `Download ${targetName} from S3`,
-      run: ['aws s3 sync', `s3://${this.bucket}/${this.seed}/${targetName}`, targetDir].join(' '),
-    }];
+    return [
+      ...this.awsCredsStep,
+      {
+        name: `Download ${targetName} from S3`,
+        run: ['aws s3 sync', `s3://${this.bucket}/${this.seed}/${targetName}`, targetDir].join(' '),
+      },
+    ];
   }
 
   uploadAssemblySteps(sourceName: string, sourceDir: string): github.JobStep[] {
-    return [{
-      name: `Upload ${sourceName} to S3`,
-      run: ['aws s3 sync', sourceDir, `s3://${this.bucket}/${this.seed}/${sourceName}`].join(' '),
-    }];
+    return [
+      ...this.awsCredsStep,
+      {
+        name: `Upload ${sourceName} to S3`,
+        run: ['aws s3 sync', sourceDir, `s3://${this.bucket}/${this.seed}/${sourceName}`].join(' '),
+      },
+    ];
   }
 }
