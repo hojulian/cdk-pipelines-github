@@ -103,8 +103,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyPrePostStack-MyStack
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
   MyPrePostStack-PostDeployAction:
@@ -212,8 +211,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStack-MyStack
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           capabilities: CAPABILITY_NAMED_IAM,CAPABILITY_IAM,CAPABILITY_AUTO_EXPAND
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
@@ -304,8 +302,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStack-MyStack
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           capabilities: CAPABILITY_NAMED_IAM
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
@@ -397,8 +394,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStage1-MyStack
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
   MyStage2-MyStack-Deploy:
@@ -427,8 +423,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStage2-MyStack
-          template: https://cdk-hnb659fds-assets-222222222222-us-west-2.s3.us-west-2.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-222222222222-us-west-2.s3.us-west-2.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::222222222222:role/cdk-hnb659fds-cfn-exec-role-222222222222-us-west-2
 "
@@ -447,8 +442,7 @@ on:
 jobs:
   Build-Build:
     name: Synthesize
-    if: contains(github.event.issue.labels.*.name, 'deployToA') ||
-      contains(github.event.issue.labels.*.name, 'deployToB')
+    if: contains(github.event.issue.labels.*.name, 'deployToA') || contains(github.event.issue.labels.*.name, 'deployToB')
     permissions:
       contents: read
       id-token: none
@@ -469,8 +463,7 @@ jobs:
           path: cdk.out
   Assets-FileAsset1:
     name: Publish Assets Assets-FileAsset1
-    if: contains(github.event.issue.labels.*.name, 'deployToA') ||
-      contains(github.event.issue.labels.*.name, 'deployToB')
+    if: contains(github.event.issue.labels.*.name, 'deployToA') || contains(github.event.issue.labels.*.name, 'deployToB')
     needs:
       - Build-Build
     permissions:
@@ -500,8 +493,7 @@ jobs:
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
   MyWave-PreWaveAction:
     name: PreWaveAction
-    if: contains(github.event.issue.labels.*.name, 'deployToA') ||
-      contains(github.event.issue.labels.*.name, 'deployToB')
+    if: contains(github.event.issue.labels.*.name, 'deployToA') || contains(github.event.issue.labels.*.name, 'deployToB')
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -540,8 +532,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageA-MyStackA
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
   MyWave-MyStageB-MyStackB-Deploy:
@@ -570,14 +561,12 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageB-MyStackB
-          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::12345678901:role/cdk-hnb659fds-cfn-exec-role-12345678901-us-east-1
   MyWave-PostWaveAction:
     name: PostWaveAction
-    if: contains(github.event.issue.labels.*.name, 'deployToA') ||
-      contains(github.event.issue.labels.*.name, 'deployToB')
+    if: contains(github.event.issue.labels.*.name, 'deployToA') || contains(github.event.issue.labels.*.name, 'deployToB')
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -682,8 +671,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStack-MyStack
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
 "
@@ -774,8 +762,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageA-MyStackA
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
   MyWave-MyStageB-MyStackB-Deploy:
@@ -803,8 +790,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageB-MyStackB
-          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::12345678901:role/cdk-hnb659fds-cfn-exec-role-12345678901-us-east-1
 "
@@ -895,8 +881,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageA-MyStackA
-          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-111111111111-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::111111111111:role/cdk-hnb659fds-cfn-exec-role-111111111111-us-east-1
   MyStageB-MyStackB-Deploy:
@@ -925,8 +910,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: MyStageB-MyStackB
-          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{
-            needs.Assets-FileAsset1.outputs.asset-hash }}.json
+          template: https://cdk-hnb659fds-assets-12345678901-us-east-1.s3.us-east-1.amazonaws.com/\${{ needs.Assets-FileAsset1.outputs.asset-hash }}.json
           no-fail-on-empty-changeset: \\"1\\"
           role-arn: arn:aws:iam::12345678901:role/cdk-hnb659fds-cfn-exec-role-12345678901-us-east-1
 "

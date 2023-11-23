@@ -62,23 +62,23 @@ export class S3AssemblyArtifactOptions extends AssemblyArtifactOptions {
 
   private readonly seed: string;
 
-  constructor(bucket: string) {
+  constructor(bucket: string, seed?: string) {
     super();
     this.bucket = bucket;
-    this.seed = uuidv4();
+    this.seed = seed ?? uuidv4();
   }
 
   downloadAssemblySteps(targetName: string, targetDir: string): github.JobStep[] {
     return [{
       name: `Download ${targetName} from S3`,
-      run: ['aws s3 sync', `s3://${this.bucket}/${this.seed}/${targetName}`, targetDir].join(' \\ \n'),
+      run: ['aws s3 sync', `s3://${this.bucket}/${this.seed}/${targetName}`, targetDir].join(' '),
     }];
   }
 
   uploadAssemblySteps(sourceName: string, sourceDir: string): github.JobStep[] {
     return [{
       name: `Upload ${sourceName} to S3`,
-      run: ['aws s3 sync', sourceDir, `s3://${this.bucket}/${this.seed}/${sourceName}`].join(' \\ \n'),
+      run: ['aws s3 sync', sourceDir, `s3://${this.bucket}/${this.seed}/${sourceName}`].join(' '),
     }];
   }
 }

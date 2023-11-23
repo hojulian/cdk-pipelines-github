@@ -5,7 +5,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { ShellStep } from 'aws-cdk-lib/pipelines';
 import { GitHubExampleApp } from './example-app';
 import { withTemporaryDirectory, TestApp } from './testutil';
-import { GitHubWorkflow, JsonPatch, Runner, AwsCredentials } from '../src';
+import { GitHubWorkflow, JsonPatch, Runner, AwsCredentials, S3AssemblyArtifactOptions } from '../src';
 
 const fixtures = join(__dirname, 'fixtures');
 
@@ -493,6 +493,23 @@ test('pipeline with custom upload assembly step', () => {
           },
         }],
       },
+    });
+
+    app.synth();
+
+    expect(readFileSync(github.workflowPath, 'utf-8')).toMatchSnapshot();
+  });
+});
+
+test('pipeline with s3 upload assembly step', () => {
+  withTemporaryDirectory((dir) => {
+    const github = new GitHubWorkflow(app, 'Pipeline', {
+      workflowPath: `${dir}/.github/workflows/deploy.yml`,
+      synth: new ShellStep('Build', {
+        installCommands: ['yarn'],
+        commands: ['yarn build'],
+      }),
+      assemblyArtifactOptions: new S3AssemblyArtifactOptions('some-bucket-05020004-4502-4bae-8111-8c6459aa2127', '7f187bd3-12b8-4ba8-984c-6c196ae2125f'),
     });
 
     app.synth();
