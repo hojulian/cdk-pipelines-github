@@ -71,14 +71,14 @@ export class S3AssemblyArtifactOptions extends AssemblyArtifactOptions {
   downloadAssemblySteps(targetName: string, targetDir: string): github.JobStep[] {
     return [{
       name: `Download ${targetName} from S3`,
-      run: `aws s3 sync \ \ns3://${this.bucket}/${this.seed}/${targetName}\ \n${targetDir}`,
+      run: ['aws s3 sync', `s3://${this.bucket}/${this.seed}/${targetName}`, targetDir].join(' \\ \n'),
     }];
   }
 
   uploadAssemblySteps(sourceName: string, sourceDir: string): github.JobStep[] {
     return [{
       name: `Upload ${sourceName} to S3`,
-      run: `aws s3 sync \ \n${sourceDir} \ \ns3://${this.bucket}/${this.seed}/${sourceName}`,
+      run: ['aws s3 sync', sourceDir, `s3://${this.bucket}/${this.seed}/${sourceName}`].join(' \\ \n'),
     }];
   }
 }
