@@ -321,13 +321,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@latest --upgrade --target=minor --peer --dep=prod,peer --filter=decamelize,fast-json-patch,yaml,aws-cdk-lib,constructs"
+          "exec": "npx npm-check-updates@latest --upgrade --target=minor --peer --dep=prod,peer --filter=decamelize,fast-json-patch,uuid,yaml,aws-cdk-lib,constructs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade decamelize fast-json-patch yaml aws-cdk-lib constructs"
+          "exec": "yarn upgrade decamelize fast-json-patch uuid yaml aws-cdk-lib constructs"
         },
         {
           "exec": "npx projen"
@@ -369,13 +369,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@latest --upgrade --target=minor --peer --dep=dev --filter=@aws-cdk/integ-runner,@aws-cdk/integ-tests-alpha,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,aws-cdk-lib,cdklabs-projen-project-types,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest-junit,jest,jsii-diff,jsii-docgen,jsii-pacmak,jsii-rosetta,npm-check-updates,projen,standard-version,ts-jest,ts-node,typescript"
+          "exec": "npx npm-check-updates@latest --upgrade --target=minor --peer --dep=dev --filter=@aws-cdk/integ-runner,@aws-cdk/integ-tests-alpha,@types/jest,@types/node,@types/uuid,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,aws-cdk-lib,cdklabs-projen-project-types,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest-junit,jest,jsii-diff,jsii-docgen,jsii-pacmak,jsii-rosetta,npm-check-updates,projen,standard-version,ts-jest,ts-node,typescript"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @aws-cdk/integ-runner @aws-cdk/integ-tests-alpha @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib cdklabs-projen-project-types eslint-import-resolver-typescript eslint-plugin-import eslint jest-junit jest jsii-diff jsii-docgen jsii-pacmak jsii-rosetta npm-check-updates projen standard-version ts-jest ts-node typescript"
+          "exec": "yarn upgrade @aws-cdk/integ-runner @aws-cdk/integ-tests-alpha @types/jest @types/node @types/uuid @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib cdklabs-projen-project-types eslint-import-resolver-typescript eslint-plugin-import eslint jest-junit jest jsii-diff jsii-docgen jsii-pacmak jsii-rosetta npm-check-updates projen standard-version ts-jest ts-node typescript"
         },
         {
           "exec": "npx projen"

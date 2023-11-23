@@ -20,6 +20,10 @@
       "type": "build"
     },
     {
+      "name": "@types/uuid",
+      "type": "build"
+    },
+    {
       "name": "@typescript-eslint/eslint-plugin",
       "version": "^6",
       "type": "build"
@@ -109,6 +113,10 @@
     },
     {
       "name": "fast-json-patch",
+      "type": "bundled"
+    },
+    {
+      "name": "uuid",
       "type": "bundled"
     },
     {
