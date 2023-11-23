@@ -467,6 +467,40 @@ test('can escape hatch into workflow file', () => {
   });
 });
 
+test('pipeline with custom upload assembly step', () => {
+  withTemporaryDirectory((dir) => {
+    const github = new GitHubWorkflow(app, 'Pipeline', {
+      workflowPath: `${dir}/.github/workflows/deploy.yml`,
+      synth: new ShellStep('Build', {
+        installCommands: ['yarn'],
+        commands: ['yarn build'],
+      }),
+      assemblyArtifactOptions: {
+        downloadAssemblySteps: (targetName, targetDir) => [{
+          name: `Download ${targetName}`,
+          uses: 'actions/download-artifact@v3',
+          with: {
+            name: targetName,
+            path: targetDir,
+          },
+        }],
+        uploadAssemblySteps: (sourceName, sourceDir) => [{
+          name: `Upload ${sourceName} to S3`,
+          uses: 'custom-actions/upload-s3-artifact@v1',
+          with: {
+            name: sourceName,
+            path: sourceDir,
+          },
+        }],
+      },
+    });
+
+    app.synth();
+
+    expect(readFileSync(github.workflowPath, 'utf-8')).toMatchSnapshot();
+  });
+});
+
 function wrapEnv(variable: string, value: string, cb: () => void) {
   const original = process.env[variable];
   try {
