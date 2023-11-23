@@ -9,6 +9,7 @@ import * as decamelize from 'decamelize';
 import { AwsCredentials, AwsCredentialsProvider } from './aws-credentials';
 import { DockerCredential } from './docker-credentials';
 import { AddGitHubStageOptions, GitHubEnvironment } from './github-common';
+import { AssemblyArtifactOptions, GithubAssemblyArtifactOptions } from './pipeline-options';
 import { GitHubStage } from './stage';
 import { GitHubActionStep } from './steps/github-action-step';
 import { GitHubWave } from './wave';
@@ -155,6 +156,13 @@ export interface GitHubWorkflowProps extends PipelineBaseProps {
    * @see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-run-job-for-specific-repository
    */
   readonly jobSettings?: JobSettings;
+
+  /**
+   * Configure the assembly artifacts handling.
+   *
+   * @default GithubAssemblyArtifactOptions
+   */
+  readonly assemblyArtifactOptions?: AssemblyArtifactOptions;
 }
 
 /**
@@ -186,6 +194,7 @@ export class GitHubWorkflow extends PipelineBase {
   }
   > = {};
   private readonly jobSettings?: JobSettings;
+  private readonly assemblyArtifactOptions: AssemblyArtifactOptions;
   // in order to keep track of if this pipeline has been built so we can
   // catch later calls to addWave() or addStage()
   private builtGH = false;
@@ -199,6 +208,7 @@ export class GitHubWorkflow extends PipelineBase {
     this.preBuildSteps = props.preBuildSteps ?? [];
     this.postBuildSteps = props.postBuildSteps ?? [];
     this.jobSettings = props.jobSettings;
+    this.assemblyArtifactOptions = props.assemblyArtifactOptions ?? new GithubAssemblyArtifactOptions();
 
     this.awsCredentials = this.getAwsCredentials(props);
 
@@ -536,12 +546,12 @@ export class GitHubWorkflow extends PipelineBase {
           [ASSET_HASH_NAME]: `\${{ steps.Publish.outputs.${ASSET_HASH_NAME} }}`,
         },
         steps: [
+          ...this.stepsToConfigureAws(this.publishAssetsAuthRegion),
           ...this.stepsToDownloadAssembly(cdkoutDir),
           {
             name: 'Install',
             run: `npm install --no-save cdk-assets${installSuffix}`,
           },
-          ...this.stepsToConfigureAws(this.publishAssetsAuthRegion),
           ...dockerLoginSteps,
           publishStep,
         ],
@@ -813,14 +823,7 @@ export class GitHubWorkflow extends PipelineBase {
       return this.stepsToCheckout();
     }
 
-    return [{
-      name: `Download ${CDKOUT_ARTIFACT}`,
-      uses: 'actions/download-artifact@v3',
-      with: {
-        name: CDKOUT_ARTIFACT,
-        path: targetDir,
-      },
-    }];
+    return this.assemblyArtifactOptions.downloadAssemblySteps(CDKOUT_ARTIFACT, targetDir);
   }
 
   private stepsToCheckout(): github.JobStep[] {
@@ -837,14 +840,7 @@ export class GitHubWorkflow extends PipelineBase {
       return [];
     }
 
-    return [{
-      name: `Upload ${CDKOUT_ARTIFACT}`,
-      uses: 'actions/upload-artifact@v3',
-      with: {
-        name: CDKOUT_ARTIFACT,
-        path: dir,
-      },
-    }];
+    return this.assemblyArtifactOptions.uploadAssemblySteps(CDKOUT_ARTIFACT, dir);
   }
 
   private renderDependencies(node: AGraphNode) {

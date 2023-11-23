@@ -44,13 +44,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -59,6 +52,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -170,13 +170,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -185,6 +178,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -262,13 +262,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -277,6 +270,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -354,13 +354,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -369,6 +362,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -480,13 +480,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -495,6 +488,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -639,13 +639,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -654,6 +647,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -731,13 +731,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -746,6 +739,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
@@ -852,13 +852,6 @@ jobs:
     outputs:
       asset-hash: \${{ steps.Publish.outputs.asset-hash }}
     steps:
-      - name: Download cdk.out
-        uses: actions/download-artifact@v3
-        with:
-          name: cdk.out
-          path: stage.out
-      - name: Install
-        run: npm install --no-save cdk-assets
       - name: Authenticate Via GitHub Secrets
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -867,6 +860,13 @@ jobs:
           role-skip-session-tagging: true
           aws-access-key-id: \${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Download cdk.out
+        uses: actions/download-artifact@v3
+        with:
+          name: cdk.out
+          path: stage.out
+      - name: Install
+        run: npm install --no-save cdk-assets
       - id: Publish
         name: Publish Assets-FileAsset1
         run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
