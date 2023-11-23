@@ -509,7 +509,11 @@ test('pipeline with s3 upload assembly step', () => {
         installCommands: ['yarn'],
         commands: ['yarn build'],
       }),
-      assemblyArtifactOptions: new S3AssemblyArtifactOptions('some-bucket-05020004-4502-4bae-8111-8c6459aa2127', '7f187bd3-12b8-4ba8-984c-6c196ae2125f'),
+      assemblyArtifactOptions: new S3AssemblyArtifactOptions({
+        bucket: 'some-bucket-05020004-4502-4bae-8111-8c6459aa2127',
+        region: 'us-east-2',
+        seed: '7f187bd3-12b8-4ba8-984c-6c196ae2125f',
+      }),
     });
 
     app.synth();
