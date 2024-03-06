@@ -124,6 +124,11 @@ export interface GitHubWorkflowProps extends PipelineBaseProps {
   readonly postBuildSteps?: github.JobStep[];
 
   /**
+   * Github worklow steps to execute before publish.
+   */
+  readonly prePublishSteps?: github.JobStep[];
+
+  /**
    * The Docker Credentials to use to login. If you set this variable,
    * you will be logged in to docker when you upload Docker Assets.
    */
@@ -181,6 +186,7 @@ export class GitHubWorkflow extends PipelineBase {
   private readonly buildContainer?: github.ContainerOptions;
   private readonly preBuildSteps: github.JobStep[];
   private readonly postBuildSteps: github.JobStep[];
+  private readonly prePublishSteps: github.JobStep[];
   private readonly jobOutputs: Record<string, github.JobStepOutput[]> = {};
   private readonly assetHashMap: Record<string, string> = {};
   private readonly runner: github.Runner;
@@ -207,6 +213,7 @@ export class GitHubWorkflow extends PipelineBase {
     this.buildContainer = props.buildContainer;
     this.preBuildSteps = props.preBuildSteps ?? [];
     this.postBuildSteps = props.postBuildSteps ?? [];
+    this.prePublishSteps = props.prePublishSteps ?? [];
     this.jobSettings = props.jobSettings;
     this.assemblyArtifactOptions = props.assemblyArtifactOptions ?? new GithubAssemblyArtifactOptions();
 
@@ -553,6 +560,7 @@ export class GitHubWorkflow extends PipelineBase {
             run: `npm install --no-save cdk-assets${installSuffix}`,
           },
           ...dockerLoginSteps,
+          ...this.prePublishSteps,
           publishStep,
         ],
       },
